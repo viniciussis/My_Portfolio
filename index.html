@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta name=description content="Portfólio criado com JavaScript, CSS e HTML.">
     <title>Vinicius Santos | Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href=images\icon_01.avif type=image/x-icon />
+    <link rel="stylesheet" href="styles\main.css">
+    <script src=https://cdn.tailwindcss.com></script>
+    <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css>
+    <link rel=stylesheet type=text/css href=https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css>
+    <script>tailwind.config = { theme: { extend: { fontFamily: { principal: ["Montserrat", "sans-serif"] } } } };</script>
 </head>
+
 <body>
     <header>
         <h1>Vinícius Silva Santos</h1>
@@ -13,18 +22,26 @@
 
     <nav>
         <ul>
-            <li><a href="#sobre">Sobre Mim</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Uma breve descrição sobre você e suas paixões na área de desenvolvimento.</p>
+    <section id="about">
+        <h1 class="text-6xl mb-3 font-bold">Vinícius Silva Santos</h1>
+        <h3 class="text-lg mb-6 font-semibold">FULLSTACK DEVELOPER, BRAZIL</h3>
+        <p>Sou um desenvolvedor de software apaixonado e dedicado em busca de uma posição que me permita aplicar minha
+            experiência em programação e habilidades técnicas em computação para contribuir no desenvolvimento de
+            soluções inovadoras. Meu objetivo é participar de uma equipe dinâmica em uma empresa de tecnologia, onde
+            possa trabalhar em projetos desafiadores e aprimorar minhas habilidades, enquanto colaboro para criar
+            produtos de alta qualidade que atendam às necessidades dos usuários.</p>
+            <button class="curriculo">
+                <a href="https://drive.google.com/file/d/1nLzheDwt0G-sLYj2nsO0p8Nnom-umkMm/view?usp=drive_link" target="_blank">Currículo PDF</a>
+            </button>
     </section>
 
-    <se id="projetos">
+    <section id="projects">
         <h2>Projetos</h2>
         <div class="projeto">
             <h3>Nome do Projeto 1</h3>
@@ -37,17 +54,18 @@
             <a href="#">Ver Projeto</a>
         </div>
         <!-- Adicione mais projetos conforme necessário -->
-    </se>
+    </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato comigo em meunome@email.com</p>
+    <section id="contact">
+        <h2>Say hi anytime</h2>
+        <p>vinicius01012@gmail.com</p>
     </section>
 
     <footer>
-        <p>&copy; 2023 - Vinícius Silva Santos</p>
+        <p>&copy; Copyright © | Projeto para portfólio web criado por Vinícius Silva Santos | 2023</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

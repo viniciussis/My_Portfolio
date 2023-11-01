@@ -7,17 +7,17 @@
 }  
 
 /* Reset de estilos para garantir uma base limpa */
-body, h1, h2, h3, p, ul, li, a {
+body, h1, h2, h3, p, ul, li, a{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     font-family: 'Quicksand';
-    color: #5A189A;
+    color: #00ADB5;
 }
 
 body {
-    background-color: #FF9E00;
+    background-color: #112D4E;
     font-size: 16px;
     line-height: 1.6;
 }
@@ -25,12 +25,12 @@ body {
 header {
     text-align: center;
     padding: 50px 0;
-    background-color: #FF6D00;
+    background-color: #3F72AF;
 }
 
 header h1 {
     font-size: 36px;
-    color: #5A189A; 
+    color: #EEEEEE; 
 }
 
 header p {
@@ -38,7 +38,7 @@ header p {
 }
 
 nav {
-    background-color: #FF9E00;
+    background-color: #112D4E;
     text-align: center;
     padding: 20px 0;
 }
@@ -54,7 +54,7 @@ nav li {
 
 nav a {
     font-size: 20px;
-    color: #5A189A;
+    color: #EEEEEE;
 }
 
 section {
@@ -63,7 +63,7 @@ section {
 
 h2 {
     font-size: 24px;
-    color: #5A189A; /
+    color: #EEEEEE; /
 }
 
 .projeto {
@@ -79,11 +79,11 @@ h2 {
 }
 
 .projeto a {
-    color: #5A189A; 
+    color: #EEEEEE; 
 }
 
 footer {
-    background-color: #FF6D00;
+    background-color: #3F72AF;
     text-align: center;
     padding: 20px 0;
     font-size: 20px;
