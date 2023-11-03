@@ -6,7 +6,7 @@
     <meta name=viewport content="width=device-width, initial-scale=1.0">
     <meta name=description content="Portfólio criado com JavaScript, CSS e HTML.">
     <title>Vinicius Santos | Developer</title>
-    <link rel="shortcut icon" href=images\icon_01.avif type=image/x-icon />
+    <link rel="shortcut icon" href=images\v_icon3.png type=image/x-icon />
     <link rel="stylesheet" href="styles\main.css">
     <script src=https://cdn.tailwindcss.com></script>
     <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css>
@@ -15,18 +15,18 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
+        <a href="/"> <img src="images\v_icon.png" width="75" height="75"> </a>
         <h1>Vinícius Silva Santos</h1>
-        <p>Desenvolvedor Web</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>    
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
     <section id="about">
         <h1 class="text-6xl mb-3 font-bold">Vinícius Silva Santos</h1>
@@ -42,7 +42,7 @@
     </section>
 
     <section id="projects">
-        <h2>Projetos</h2>
+        <h2>Projects</h2>
         <div class="projeto">
             <h3>Nome do Projeto 1</h3>
             <p>Uma descrição do Projeto 1.</p>
