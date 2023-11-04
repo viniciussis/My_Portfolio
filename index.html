@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta name=viewport content="width=device-width, initial-scale=1.0">
     <meta name=description content="Portfólio criado com JavaScript, CSS e HTML.">
-    <title>Vinicius Santos | Developer</title>
+    <title>Vinicius Santos | Portfólio</title>
     <link rel="shortcut icon" href=images\v_icon3.png type=image/x-icon />
     <link rel="stylesheet" href="styles\main.css">
-    <script src=https://cdn.tailwindcss.com></script>
-    <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css>
-    <link rel=stylesheet type=text/css href=https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css>
-    <script>tailwind.config = { theme: { extend: { fontFamily: { principal: ["Montserrat", "sans-serif"] } } } };</script>
+    <link rel="stylesheet" href="styles\header.css">
+    <link rel="stylesheet" href="styles\footer.css">
+    <link rel="stylesheet" href="styles\sections.css">
+    <script src="https://kit.fontawesome.com/ab85890f6c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Ocultando o código por enquanto...             
+    <svg id="cursor" width="64" height="64" xmlns="http://www.w3.org/2000/svg" style="top: 67.6px; left: 78px;">
+        <circle id="cursor_circle" stroke="rgba(128, 128, 128, 0.7)" stroke-width="3" cy="32" cx="32" r="30" fill="transparent"></circle>
+    </svg> -->
     <header id="header">
         <a href="/"> <img src="images\v_icon.png" width="75" height="75"> </a>
         <h1>Vinícius Silva Santos</h1>
@@ -26,7 +30,6 @@
             </ul>
         </nav>    
     </header>
-
 
     <section id="about">
         <h1 class="text-6xl mb-3 font-bold">Vinícius Silva Santos</h1>
@@ -62,10 +65,11 @@
     </section>
 
     <footer>
-        <p>&copy; Copyright © | Projeto para portfólio web criado por Vinícius Silva Santos | 2023</p>
+        <p>&copy; Copyright | Projeto para portfólio web criado por Vinícius Silva Santos | 2023</p>
     </footer>
-
-    <script src="script.js"></script>
+    
+    <script type="module" src="scripts\cursor.js"></script>
+    <script type="module" src="scripts\utils.js"></script>
 </body>
 
 </html>
