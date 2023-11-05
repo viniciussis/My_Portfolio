@@ -1,34 +1,10 @@
-/* Local para adicionar fontes novas */
+/* Adicionar fontes */
 @font-face {
     font-family: 'Checkbook';
     src: url('fonts\\Checkbook-1K2.ttf') format('truetype');
     font-family: 'Quicksand';
     src: url('fonts\\QuicksandbookRegular-0gW4.otf') format('truetype');
 }  
-
-/*-- CORES: ffffff-d8f3dc-95d5b2-52b788-38805f-2d6a4f-1b4332-081c15-04100c */
-
-/* Reset de estilos para garantir uma base limpa */
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
-    color: #D8F3DC;
-}
-
-body {
-    background-color: #1B4332;
-    font-size: 16px;
-    line-height: 1.6; 
-}
-
-#cursor {
-    position: absolute;
-    pointer-events: none;
-    z-index: 2
-}
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
@@ -43,4 +19,32 @@ body {
     nav li {
         margin: 10px 0;
     }
+}
+
+/*-- PALETA DE CORES: 
+    -ffffff
+    -d8f3dc
+    -95d5b2
+    -52b788
+    -38805f
+    -2d6a4f
+    -1b4332
+    -081c15
+    -04100c 
+*/
+
+/* Reset de estilos */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #D8F3DC;
+    line-height: 1.5; 
+}
+
+body {
+    background-color: #1B4332;
+    font-size: 16px;
 }

@@ -1,36 +1,34 @@
 #header {
     background-color: #04100C;
-    padding: 12px;
+    padding: 8px 48px;
     display: flex;
+    top: 0;
     align-items: center;
     justify-content: space-between;
     position: sticky;
-    top: 0;
-    width: 100%;
+    text-align: center;
+    font-size: 24px;
 }
 
-header h1 {
-    font-size: 36px;
+#header img { 
+    width: auto;
+    height: 60px;
+    border-radius: 10px;
 }
 
-header p {
-    font-size: 18px;
+li:hover{
+    background-color: #1b4332;
 }
 
 nav {
-    text-align: center;
-    padding: 10px 0;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
 }
 
 nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    font-size: 20px;
+    margin: 4px;
+    padding: 12px;
+    border-radius: 15px;
 }
