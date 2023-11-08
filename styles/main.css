@@ -34,7 +34,7 @@
 */
 
 /* Reset de estilos */
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -42,9 +42,10 @@
     font-family: 'Quicksand', sans-serif;
     color: #D8F3DC;
     line-height: 1.5; 
+    font-size: large;
+    border: 1px solid white;
 }
 
 body {
     background-color: #1B4332;
-    font-size: 16px;
 }

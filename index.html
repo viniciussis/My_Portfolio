@@ -2,20 +2,24 @@
 <html lang='pt-BR'>
 
 <head>
+    <title>Vinicius Santos | Portfólio</title>
     <meta charset="UTF-8">
+    <meta name=keywords content="Portfolio, Developer">
+    <meta name=author content="Vinícius Silva Santos">
     <meta name=viewport content="width=device-width, initial-scale=1.0">
     <meta name=description content="Portfólio criado com JavaScript, CSS e HTML.">
-    <title>Vinicius Santos | Portfólio</title>
+    <base target=_blank>
     <link rel="shortcut icon" href=images\flavicon_main.png type=image/x-icon />
     <link rel="stylesheet" href="styles\main.css">
     <link rel="stylesheet" href="styles\header.css">
     <link rel="stylesheet" href="styles\footer.css">
     <link rel="stylesheet" href="styles\sections.css">
     <script src="https://kit.fontawesome.com/ab85890f6c.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <header id="header">
+    <header>
         <a href="/"> <img src="images\logo_main.png"> </a>
         <nav>
             <ul>
@@ -27,8 +31,8 @@
     </header>
 
     <section id="about">
-        <h1 >Vinícius Silva Santos</h1>
-        <h2 >FULLSTACK DEVELOPER, BRAZIL</h2>
+        <h1>Vinícius Silva Santos</h1>
+        <h2>FULLSTACK DEVELOPER, BRASIL</h2>
         <p>Sou um desenvolvedor de software apaixonado e dedicado em busca de uma posição que me permita aplicar minha
             experiência em programação e habilidades técnicas em computação para contribuir no desenvolvimento de
             soluções inovadoras. Meu objetivo é participar de uma equipe dinâmica em uma empresa de tecnologia, onde
@@ -41,17 +45,17 @@
     </section>
 
     <section id="about-me">
-        <h2>Sobre mim...</h2>
+        <h2>About Me</h2>
     </section>
 
-    <section id="projects">
+    <section id="my-projects">
         <h2>Projects</h2>
-        <div class="projeto">
+        <div class="project">
             <h3>Nome do Projeto 1</h3>
             <p>Uma descrição do Projeto 1.</p>
             <a href="#">Ver Projeto</a>
         </div>
-        <div class="projeto">
+        <div class="project">
             <h3>Nome do Projeto 2</h3>
             <p>Uma descrição do Projeto 2.</p>
             <a href="#">Ver Projeto</a>
@@ -59,8 +63,28 @@
     </section>
 
     <section id="contact">
+        <div id="contact-form">
+            <h2>CONTATO</h2>
+            <form action="/contact" method="post">
+                <label for="name">Seu nome:</label>
+                <input type="text" name="name" id="name"><br>
+                <label for="email">Seu email:</label>
+                <input type="email" name="email" id="email"><br>
+                <label for="phone">Seu celular:</label>
+                <input type="tel" name="phone" id="phone"><br>
+                <label for="reason">Motivo do Contato</label>
+                <select name="reason" id="reason">
+                    <option value="entrevista de emprego">Entrevista de Emprego</option>
+                    <option value="aula particular">Aula Particular</option>
+                    <option value="consultoria">Consultoria</option>
+                    <option value="outro motivo">Outro Motivo</option>
+                </select><br>
+                <textarea name="description" id="description" cols="30" rows="10">Diga-me, como posso ajudá-lo?</textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
         <h2>Say hi anytime</h2>
-        <p>vinicius01012@gmail.com</p>
+        <p>vinicius01012@gmail.com</p>    
     </section>
 
     <footer>
