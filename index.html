@@ -65,22 +65,25 @@
     <section id="contact">
         <div id="contact-form">
             <h2>CONTATO</h2>
-            <form action="/contact" method="post">
-                <label for="name">Seu nome:</label>
-                <input type="text" name="name" id="name"><br>
-                <label for="email">Seu email:</label>
-                <input type="email" name="email" id="email"><br>
-                <label for="phone">Seu celular:</label>
-                <input type="tel" name="phone" id="phone"><br>
-                <label for="reason">Motivo do Contato</label>
-                <select name="reason" id="reason">
-                    <option value="entrevista de emprego">Entrevista de Emprego</option>
-                    <option value="aula particular">Aula Particular</option>
-                    <option value="consultoria">Consultoria</option>
-                    <option value="outro motivo">Outro Motivo</option>
-                </select><br>
-                <textarea name="description" id="description" cols="30" rows="10">Diga-me, como posso ajudá-lo?</textarea><br>
-                <input type="submit" value="Enviar">
+            <form method="post" autocomplete="off" target="_blank">
+                <fieldset>
+                    <legend>Formulário de Contato</legend>
+                    <label for="name">Seu nome:</label>
+                    <input type="text" name="name" id="name"><br>
+                    <label for="email">Seu email:</label>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="phone">Seu celular:</label>
+                    <input type="tel" name="phone" id="phone"><br>
+                    <label for="reason">Motivo do Contato:</label>
+                    <select name="reason" id="reason">
+                        <option value="entrevista de emprego">Entrevista de Emprego</option>
+                        <option value="aula particular">Aula Particular</option>
+                        <option value="consultoria">Consultoria</option>
+                        <option value="outro motivo">Outro Motivo</option>
+                    </select><br>
+                    <textarea name="description" id="description" cols="30" rows="10">Diga-me, como posso ajudá-lo?</textarea><br>
+                    <input type="submit" value="Enviar">
+                </fieldset>
             </form>
         </div>
         <h2>Say hi anytime</h2>
