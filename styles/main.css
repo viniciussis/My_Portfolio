@@ -39,10 +39,10 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     color: #D8F3DC;
     line-height: 1.5; 
-    font-size: large;
+    font-size: 100%;
     /* border: 1px solid white; */
 }
 

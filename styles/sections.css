@@ -14,7 +14,7 @@ section {
     font-size: 28px;
 }
 
-#about button{
+.buttons {
     border-radius: 18px;
     font-size: 16px;
     color: #52b788;
@@ -23,7 +23,7 @@ section {
     padding: 8px;
 }
 
-#about button:hover{
+.buttons:hover{
     color: #04100c;
     border-color: #04100c;
     background-color: #38805f;
