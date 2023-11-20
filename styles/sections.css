@@ -34,8 +34,8 @@ section {
 }
 
 #contact *{
-margin: 4px 0px;
-font-size: 24px;
+    margin: 4px 0px;
+    font-size: 24px;
 }
 
 #contact-form {
@@ -48,4 +48,10 @@ font-size: 24px;
 
 #contact h2{
     margin-top: 48px;
+}
+
+.rounded {
+    color: black;
+    border-radius: 15px;
+    padding: 8px;
 }
