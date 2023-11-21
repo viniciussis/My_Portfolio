@@ -20,7 +20,7 @@
 
 <body>
     <header>
-        <a href="/"> <img src="images\logo_main.png"> </a>
+        <a href="/"> <img src="images\logo_main.png" alt="minha-logo"> </a>
         <nav>
             <ul>
                 <li><a href="#about">About_Me</a></li>
@@ -45,7 +45,28 @@
     </section>
 
     <section id="about-me">
-        <h2>About Me</h2>
+        <img class="img-section" src="images\Profile 01.jpeg" alt="personal-photo">
+        <div id="content">
+            <h2>About Me</h2>
+            <p>Olá! Sou Vinícius Silva Santos, um desenvolvedor de software apaixonado por programação e ciência de dados,
+                que apesar de possuir pouca experiência profissional, estou comprometido em impulsionar inovação e
+                excelência em cada projeto em que me envolvo.<br>
+
+                Minha jornada de ensino me levou a estudar numa das melhores faculdades de ensino da Bahia, o IFBA, e támbem
+                na maior escola online de tecnologia do brasil, a Alura. Estou constantemente buscando novos desafios e
+                oportunidades para crescer e aprender.<br>
+
+                Minhas principais habilidades incluem um amplo conhecimento nas linguagens de programação Java, Python,
+                Javascript, conhecimento web como HTML, CSS e SQL, controle de versão no GIT & GitHub e conhecimento em
+                bancos de dados como MySQL e MongoDB. Acredito que o trabalho em equipe é a chave para o sucesso, e tenho
+                orgulho de colaborar com colegas para alcançar resultados excepcionais.<br>
+
+                Fora do ambiente de trabalho, sou um entusiasta em academia e nutrição, e um ótimo leitor. Acredito na
+                importância de equilibrar a vida profissional com o crescimento pessoal e a contribuição para a comunidade.<br>
+
+                Estou sempre aberto a conectar com pessoas que compartilham interesses semelhantes ou que desejam discutir
+                oportunidades de colaboração. Vamos juntos construir um futuro de sucesso!</p>
+        </div>
     </section>
 
     <section id="my-projects">
@@ -67,7 +88,7 @@
             <h2>CONTATO</h2>
             <form method="post" autocomplete="off" target="_blank">
                 <fieldset>
-                    <legend>Formulário de Contato</legend>
+                    <legend>&nbsp;Formulário de Contato&nbsp;</legend>
                     <label for="name">Seu nome:</label>
                     <input class="rounded" type="text" name="name" id="name"><br>
                     <label for="email">Seu email:</label>
@@ -81,21 +102,19 @@
                         <option class="rounded" value="consultoria">Consultoria</option>
                         <option class="rounded" value="outro motivo">Outro Motivo</option>
                     </select><br>
-                    <textarea class="rounded" name="description" id="description" cols="30" rows="10">Diga-me, como posso ajudá-lo?</textarea><br>
+                    <textarea class="rounded" name="description" id="description" cols="30"
+                        rows="10">Diga-me, como posso ajudá-lo?</textarea><br>
                     <input class="buttons" type="submit" value="Enviar">
                 </fieldset>
             </form>
         </div>
         <h2>Say hi anytime</h2>
-        <p>vinicius01012@gmail.com</p>    
+        <p>vinicius01012@gmail.com</p>
     </section>
 
     <footer>
         <p>&copy; Copyright | Projeto para portfólio web criado por Vinícius Silva Santos | 2023</p>
     </footer>
-
-    <script type="module" src="scripts\cursor.js"></script>
-    <script type="module" src="scripts\utils.js"></script>
 </body>
 
 </html>
