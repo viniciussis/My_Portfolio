@@ -1,35 +1,20 @@
+PALETA DE CORES: 
+-ffffff
+-d8f3dc
+-95d5b2
+-52b788
+-38805f
+-2d6a4f
+-1b4332
+-081c15
+-04100c 
+
+FONT AWESOME:
+<script src="https://kit.fontawesome.com/ab85890f6c.js" crossorigin="anonymous"></script>
+
 <!DOCTYPE html>
-<html lang='pt-BR'>
-
-<head>
-    <title>Vinicius Santos | Portfólio</title>
-    <meta charset="UTF-8">
-    <meta name=keywords content="Portfolio, Developer">
-    <meta name=author content="Vinícius Silva Santos">
-    <meta name=viewport content="width=device-width, initial-scale=1.0">
-    <meta name=description content="Portfólio criado com JavaScript, CSS e HTML.">
-    <base target=_blank>
-    <link rel="shortcut icon" href=images\flavicon_main.png type=image/x-icon />
-    <link rel="stylesheet" href="styles\main.css">
-    <link rel="stylesheet" href="styles\header.css">
-    <link rel="stylesheet" href="styles\footer.css">
-    <link rel="stylesheet" href="styles\sections.css">
-    <script src="https://kit.fontawesome.com/ab85890f6c.js" crossorigin="anonymous"></script>
-
-</head>
 
 <body>
-    <header>
-        <a href="/"> <img src="images\logo_main.png" alt="minha-logo"> </a>
-        <nav>
-            <ul>
-                <li><a href="#about">About_Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <section id="about">
         <h1>Vinícius Silva Santos</h1>
         <h2>FULLSTACK DEVELOPER, BRASIL</h2>
@@ -111,10 +96,5 @@
         <h2>Say hi anytime</h2>
         <p>vinicius01012@gmail.com</p>
     </section>
-
-    <footer>
-        <p>&copy; Copyright | Projeto para portfólio web criado por Vinícius Silva Santos | 2023</p>
-    </footer>
 </body>
-
 </html>
