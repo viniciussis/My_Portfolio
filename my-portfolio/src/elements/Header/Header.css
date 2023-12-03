@@ -1,52 +1,44 @@
-/* OBs:. 
-    - Futuramente adicionar comportamento no header, que consiste em se esconder
-    quando scrolamos a página para baixo e aparecer quando scrolamos para cima...
-*/
-
-header {
-  background-color: #04100C;
-  padding: 8px 48px;
+.menu {
   display: flex;
-  top: 0;
+  font-size: 16px;
+  gap: 88px;
+  background-color: #15202b;
+}
+
+.leftSide a, .rightSide a{
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  border-radius: 5px;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  font-size: 24px;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition-duration: 0.4s;
 }
 
-header img { 
-  width: auto;
-  height: 60px;
-  border-radius: 10px;
-  box-shadow: 5px 10px 10px #1b4332;
+.rightSide {
+  float: right;
 }
 
-li:hover{
-  background-color: #1b4332;
-}
-
-nav ul {
+.rightSide, .leftSide {
   display: flex;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Poppins';
+  position: relative;
+  top: 0;
+  box-sizing: content-box;
+  width: 100%;
+  transition-duration: 0.4s;
 }
 
-nav li {
-  margin: 4px;
-  padding: 12px;
-  border-radius: 15px;
-  float: left;
+.rightSide li, .leftSide li {
+  display: inline;
+  
 }
 
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-  header h1 {
-      font-size: 28px;
-  }
-
-  nav ul {
-      flex-direction: column;
-  }
-
-  nav li {
-      margin: 10px 0;
-  }
+.leftSide a:hover, .rightSide a:hover {
+  background-color: #111;
 }

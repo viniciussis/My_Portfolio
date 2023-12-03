@@ -1,18 +1,35 @@
-@font-face {
-  font-family: 'Playfair';
-  src: url('../public/fonts/Playfair/PlayfairDisplay-Regular.ttf') format('truetype');
-  font-family: 'Roboto';
-  src: url('../public/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
-} 
+/* 
+  Colors:
+  #15202b
+  #04aa6d
+  #1d2a35
+  #29353e
+  #9763f6
+  #ffffff
+  #282a35
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Playfair', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1B4332;
+  background-color: #1d2a35;
+  color: white;
 }
 
 code {
   font-family: monospace, serif;
+}
+
+.buttons {
+  background-color: #04AA6D;
+  border: none;
+  padding: 16px 32px;
+  display: inline-block;
+  border-radius: 15px;
+  box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.5);
+  transition-duration: 0.4s;
 }
