@@ -29,22 +29,6 @@
   text-align: justify;
 }
 
-.buttons a{
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  transition-duration: 0.4s;
-  font-weight: 700;
-}
-
-.buttons:hover {
-  background-color: white;
-}
-
-.buttons:hover a {
-  color: #04AA6D;
-}
-
 .title {
   font-family: 'Poppins', sans-serif;
 }

@@ -3,20 +3,20 @@ import Dropdown from '../Dropdown'
 import Button from '../Button'
 import './Form.css'
 
-const Form = (props) => {
+const Form = () => {
   return (
     <div className='forms'>      
       <form onSubmit = {''} >
-        <h2>Preencha os dados para criar o card...</h2>
+        <h2>CONTACT</h2>
         <Field type='text' value={''} mandatory label='Nome'
           placeholder='Digite seu nome...'/>
-        <Field type='text' value={''} mandatory label='Cargo'
-          placeholder='Digite seu cargo...'/>
-        <Field type='text' value={''} label='Imagem' 
-          placeholder='Informe o endereço da imagem...'/>
+        <Field type='text' value={''} mandatory label='Email'
+          placeholder='Digite seu email...'/>
         <Dropdown value={''} mandatory 
-          label='Time' itens={''}/>
-        <Button>Criar card</Button>
+          label='Motivo do contato'/>
+        <Field type='text' value={''} label='Descrição' 
+          placeholder='Em que posso ajudá-lo...'/>
+        <Button>Enviar</Button>
       </form>
     </div>
   )

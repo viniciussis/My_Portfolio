@@ -1,4 +1,5 @@
 import './AboutSection.css'
+import Button from '../Button'
 
 const AboutSection = () => {
   return (
@@ -11,10 +12,7 @@ const AboutSection = () => {
           soluções inovadoras. Meu objetivo é participar de uma equipe dinâmica em uma empresa de tecnologia, onde
           possa trabalhar em projetos desafiadores e aprimorar minhas habilidades, enquanto colaboro para criar
           produtos de alta qualidade que atendam às necessidades dos usuários.</p>
-        <button className="buttons">
-          <a href="https://drive.google.com/file/d/1ct8JAVlRW2GH_OJsZwZuaUaiFLFPnEy_/view?usp=drive_link">
-            Currículo PDF</a>
-        </button>
+        <Button link='https://drive.google.com/file/d/1ct8JAVlRW2GH_OJsZwZuaUaiFLFPnEy_/view?usp=drive_link'>Currículo PDF</Button>
       </div>
       <div className="about-me">
         <img className="img-section" src="https://github.com/viniciussis.png" alt="personal" />

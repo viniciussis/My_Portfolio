@@ -4,6 +4,7 @@ import AboutSection from './elements/AboutSection'
 import Certificates from './elements/Certificates'
 import Projects from './elements/Projects'
 import Form from './elements/Form'
+import Title from './elements/Title'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AboutSection/>
       <Projects/>
       <Certificates/>
+      <Title text='Conectando ideias, construindo oportunidades!'/>
       <Form/>
       <Footer/>
     </div>
