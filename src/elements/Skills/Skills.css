@@ -1,0 +1,20 @@
+.sect-skills {
+  background-color: #171921;
+  display: flexbox;
+  text-align: center;
+  padding: 24px;
+  align-items: center;
+  box-shadow: 0px 10px 10px rgba(23, 25, 33, 0.9);
+  margin: 56px 0px;
+}
+
+.skills {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 24px;
+  align-items: center;
+}
