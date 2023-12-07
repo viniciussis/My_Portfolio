@@ -18,3 +18,7 @@
   padding: 24px;
   align-items: center;
 }
+
+.skills h3 {
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}

@@ -6,6 +6,7 @@ import Projects from './elements/Projects'
 import Form from './elements/Form'
 import Title from './elements/Title'
 import Skills from './elements/Skills'
+import ArrowTop from './elements/ArrowTop'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Title text='Conectando ideias, construindo oportunidades!'/>
       <Form/>
       <Footer/>
+      <ArrowTop/>
     </div>
   );
 }

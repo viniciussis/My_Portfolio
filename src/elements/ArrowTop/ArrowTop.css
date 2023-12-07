@@ -1,0 +1,16 @@
+.sectArrowTop {
+  z-index: 3;
+  position: fixed;
+  right: 56px;
+  bottom: 56px;
+  background-color: #111;
+  border: none;
+  border-radius: 28px;
+  padding: 8px;
+  transition-duration: 0.75s;
+}
+
+.sectArrowTop:hover {
+  color: #111;
+  background-color: white;
+}

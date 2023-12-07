@@ -9,35 +9,35 @@ const Skills = ({ text }) => {
     <div className='sect-skills'>
       <h1>SKILLS</h1>
       <div className='skills'>
-        <div>
+        <div className='skill'>
           <FaCss3Alt size={60} />
           <h3>CSS</h3>
         </div>
-        <div>
+        <div className='skill'>
           <FaHtml5 size={60} />
           <h3>HTML</h3>
         </div>
-        <div>
+        <div className='skill'>
           <IoLogoJavascript size={60}/>
           <h3>JavaScript</h3>
         </div>
-        <div>
+        <div className='skill'>
           <FaJava size={60} />
           <h3>Java</h3>
         </div>
-        <div>
+        <div className='skill'>
           <GrMysql size={60}/>
-          <h3>SQL</h3>
+          <h3>MySQL</h3>
         </div>
-        <div>
+        <div className='skill'>
           <FaReact size={60}/>
           <h3>React</h3>
         </div>
-        <div>
+        <div className='skill'>
           <FaPython  size={60}/>
           <h3>Python</h3>
         </div>
-        <div>
+        <div className='skill'>
           <SiTypescript  size={60}/>
           <h3>Typescript</h3>
         </div>
