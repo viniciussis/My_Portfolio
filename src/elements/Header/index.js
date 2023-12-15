@@ -13,12 +13,12 @@ const Header = () => {
         <Link className='link left' href="#certificates">CERTIFICATES</Link>
         <Link className='link left' href="#contact">CONTACT</Link>
       </div>
-      <img src={imgHeader} width={40} height={40} alt="logo" />
+      <img className='logo' src={imgHeader} width={55} height={55} alt="logo" />
       <div className='rightSide'>
-        <Link className='link right' href="https://www.instagram.com/_viniciussis/"><RiInstagramFill size={16} />&nbsp;INSTAGRAM</Link>
-        <Link className='link right' href="https://www.linkedin.com/in/viniciussis/"><FaLinkedinIn size={16} />&nbsp;LINKEDIN</Link>
-        <Link className='link right' href="https://twitter.com/_viniciussis"><FaTwitter size={16} />&nbsp;TWITTER</Link>
-        <Link className='link right' href="https://github.com/viniciussis"><FaGithub size={16} />&nbsp;GITHUB</Link>
+        <a className='link right' href="https://www.instagram.com/_viniciussis/"><RiInstagramFill size={16} />&nbsp;INSTAGRAM</a>
+        <a className='link right' href="https://www.linkedin.com/in/viniciussis/"><FaLinkedinIn size={16} />&nbsp;LINKEDIN</a>
+        <a className='link right' href="https://twitter.com/_viniciussis"><FaTwitter size={16} />&nbsp;TWITTER</a>
+        <a className='link right' href="https://github.com/viniciussis"><FaGithub size={16} />&nbsp;GITHUB</a>
       </div>
     </header>
   )

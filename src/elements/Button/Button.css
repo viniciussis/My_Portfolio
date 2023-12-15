@@ -5,6 +5,7 @@
   border-radius: 12px;
   border-style: none;
   background-color: #04AA6D;
+  cursor: pointer;
 }
 
 .button:hover {

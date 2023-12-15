@@ -1,16 +1,16 @@
 .forms {
-  display: flexbox;
-  width: 60%;
-  margin: auto;
-  padding: 48px;  
+  margin: 60px 0;
 }
 
 .forms form{
+  width: 65%;
+  margin: auto;
   background-color: #171921;
   border-radius: 24px;
   padding: 12px 48px 48px 48px;
   flex: 1;
-  box-shadow: 8px 8px 25px rgba(255, 255, 255, 0.5);
+  display: flexbox;
+  box-shadow: 25px 25px 25px rgba(23, 25, 33, 0.2), -25px -25px 25px rgba(23, 25, 33, 0.2);
 }
 
 .forms h2 {

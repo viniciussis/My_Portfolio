@@ -4,8 +4,8 @@ import firstProject from '../../images/icon_01.jpg'
 
 const ProjectSection = () => {
   return(
-    <div className='projectSection'>
-      <div>
+    <div className='projectsSection'>
+      <div className='conteinerProject'>
         <Project image={firstProject} name='first project' />
       </div>
     </div>

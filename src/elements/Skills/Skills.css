@@ -1,11 +1,15 @@
 .sect-skills {
   background-color: #171921;
-  display: flexbox;
   text-align: center;
   padding: 24px;
   align-items: center;
-  box-shadow: 0px 10px 10px rgba(23, 25, 33, 0.9);
-  margin: 56px 0px;
+  box-shadow: 0 10px 10px rgba(23, 25, 33, 0.9), 0 -10px 10px rgba(23, 25, 33, 0.9);
+  margin: 80px 0px;
+}
+
+.sect-skills h1 {
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-size: 3rem;
 }
 
 .skills {
@@ -20,5 +24,7 @@
 }
 
 .skills h3 {
+  font-size: 1.5rem;
   text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
+
