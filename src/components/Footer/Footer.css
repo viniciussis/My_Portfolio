@@ -1,7 +1,7 @@
 .footer {
   text-align: center;
   padding: 20px 48px;
-  font-size: 20px;
-  font-style: 'Roboto';
+  font-size: 24px;
   background-color: #171921;
+  font-variant: small-caps;
 }
