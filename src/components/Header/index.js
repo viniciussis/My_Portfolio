@@ -3,16 +3,19 @@ import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import imgHeader from '../../favicon/apple-touch-icon.png'
 import Links from '../Links'
+import { useLanguage } from '../../context/LanguageContext'
 
 const Header = () => {
+  const { language } = useLanguage();
+
   return (
     <header className='menu'>
       <nav className='navigator'>
         <Links to='/'>Home</Links>
-        <Links to="/about-me">About Me</Links>
-        <Links to="/projects">Projects</Links>
-        <Links to="/certificates">Certificates</Links>
-        <Links to="/contact">Contact</Links>
+        <Links to="/about-me">{language === 'pt' ? 'Sobre Mim' : 'About Me'}</Links>
+        <Links to="/projects">{language === 'pt' ? 'Projetos' : 'Projects'}</Links>
+        <Links to="/certificates">{language === 'pt' ? 'Certificados' : 'Certificates'}</Links>
+        <Links to="/contact">{language === 'pt' ? 'Contact' : 'Contato'}</Links>
       </nav>
       <img className='logo' src={imgHeader} width={55} height={55} alt="logo" />
       <div className='links'>
