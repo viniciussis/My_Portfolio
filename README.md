@@ -19,7 +19,7 @@ Você também pode conferir a demonstração ao vivo do portfólio [aqui!](https
 
 ## Tecnologias Utilizadas e Funcionalidades
 
-- **HTML5 e CSS3:** Para a estrutura e estilo do site.
+- **HTML5, CSS3 e Tailwind:** Para a estrutura e estilo do site.
 - **JavaScript e React:** Para interatividade.
 - **Utilização de Hooks:** Aproveitamento de conceitos de Hooks do React para gerenciar estado e ciclo de vida dos componentes.
 - **React-icons:** Adição de ícones personalizados aos componentes.

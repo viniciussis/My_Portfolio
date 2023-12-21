@@ -2,6 +2,13 @@
   text-align: center;
   padding: 20px 48px;
   font-size: 24px;
-  background-color: #171921;
+  font-weight: 700;
+  background-color: var(--dark-secondary);
+  color: white;
   font-variant: small-caps;
+}
+
+.footer--light {
+  background-color: white;
+  color: black;
 }

@@ -6,7 +6,7 @@ const Links = ({ to, children }) => {
   const location = useLocation()
 
   return (
-    <Link className={`link ${location.pathname === to && 'linkCurrentPage'}`} to={to}>
+    <Link className={`menu__link ${location.pathname === to && 'menu__link--current'}`} to={to}>
       {children}
     </Link>
   )
