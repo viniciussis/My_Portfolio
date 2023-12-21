@@ -1,11 +1,14 @@
 .footer {
   text-align: center;
-  padding: 20px 48px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   font-size: 24px;
   font-weight: 700;
   background-color: var(--dark-secondary);
   color: white;
   font-variant: small-caps;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4); 
 }
 
 .footer--light {

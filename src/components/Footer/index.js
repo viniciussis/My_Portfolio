@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer className={`footer ${isDarkMode ? '' : 'footer--light'}`}>
-      <p>&copy; {language === 'pt' 
+      <p className='footer__para'>&copy; {language === 'pt' 
         ? 'Copyright | Projeto para portfólio web criado por Vinícius Silva Santos | 2023' 
         : 'Copyright | Project for web portfolio created by Vinícius Silva Santos | 2023'}
       </p>
