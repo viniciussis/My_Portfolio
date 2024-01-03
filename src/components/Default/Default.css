@@ -1,3 +1,7 @@
 .default {
+  background-color: var(--dark-primary);
+}
+
+.default--light {
   background-color: white;
 }

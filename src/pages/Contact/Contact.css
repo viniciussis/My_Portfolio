@@ -1,0 +1,10 @@
+.contact {
+  color: white;
+  background-color: var(--dark-primary);
+  padding: 8vw;
+}
+
+.contact--light {
+  color: var(--dark-primary);
+  background-color: white;
+}

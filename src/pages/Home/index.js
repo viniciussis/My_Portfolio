@@ -1,5 +1,4 @@
 import './Home.css'
-import Button from '../../components/Button'
 import circle from '../../images/circulo_colorido.png'
 import profile from '../../images/Profile 06.jpeg.jpg'
 import { useTheme } from '../../context/ThemeContext'
