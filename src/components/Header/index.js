@@ -3,8 +3,8 @@ import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
-import logoDark from '../../favicon/apple-touch-icon.png';
-import logoLight from '../../favicon/apple-touch-icon-light.png';
+import logoDark from '../../images/apple-touch-icon.png';
+import logoLight from '../../images/apple-touch-icon-light.png';
 import Links from '../Links';
 
 

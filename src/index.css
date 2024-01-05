@@ -5,19 +5,27 @@
 :root {
   --dark-primary: #1d2a35;
   --dark-secondary: #171921;
+  --green: #04AA6D;
 }
 
-body {
+html, body, #root{
   padding: 0;
   margin: 0;
+  height: 100%;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   list-style: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-color: white;
   color: black;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+*{
+  box-sizing: inherit;
 }
 
 .buttons {

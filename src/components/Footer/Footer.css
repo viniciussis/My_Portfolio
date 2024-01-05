@@ -1,11 +1,14 @@
 .footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
   display: flex;
   text-align: center;
   justify-content: center;;
   box-sizing: border-box;
   width: 100%;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 21px;
+  font-weight: 900;
   background-color: var(--dark-secondary);
   color: white;
   font-variant: small-caps;

@@ -1,0 +1,29 @@
+.projects {
+  background-color: var(--dark-primary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vw;
+  height: 100%;
+}
+
+.projects--light {
+  background-color: white;
+  color: var(--dark-primary);
+}
+
+.projects__title {
+  font-size: 4rem;
+  margin: 24px 0;
+  font-weight: 900;
+}
+
+.projects__container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 90%;
+  height: 70%;
+  gap: 16px;
+}

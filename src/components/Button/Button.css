@@ -1,22 +1,36 @@
 .button {
-  padding: 20px 40px;
-  font-size: 24px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--green);
   transition-duration: 0.4s;
   border-radius: 12px;
   border-style: none;
-  background-color: #04AA6D;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: white;
+  background-color: var(--dark-primary);
 }
+
+.button--light {
+  background-color: var(--green);  
+}
+
+.button--light:hover {
+  background-color: white;  
+}
+
 
 .button a {
   text-decoration: none;
+  color: var(--dark-primary);
+}
+
+.button--light a {
   color: white;
 }
 
-.button:hover a {
+.button:hover a, .button--light:hover a {
   color: #04AA6D;
 }
