@@ -1,16 +1,17 @@
 .menu {
+  background-color: var(--dark-secondary);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding: 0 5%;
   position: fixed;
   top: 0;
   height: 9%;
   width: 100%;
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  align-items: center;
-  background-color: var(--dark-secondary);
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .menu--light {
@@ -18,25 +19,13 @@
   color: var(--dark-secondary);
 }
 
-.menu__social, .menu__navbar {
+.menu__navbar {
   height: 100%;
+  width: 40%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.menu__link {
-  height: 100%;
-  font-size: 24px;
-  text-decoration: none;
-  transition-duration: 0.8s;
-  padding: 16px;
-  font-variant: small-caps;
-  font-weight: 600;
-  color: inherit;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.menu__link:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+.menu__navbar {
+  justify-content: left;
 }

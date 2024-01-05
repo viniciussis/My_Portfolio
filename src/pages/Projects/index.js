@@ -3,26 +3,29 @@ import { useTheme } from '../../context/ThemeContext'
 import { useLanguage } from '../../context/LanguageContext'
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Project from '../../components/Project';
-import img from '../../images/organo.png'
+import Organo from '../../images/organo.png'
+import VS from '../../images/vs.png'
 
 const Projects = () => {
 
-  const {isDarkMode} = useTheme();
-  const {language} = useLanguage();
+  const { isDarkMode } = useTheme();
+  const { language } = useLanguage();
   const projectsData = [
-    { 
-      id: 1,
+    {
       title: 'Organo',
-      description: 'Organizador de times',
-      link: 'https://organo-project-jet.vercel.app/',
-      img: img
+      about: 'Plataforma para criar e organizar dinamicamente times ou equipes, adaptando-se às necessidades específicas do usuário.',
+      website: 'https://organo-project-jet.vercel.app/',
+      github: 'https://github.com/viniciussis/Organo_Project.git',
+      stack: 'JavaScript, CSS, HTML, ReactJS',
+      img: Organo
     },
-    { 
-      id: 2,
+    {
       title: 'Virtual Space',
-      description: 'Blog para postar pensamentos e insights',
-      link: 'https://virtual-space-three.vercel.app',
-      img: ''
+      about: 'Desenvolvimento de um mini blog em React, com ênfase em conceitos avançados, incluindo React Router, rotas dinâmicas, Single Page Applications (SPAs), e integração de bibliotecas como react-markdown e react-icons.',
+      website: 'https://virtual-space-three.vercel.app',
+      github: 'https://github.com/viniciussis/Virtual_Space.git',
+      stack: 'JavaScript, CSS, HTML, ReactJS',
+      img: VS
     }
   ];
 
@@ -30,14 +33,16 @@ const Projects = () => {
     <div className={`projects ${isDarkMode ? '' : 'projects--light'}`}>
       <h1 className='projects__title'>{language === 'pt' ? 'Projetos' : 'Projects'}</h1>
       <div className='projects__container'>
-        <FaArrowLeft size={24} style={{cursor:'pointer'}}/>
+        <FaArrowLeft size={28} style={{ cursor: 'pointer' }} />
         <Project
           title={projectsData[0].title}
           img={projectsData[0].img}
-          description={projectsData[0].description}
-          link={projectsData[0].link}
+          about={projectsData[0].about}
+          website={projectsData[0].link}
+          stack={projectsData[0].stack}
+          github={projectsData[0].github}
         />
-        <FaArrowRight size={24} style={{cursor:'pointer'}}/>
+        <FaArrowRight size={28} style={{ cursor: 'pointer' }} />
       </div>
     </div>
   )

@@ -1,3 +1,19 @@
+.menu__link {
+  height: 100%;
+  font-size: 24px;
+  text-decoration: none;
+  transition-duration: 0.8s;
+  padding: 16px;
+  font-variant: small-caps;
+  font-weight: 600;
+  color: inherit;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu__link:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
 .menu__link--current {
   text-decoration: underline;
 }

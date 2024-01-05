@@ -45,3 +45,29 @@
   width: 25vw;
   border-radius: 50%;
 }
+
+.intro__social {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.intro__media {
+  z-index: 2;
+  padding: 12px;
+  background-color: white;
+  color: var(--dark-secondary);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: 0.8s;
+}
+
+.intro__media--light {
+  color: white;
+  background: var(--dark-secondary);
+}
+
+.intro__media:hover {
+  transform: scale(1.15);
+}
