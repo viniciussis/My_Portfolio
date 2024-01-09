@@ -1,8 +1,8 @@
 import './Header.css';
 import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
-import logoDark from '../../images/apple-touch-icon.png';
-import logoLight from '../../images/apple-touch-icon-light.png';
+import logoDark from '../../../public/images/others/apple-touch-icon.png';
+import logoLight from '../../../public/images/others/apple-touch-icon-light.png';
 import Links from '../Links';
 
 

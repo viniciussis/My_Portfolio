@@ -3,8 +3,6 @@ import { useTheme } from '../../context/ThemeContext'
 import { useLanguage } from '../../context/LanguageContext'
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Project from '../../components/Project';
-import Organo from '../../images/organo.png'
-import VS from '../../images/vs.png'
 
 const Projects = () => {
 
@@ -17,7 +15,7 @@ const Projects = () => {
       website: 'https://organo-project-jet.vercel.app/',
       github: 'https://github.com/viniciussis/Organo_Project.git',
       stack: 'JavaScript, CSS, HTML, ReactJS',
-      img: Organo
+      img: '/images/organo.png'
     },
     {
       title: 'Virtual Space',
@@ -25,7 +23,7 @@ const Projects = () => {
       website: 'https://virtual-space-three.vercel.app',
       github: 'https://github.com/viniciussis/Virtual_Space.git',
       stack: 'JavaScript, CSS, HTML, ReactJS',
-      img: VS
+      img: ''
     }
   ];
 
