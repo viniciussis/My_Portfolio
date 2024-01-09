@@ -1,6 +1,6 @@
 import './Home.css'
-import circle from 'public/images/others/circulo_colorido.png'
-import profile from 'public/images/others/Profile 06.jpg'
+import circle from '../../images/others/circulo_colorido.png'
+import profile from '../../images/others/Profile06.jpg'
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { useTheme } from '../../context/ThemeContext'

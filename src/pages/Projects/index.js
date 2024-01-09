@@ -3,29 +3,12 @@ import { useTheme } from '../../context/ThemeContext'
 import { useLanguage } from '../../context/LanguageContext'
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Project from '../../components/Project';
+import projectsData from '../../data/projectsData';
 
 const Projects = () => {
 
   const { isDarkMode } = useTheme();
   const { language } = useLanguage();
-  const projectsData = [
-    {
-      title: 'Organo',
-      about: 'Plataforma para criar e organizar dinamicamente times ou equipes, adaptando-se às necessidades específicas do usuário.',
-      website: 'https://organo-project-jet.vercel.app/',
-      github: 'https://github.com/viniciussis/Organo_Project.git',
-      stack: 'JavaScript, CSS, HTML, ReactJS',
-      img: '/images/organo.png'
-    },
-    {
-      title: 'Virtual Space',
-      about: 'Desenvolvimento de um mini blog em React, com ênfase em conceitos avançados, incluindo React Router, rotas dinâmicas, Single Page Applications (SPAs), e integração de bibliotecas como react-markdown e react-icons.',
-      website: 'https://virtual-space-three.vercel.app',
-      github: 'https://github.com/viniciussis/Virtual_Space.git',
-      stack: 'JavaScript, CSS, HTML, ReactJS',
-      img: ''
-    }
-  ];
 
   return (
     <div className={`projects ${isDarkMode ? '' : 'projects--light'}`}>

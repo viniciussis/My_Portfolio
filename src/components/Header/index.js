@@ -1,10 +1,9 @@
 import './Header.css';
 import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
-import logoDark from '../../../public/images/others/apple-touch-icon.png';
-import logoLight from '../../../public/images/others/apple-touch-icon-light.png';
+import logoDark from '../../images/others/apple-touch-icon.png';
+import logoLight from '../../images/others/apple-touch-icon-light.png';
 import Links from '../Links';
-
 
 const Header = () => {
   const { language } = useLanguage();
