@@ -20,14 +20,16 @@
 }
 
 .certificates__container {
+  align-items: center;
+  justify-content: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 16px;  
+  width: 95%;
+  height: 75%;
+  gap: 16px;
 }
 
-.certificates__img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 16px;
+.certificates__image {
+  width: 100%;
+  margin-bottom: 24px;
+  border-radius: 12px;
 }
