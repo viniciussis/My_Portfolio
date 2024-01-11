@@ -3,7 +3,7 @@ import Button from '../Button'
 import { useTheme } from '../../context/ThemeContext'
 import './Project.css'
 
-const Project = ({ title, img, about, stack, github, website }) => {
+const Project = ({ title, img, about, stack, repository, demo }) => {
 
   const {isDarkMode} = useTheme();
 
@@ -16,8 +16,8 @@ const Project = ({ title, img, about, stack, github, website }) => {
           <p className='project__para'>{about}</p>
           <p className='project__para'><strong>Tech Stack: </strong>{stack}</p>
           <div className='project__links'>
-            <Button link={github}>GitHub</Button>
-            <Button link={website}>Demo</Button>
+            <Button link={repository}>GitHub</Button>
+            <Button link={demo}>Demo</Button>
           </div>
         </div>
       </div>

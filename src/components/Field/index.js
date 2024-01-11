@@ -1,7 +1,7 @@
 import { useTheme } from '../../context/ThemeContext';
 import './Field.css';
 
-const Field = ({ type = 'text', label, placeholder, mandatory = false, value }) => {
+const Field = ({ type = 'text', label, placeholder, mandatory = false, value, onChange }) => {
 
   const { isDarkMode } = useTheme();
 
@@ -11,6 +11,7 @@ const Field = ({ type = 'text', label, placeholder, mandatory = false, value }) 
       <input className={`field__input ${isDarkMode ? '' : 'field__input--light'}`}
         type={type} 
         value={value} 
+        onChange={onChange}
         id={label} 
         required={mandatory} 
         placeholder={`${placeholder}`}

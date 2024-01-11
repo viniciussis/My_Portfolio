@@ -30,9 +30,9 @@ const Projects = () => {
           title={projectsData[currentIndex].title}
           img={projectsData[currentIndex].img}
           about={projectsData[currentIndex].about}
-          website={projectsData[currentIndex].link}
+          demo={projectsData[currentIndex].demo}
           stack={projectsData[currentIndex].stack}
-          github={projectsData[currentIndex].github}
+          repository={projectsData[currentIndex].repository}
         />
         <FaArrowRight onClick={handleNextClick} size={28} style={{ cursor: 'pointer' }} />
       </div>
