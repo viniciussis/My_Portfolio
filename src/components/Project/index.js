@@ -9,7 +9,7 @@ const Project = ({ title, img, about, stack, github, website }) => {
 
   return (
     <div className={`project ${isDarkMode ? '' : 'project--light'}`}>
-      <h3 className='project__title'>{title}</h3>
+      <h2 className='project__title'>{title}</h2>
       <div className='project__content'>
         <img className='project__img' src={img} alt="visual do projeto" />
         <div className='project__information'>

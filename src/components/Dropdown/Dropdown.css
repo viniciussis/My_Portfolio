@@ -1,20 +1,27 @@
 .dropdown {
-  margin: 20px 0px;
+  margin: 12px 0px;
 }
 
-.dropdown label {
+.dropdown__label {
   display: block;
-  margin-bottom: 8px;
-  font-size: 24px;
+  font-size: 1.25rem;
   font-weight: 600;
+  margin-bottom: 4px;
+  margin-left: 8px;
 }
 
-.dropdown select {
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.09);
-  background-color: whitez;
-  border: none;
+.dropdown__select {
+  color: var(--dark-primary);
+  background-color: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);  border: none;
+  border-radius: 12px;
   box-sizing: border-box;
-  font-size: 24px;
-  padding: 24px;
+  font-size: 1rem;
+  padding: 16px;
   width: 100%;
+}
+
+.dropdown__select--light, .dropdown__select--light::placeholder {
+  background-color: var(--dark-primary);
+  color: white;
 }

@@ -1,0 +1,25 @@
+.social {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.social__media {
+  z-index: 2;
+  padding: 12px;
+  background-color: white;
+  color: var(--dark-secondary);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: 0.8s;
+}
+
+.social__media--light {
+  color: white;
+  background: var(--dark-secondary);
+}
+
+.social__media:hover {
+  transform: scale(1.15);
+}
