@@ -3,6 +3,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import Field from '../../components/Field'
 import Dropdown from '../../components/Dropdown'
 import SocialMedia from '../../components/SocialMedia';
+import Modal from '../../components/Modal';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css'
@@ -19,10 +20,16 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [modal, setModal] = useState(false);
+  const [modalTitle, setModalTitle] = useState('');
+  const [modalMessage, setModalMessage] = useState('');
+
+  const switchModal = () => {
+    setModal(!modal);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .send(
         serviceID,
@@ -31,10 +38,14 @@ const Contact = () => {
         publicKey
       )
       .then((result) => {
-        console.log('Successful contact: ', result.text);
+        setModalTitle('Sucessful contact! ', result)
+        setModalMessage('O email foi enviado com sucesso!!')
+        switchModal();        
         clearFormFields();
       }, (error) => {
-        console.log('Error sending the e-mail: ', error.text);
+        setModalTitle('Error sending the e-mail! ', error)
+        setModalMessage('Ouve uma falha no envio do email!!')
+        switchModal();        
       }
       );
   };
@@ -66,7 +77,6 @@ const Contact = () => {
           placeholder={language === 'pt' ? 'Digite seu email...' : 'Type your email...'}
         />
         <Dropdown
-          value={subject}
           mandatory
           onChange={(e) => setSubject(e.target.value)}
           label={language === 'pt' ? 'Motivo do contato' : 'Reason for contact'}
@@ -86,6 +96,12 @@ const Contact = () => {
         <h3 className='contact__subtitle'>{language === 'pt' ? 'Adicione nas redes' : 'Social media'}</h3>
         <SocialMedia />
       </div>
+      <Modal
+        switching={modal}
+        title={modalTitle}
+        message={modalMessage}
+        onSwitching={switchModal}
+      />
     </div>
   )
 }

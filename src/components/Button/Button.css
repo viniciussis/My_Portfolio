@@ -5,31 +5,23 @@
   background-color: var(--green);
   transition-duration: 0.4s;
   border-radius: 12px;
+  text-decoration: none;
   border-style: none;
   cursor: pointer;
+  color: var(--dark-primary);
 }
 
 .button:hover {
+  color: #04AA6D;
   background-color: var(--dark-primary);
 }
 
 .button--light {
+  color: white;
   background-color: var(--green);  
 }
 
 .button--light:hover {
-  background-color: white;  
-}
-
-.button a {
-  text-decoration: none;
-  color: var(--dark-primary);
-}
-
-.button--light a {
-  color: white;
-}
-
-.button:hover a, .button--light:hover a {
   color: #04AA6D;
+  background-color: white;  
 }

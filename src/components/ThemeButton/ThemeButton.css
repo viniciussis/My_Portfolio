@@ -1,6 +1,6 @@
 .theme {
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   bottom: 120px;
   right: 20px;
   padding: 10px;

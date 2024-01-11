@@ -2,7 +2,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
 import './Dropdown.css'
 
-const Dropdown = ({ value, mandatory, label, placeholder, onChange }) => {
+const Dropdown = ({ mandatory, label, placeholder, onChange }) => {
 
   const { isDarkMode } = useTheme();
   const { language } = useLanguage();
@@ -10,16 +10,15 @@ const Dropdown = ({ value, mandatory, label, placeholder, onChange }) => {
   return (
     <div className='dropdown'>
       <label className='dropdown__label' htmlFor={label} >{label}</label>
-      <select 
-        className={`dropdown__select ${isDarkMode ? '' : 'dropdown__select--light'}`} 
-        value={value}
+      <select
+        className={`dropdown__select ${isDarkMode ? '' : 'dropdown__select--light'}`}
         id={label}
         onChange={onChange}
         required={mandatory}
         placeholder={`${placeholder}`}
         defaultValue=''
       >
-        <option value='' disabled style={{display:'none'}}>{language === 'pt' ? 'Escolha uma opção...' : 'Choose an option...'}</option>
+        <option value='' disabled style={{ display: 'none' }}>{language === 'pt' ? 'Escolha uma opção...' : 'Choose an option...'}</option>
         <option value="Contratação">{language === 'pt' ? 'Contratação' : 'Hiring'}</option>
         <option value="Dúvidas">{language === 'pt' ? 'Dúvidas' : 'Doubts'}</option>
         <option value="Parcerias">{language === 'pt' ? 'Parcerias' : 'Partnerships'}</option>
