@@ -13,6 +13,7 @@ import certificate12 from '../images/certificates/React - desenvolvendo com Java
 import certificate13 from '../images/certificates/React - como os componentes funcionam.png';
 import certificate14 from '../images/certificates/React - desenvolvendo em React Router com JavaScript.png';
 import certificate15 from '../images/certificates/SQL com MySQL - manipule e consulte dados.png';
+import certificate16 from '../images/certificates/React - escrevendo com Typescript.png'
 
 const certificatesData = [
   {
@@ -88,6 +89,11 @@ const certificatesData = [
     name: 'Certificate 15',
     imagePath: certificate15
   },
+  {
+    id: 16,
+    name: 'Certificate 16',
+    imagePath: certificate16
+  }
 ];
 
 export default certificatesData;
