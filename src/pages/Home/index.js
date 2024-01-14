@@ -19,7 +19,7 @@ const Home = () => {
         <div className='intro__links'>
           <a
             href='https://drive.google.com/file/d/1Cz6w2hOElf7HrIRgCCad6K7ODTKnMm_E/view?usp=sharing'
-            className='intro__button'>{language === 'pt' ? 'currículo' : 'currículo'}</a>
+            className='intro__button'>{language === 'pt' ? 'currículo' : 'curriculum'}</a>
           <SocialMedia />
         </div>
       </div>
