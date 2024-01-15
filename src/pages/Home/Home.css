@@ -35,7 +35,7 @@
   margin-bottom: 1.5rem;
   margin-top: 1rem;
   font-size: 1.25rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 700;
   color: white;
   background-color: var(--green);
@@ -98,4 +98,38 @@
 
 .intro__media:hover {
   transform: scale(1.15);
+}
+
+@media only screen and (max-width: 767px) {
+  .intro__links {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+  }
+  .intro__title{
+    margin: 3rem 0 0;
+    font-size: 3.5rem;
+  }
+  .intro__para{
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  .intro__button{
+    margin: 1rem 0;
+  }
+  .intro__images > .intro__circle {
+    width: 25vw;
+  }
+  .intro__images > .intro__prof {
+    width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro__images > .intro__circle {
+    width: 25vw;
+  }
+  .intro__images > .intro__prof {
+    width: 35vw;
+  }
 }

@@ -14,7 +14,7 @@ const Certificates = () => {
   useEffect(() => {
 
     function handleResize() {
-      if (window.innerWidth < 720) {
+      if (window.innerWidth < 1050) {
         setSlidePerView(1)
       }
       else {

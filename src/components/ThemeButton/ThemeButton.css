@@ -20,3 +20,9 @@
 .theme:hover {
   transform: scale(1.15);
 }
+
+@media only screen and (max-width: 720px) {
+  .theme {
+    bottom: 145px;
+  }
+}

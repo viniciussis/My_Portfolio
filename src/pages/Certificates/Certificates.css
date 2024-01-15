@@ -15,7 +15,7 @@
 
 .certificates__title {
   font-size: 3.25rem;
-  margin: 24px 0;
+  margin: 2rem 0;
   font-weight: 900;
 }
 
@@ -32,4 +32,34 @@
   width: 100%;
   margin-bottom: 24px;
   border-radius: 12px;
+}
+@media only screen and (max-width: 750px){
+  .certificates__title{
+    margin: 4rem 0 0;
+  }  
+  .certificates__container{
+    width: 80%;
+  }
+}
+
+
+@media only screen and (min-width: 750px ) and (max-width: 950px){
+  .certificates__title{
+    margin: 3rem 0 0;
+  }  
+  .certificates__container{
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 950px ) and (max-width: 1050px) {
+  .certificates__container{
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1300px) {
+  .certificates__title{
+    margin: 3rem 0 0;
+  }
 }

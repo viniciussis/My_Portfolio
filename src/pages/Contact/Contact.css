@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4%;
+  gap: 3%;
 }
 
 .contact--light {
@@ -15,7 +15,7 @@
 }
 
 .contact__form {
-  width: 60%;
+  width: 62%;
 }
 
 .contact__form__title{
@@ -47,7 +47,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  width: 20%;
+  width: 22%;
 }
 
 .contact__subtitle{
@@ -57,4 +57,25 @@
 
 .contact__para{
   font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 826px) {
+  .contact{
+    gap: 2%;
+  }
+  .contact__form{
+    width: 43%;
+  }
+  .contact__media {
+    width: 43%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1150px) {
+  .contact__form{
+    width: 53%;
+  }
+  .contact__media {
+    width: 33%;
+  }
 }
