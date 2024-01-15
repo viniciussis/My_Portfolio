@@ -59,7 +59,7 @@
   font-size: 1.25rem;
 }
 
-@media only screen and (max-width: 826px) {
+@media only screen and (max-width: 768px) {
   .contact{
     gap: 2%;
   }

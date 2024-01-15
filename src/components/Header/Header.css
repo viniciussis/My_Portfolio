@@ -2,15 +2,13 @@
   background-color: var(--dark-secondary);
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
   align-items: center;
   gap: 10%;
-  padding: 0 5%;
   position: fixed;
   top: 0;
   height: 9%;
   width: 100%;
+  display: flex;
   z-index: 1;
 }
 
@@ -19,13 +17,3 @@
   color: var(--dark-secondary);
 }
 
-.menu__navbar {
-  height: 100%;
-  width: 40%;
-  display: flex;
-  align-items: center;
-}
-
-.menu__navbar {
-  justify-content: left;
-}

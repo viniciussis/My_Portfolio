@@ -5,16 +5,30 @@ import Header from '../Header'
 import LanguageButton from '../LanguageButton'
 import ThemeButton from '../ThemeButton'
 import './Default.css'
+import { useEffect, useState } from 'react'
 
 const Default = ({ children }) => {
   const {isDarkMode} = useTheme();
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const updateWindowSize = () => {
+      setWindowSize(window.innerWidth);
+    };
+
+    window.addEventListener('resize', updateWindowSize);
+
+    return () => {
+      window.removeEventListener('resize', updateWindowSize);
+    };
+  }, []);
 
   return (
     <div className={`default ${ isDarkMode ? '' : 'default--light' }`}>
-      <Header/>
+      <Header windowSize={windowSize}/>
       <Outlet/>
       {children}
-      <Footer/>
+      <Footer windowSize={windowSize}/>
       <LanguageButton/>
       <ThemeButton/>
     </div>

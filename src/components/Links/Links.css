@@ -4,6 +4,7 @@
   text-decoration: none;
   transition-duration: 0.8s;
   padding: 16px;
+  background-color: inherit;
   font-variant: small-caps;
   font-weight: 600;
   color: inherit;

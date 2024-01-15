@@ -1,0 +1,33 @@
+.menu__dropdown{
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  background-color: inherit;
+  margin-right: 40%;
+}
+
+.menu__dropbutton {
+  height: 100%;
+  transition-duration: 0.8s;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  color: inherit;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu__dropbutton:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.menu__content {
+  background-color: inherit;
+  position: absolute;
+  display: block;
+}
+
+.menu__content * {
+  display: block;
+}
