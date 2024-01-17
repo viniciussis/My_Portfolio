@@ -15,8 +15,24 @@ import certificate14 from '../images/certificates/React - desenvolvendo em React
 import certificate15 from '../images/certificates/SQL com MySQL - manipule e consulte dados.png';
 import certificate16 from '../images/certificates/React - escrevendo com Typescript.png'
 import certificate17 from '../images/certificates/Vue 3 - entendendo componentes, diretivas e reatividade no framework.png';
+import certificate18 from '../images/certificates/Vue3 - explorando o framework.png';
 
 const certificatesData = [
+  {
+    id: 17,
+    name: 'Certificate 17',
+    imagePath: certificate17
+  },
+  {
+    id: 16,
+    name: 'Certificate 16',
+    imagePath: certificate16
+  },
+  {
+    id: 18,
+    name: 'Certificate 18',
+    imagePath: certificate18
+  },
   {
     id: 1,
     name: 'Certificate 1',
@@ -89,16 +105,6 @@ const certificatesData = [
     id: 15,
     name: 'Certificate 15',
     imagePath: certificate15
-  },
-  {
-    id: 16,
-    name: 'Certificate 16',
-    imagePath: certificate16
-  },
-  {
-    id: 17,
-    name: 'Certificate 17',
-    imagePath: certificate17
   }
 ];
 

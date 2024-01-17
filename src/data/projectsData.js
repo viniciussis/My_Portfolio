@@ -1,16 +1,25 @@
 import Organo from '../images/projects/Organo.png'
 import VS from '../images/projects/Virtual-Space.png'
 import Clock from '../images/projects/Clock.png'
+import Tracker from '../images/projects/Tracker.png'
 import CookinUp from "../images/projects/Cookin' Up.png"
 
 const projectsData = [
   {
     title: "Cookin'Up",
-    about: 'Gerenciador de ingredientes e receitas em Vue',
+    about: 'Desenvolvimento de um gerenciador de ingredientes e receitas em Vue abordando conceitos de gerenciamento de ciclo de vida de componentes',
     demo: 'https://cookin-up-two.vercel.app',
     repository: 'https://github.com/viniciussis/Cookin_Up',
     stack: 'Vue, Typescript',
     img: CookinUp
+  },
+  {
+    title: 'My Tracker',
+    about: 'Um cronômetro de tarefas em Vue3',
+    demo: 'https://my-tracker-three.vercel.app',
+    repository: 'https://github.com/viniciussis/My_Tracker.git',
+    stack: 'TypeScript, Vue3',
+    img: Tracker
   },
   {
     title: 'Virtual Space',
