@@ -17,12 +17,18 @@ import certificate16 from '../images/certificates/React - escrevendo com Typescr
 import certificate17 from '../images/certificates/Vue 3 - entendendo componentes, diretivas e reatividade no framework.png';
 import certificate18 from '../images/certificates/Vue3 - explorando o framework.png';
 import certificate19 from '../images/certificates/Vue3 - avançando no framework.png';
+import certificate20 from '../images/certificates/Vue3 - composition API e Vuex.png';
 
 const certificatesData = [
   {
     id: 17,
     name: 'Certificate 17',
     imagePath: certificate17
+  },
+  {
+    id: 20,
+    name: 'Certificate 20',
+    imagePath: certificate20
   },
   {
     id: 16,
