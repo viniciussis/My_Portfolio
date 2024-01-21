@@ -18,6 +18,8 @@ import certificate17 from '../images/certificates/Vue 3 - entendendo componentes
 import certificate18 from '../images/certificates/Vue3 - explorando o framework.png';
 import certificate19 from '../images/certificates/Vue3 - avançando no framework.png';
 import certificate20 from '../images/certificates/Vue3 - composition API e Vuex.png';
+import certificate21 from '../images/certificates/HTTP - entendendo a web por baixo dos panos
+.png';
 
 const certificatesData = [
   {
@@ -84,6 +86,11 @@ const certificatesData = [
     id: 8,
     name: 'Certificate 8',
     imagePath: certificate8
+  },
+  {
+    id: 21,
+    name: 'Certificate 21',
+    imagePath: certificate21
   },
   {
     id: 9,
