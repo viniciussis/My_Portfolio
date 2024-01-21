@@ -46,7 +46,7 @@ Aqui estão alguns dos projetos destacados que fiz parte:
 Estou sempre aberto para conversar e colaborar em projetos interessantes. Você pode entrar em contato comigo pelos seguintes meios:
 
 - Email: vinicius01012@gmail.com
-- LinkedIn: [https://www.linkedin.com/in/viniciussis](URL)
+- LinkedIn: [https://www.linkedin.com/in/_viniciussis](URL)
 - GitHub: [https://github.com/viniciussis](URL)
 
 Fique à vontade para me contatar se tiver alguma pergunta, ideia ou oportunidade de colaboração!
