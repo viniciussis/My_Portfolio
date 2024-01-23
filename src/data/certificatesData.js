@@ -19,7 +19,7 @@ import certificate18 from '../images/certificates/Vue3 - explorando o framework.
 import certificate19 from '../images/certificates/Vue3 - avançando no framework.png';
 import certificate20 from '../images/certificates/Vue3 - composition API e Vuex.png';
 import certificate21 from '../images/certificates/HTTP - entendendo a web por baixo dos panos.png';
-import certificate22 from '../images/certificates/Node.js - criando uma API Rest com Express e MongoDB';
+import certificate22 from '../images/certificates/Node.js - criando uma API Rest com Express e MongoDB.png';
 
 const certificatesData = [
   {
