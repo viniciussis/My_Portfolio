@@ -21,6 +21,7 @@ import certificate20 from '../images/certificates/Vue3 - composition API e Vuex.
 import certificate21 from '../images/certificates/HTTP - entendendo a web por baixo dos panos.png';
 import certificate22 from '../images/certificates/Node.js - criando uma API Rest com Express e MongoDB.png';
 import certificate23 from '../images/certificates/Node.js - lidando com buscas, filtros, paginação e erros em uma API.png';
+import certificate24 from '../images/certificates/PostgreSQL.png';
 
 const certificatesData = [
   {
@@ -62,6 +63,11 @@ const certificatesData = [
     id: 1,
     name: 'Certificate 1',
     imagePath: certificate1
+  },
+  {
+    id: 24,
+    name: 'Certificate 24',
+    imagePath: certificate24
   },
   {
     id: 2,
