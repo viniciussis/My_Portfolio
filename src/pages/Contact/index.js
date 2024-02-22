@@ -12,9 +12,9 @@ const Contact = () => {
   const { isDarkMode } = useTheme();
   const { language } = useLanguage();
 
-  const serviceID = 'service_2ebhax7';
-  const templateID = 'template_0rttn6e';
-  const publicKey = 'XkNMkZdJ0QrfOEExo';
+  const serviceID = process.env.SERVICE_ID
+  const templateID = process.env.TEMPLATE_ID;
+  const publicKey = process.env.PUBLIC_KEY;
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
