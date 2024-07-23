@@ -1,78 +1,30 @@
-# Meu Portfólio Pessoal
+# React + TypeScript + Vite
 
-Bem-vindo ao meu portfólio pessoal! Este é um espaço onde compartilho informações sobre mim, meu trabalho e projetos anteriores. Seja livre para explorar e conhecer um pouco mais sobre minha jornada como desenvolvedor.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Conteúdo
+Currently, two official plugins are available:
 
-- [Visão Geral](#visão-geral)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Projetos Destacados](#projetos-destacados)
-- [Como Entrar em Contato](#como-entrar-em-contato)
-- [Instalação e Pré-requisitos](#pré-requisitos)
-- [Licença](#licença)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Visão Geral
+## Expanding the ESLint configuration
 
-Este portfólio foi criado com o objetivo de apresentar minhas habilidades, experiências e projetos. Aqui você encontrará informações sobre minha formação, histórico profissional e uma seleção de projetos que demonstrem minhas habilidades e conhecimentos.
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-Você também pode conferir a demonstração ao vivo do portfólio [aqui!](https://my-portfolio-rust-eight-80.vercel.app/)
+- Configure the top-level `parserOptions` property like this:
 
-## Tecnologias Utilizadas e Funcionalidades
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
 
-- **HTML5, CSS3 e Tailwind:** Para a estrutura e estilo do site.
-- **JavaScript e React:** Para interatividade.
-- **Utilização de Hooks:** Aproveitamento de conceitos de Hooks do React para gerenciar estado e ciclo de vida dos componentes.
-- **React-icons:** Adição de ícones personalizados aos componentes.
-- **React-router-dom:** Para gerenciar as rotas e permitir uma experiência de navegação dinâmica.
-
-## Projetos Destacados
-
-Aqui estão alguns dos projetos destacados que fiz parte:
-
-1. **Virtual Space**: um mini blog desenvolvido em React
-   - [Link para o Projeto](https://virtual-space-viniciussis-projects.vercel.app/)
-   - [Link para o Código-fonte](https://github.com/viniciussis/Virtual_Space.git)
-
-2. **Projeto 2**: 
-   - [Link para o Projeto](URL)
-   - [Link para o Código-fonte](URL)
-
-3. **Projeto 3**: 
-   - [Link para o Projeto](URL)
-   - [Link para o Código-fonte](URL)
-
-## Como Entrar em Contato
-
-Estou sempre aberto para conversar e colaborar em projetos interessantes. Você pode entrar em contato comigo pelos seguintes meios:
-
-- Email: vinicius01012@gmail.com
-- LinkedIn: [https://www.linkedin.com/in/_viniciussis](URL)
-- GitHub: [https://github.com/viniciussis](URL)
-
-Fique à vontade para me contatar se tiver alguma pergunta, ideia ou oportunidade de colaboração!
-
-## Pré-requisitos
-
-- Node.js e npm instalados
-
-## Instalação
-
-1. Clone o repositório: `git clone https://github.com/viniciussis/My_Portfolio.git`
-2. Entre no diretório do projeto: `cd My_Portfolio`
-3. Instale as dependências: `npm install`
-
-## Como Usar
-
-1. Inicie o aplicativo: `npm start`
-2. Abra o navegador e acesse `http://localhost:3000`
-
-## Contribuindo
-
-Sinta-se à vontade para contribuir ou abrir issues para sugestões e correções de bugs. Pull requests são bem-vindos!
-
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
-
----
-**Desenvolvido por Vinícius Silva Santos**
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
