@@ -1,12 +1,17 @@
 import logoLight from '../../images/others/apple-touch-icon-light.png'
+import logoDark from '../../images/others/apple-touch-icon.png'
+import useTheme from '@/context/useTheme'
 import './Header.scss'
+import Menu from './Menu'
 
 const Header = () => {
+  const { theme } = useTheme()
+
   return (
-    <header className={`menu 'menu--light'}`}>
+    <header className="header">
+      <Menu />
       <img
-        className="menu__logo"
-        src={logoLight}
+        src={theme == 'light' ? logoLight : logoDark}
         width={45}
         height={45}
         alt="logo"

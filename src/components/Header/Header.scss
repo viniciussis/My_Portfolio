@@ -1,19 +1,15 @@
-.menu {
-  background-color: var(--dark-secondary);
-  color: white;
+.header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background-color: var(--theme-background);
+  color: var(--theme-secondary);
+  padding: 0 8rem;
+
+  justify-content: space-between;
   align-items: center;
-  gap: 10%;
   position: fixed;
-  top: 0;
-  height: 9%;
-  width: 100%;
   display: flex;
+  width: 100%;
   z-index: 1;
+  height: 9%;
+  gap: 10%;
 }
-
-.menu--light {
-  background-color: white;
-  color: var(--dark-secondary);
-}
-

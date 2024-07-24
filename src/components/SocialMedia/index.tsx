@@ -6,25 +6,25 @@ const SocialMedia = () => {
   return (
     <div className="social">
       <a
-        className={`social__media social__media--light`}
+        className="social__media"
         href="https://www.instagram.com/_viniciussis/"
       >
         <RiInstagramFill size={18} />
       </a>
       <a
-        className={`social__media social__media--light`}
+        className="social__media"
         href="https://www.linkedin.com/in/viniciussis/"
       >
         <FaLinkedinIn size={18} />
       </a>
       <a
-        className={`social__media social__media--light`}
+        className="social__media"
         href="https://twitter.com/dev_ilman_"
       >
         <FaTwitter size={18} />
       </a>
       <a
-        className={`social__media social__media--light`}
+        className="social__media"
         href="https://github.com/viniciussis"
       >
         <FaGithub size={18} />

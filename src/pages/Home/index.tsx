@@ -15,7 +15,7 @@ const Home = () => {
         <div className="home__greets__links">
           <a
             href="https://drive.google.com/file/d/167AD4TVa-fOxwcwTfgAVXYqsrb0l5DQO/view?usp=drive_link"
-            className="home__greets__links__button"
+            className="home__greets__links__link"
           >
             currículo
           </a>

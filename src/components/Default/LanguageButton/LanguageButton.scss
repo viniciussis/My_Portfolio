@@ -2,14 +2,17 @@
   background-color: var(--theme-on-surface);
   color: var(--theme-primary);
   transition-duration: 0.8s;
-  border-radius: 50%;
-
-  position: fixed;
+  border-radius: 0.75rem;
   cursor: pointer;
   padding: 10px;
-  bottom: 70px;
   border: none;
-  right: 20px;
+
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 4.5rem;
+  display: flex;
+  right: 1rem;
   z-index: 1;
 
   &:hover {
