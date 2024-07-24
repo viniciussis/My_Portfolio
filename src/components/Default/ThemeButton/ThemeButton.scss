@@ -1,0 +1,24 @@
+.themeButton {
+  background-color: var(--theme-on-surface);
+  color: var(--theme-primary);
+  transition-duration: 0.8s;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  z-index: 1;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+
+@media only screen and (max-width: (--desktop-width)) {
+  .theme {
+    bottom: 145px;
+  }
+}

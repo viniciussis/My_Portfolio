@@ -1,8 +1,0 @@
-.default {
-  background-color: var(--dark-primary);
-  height: 100%;
-}
-
-.default--light {
-  background-color: white;
-}
