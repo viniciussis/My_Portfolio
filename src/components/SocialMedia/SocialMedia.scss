@@ -20,5 +20,14 @@
     &:hover {
       transform: scale(1.15);
     }
+
+    @include mixins.for-size(tablet) {
+      padding: 0.75rem;
+    }  
+
+    @include mixins.for-size(desktop-md) {
+      border-width: 3px;
+      padding: 1rem;
+    }  
   }
 }

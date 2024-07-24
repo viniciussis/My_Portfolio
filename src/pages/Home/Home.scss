@@ -73,7 +73,7 @@
   }
 
   @include mixins.for-size(tablet) {
-    padding: 6rem 3rem;
+    padding: 4rem;
     gap: 2rem;
 
     &__social {
@@ -85,8 +85,8 @@
 
       &__circle {
         width: 25vw;
-        right: 32.5%;
-        top: 30%;
+        right: 29%;
+        top: 25%;
       }
     }
 
@@ -107,18 +107,18 @@
   }
 
   @include mixins.for-size(desktop) {
-    padding: 6rem 4rem;
+    padding: 4rem;
     gap: 4rem;
 
     &__social {
       &__profile {
-        width: 15vw;
+        width: 25vw;
         right: 40%;
       }
 
       &__circle {
-        width: 13vw;
-        top: 35%;
+        width: 20vw;
+        top: 30%;
       }
     }
 
@@ -147,9 +147,9 @@
       }
 
       &__circle {
-        right: 37.5%;
+        right: 35%;
         width: 15vw;
-        top: 45%;
+        top: 35%;
       }
     }
   }

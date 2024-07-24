@@ -13,4 +13,10 @@
 
   @include mixins.for-size(tablet) {
   }
+
+  @include mixins.for-size(desktop-md) {
+    &__para {
+      font-size: 2rem;
+    }
+  }
 }

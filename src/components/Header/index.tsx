@@ -13,10 +13,19 @@ const Header = () => {
       <img
         src={
           theme == 'light'
-            ? 'images/common/logo-white.png'
-            : 'images/common/logo-dark.png'
+            ? 'images/common/logo-sm-light.png'
+            : 'images/common/logo-sm-dark.png'
         }
         className="header__logo"
+        alt="logo"
+      />
+      <img
+        src={
+          theme == 'light'
+            ? 'images/common/logo-lg-light.png'
+            : 'images/common/logo-lg-dark.png'
+        }
+        className="header__logo--lg"
         alt="logo"
       />
     </header>

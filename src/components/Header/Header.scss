@@ -16,8 +16,40 @@
     border-left: 3px solid var(--theme-on-surface);
     border-bottom-left-radius: 1rem;
     width: 4.75rem;
+    display: flex;
+
+    &--lg {
+      display: none;
+    }
   }
 
   @include mixins.for-size(tablet) {
+    border-bottom: 3px solid var(--theme-on-surface);
+    box-shadow: none;
+    padding: 0 3rem;
+    opacity: unset;
+
+    &__logo {
+      border-bottom-left-radius: 0;
+      border-bottom: none;
+      border-right: 3px solid var(--theme-on-surface);
+    }
+  }
+
+  @include mixins.for-size(desktop) {
+    &__logo {
+      display: none;
+
+      &--lg {
+        border-left: 3px solid var(--theme-on-surface);
+        border-right: 3px solid var(--theme-on-surface);
+        height: 4.75rem;
+        display: flex;
+      }
+    }
+  }
+
+  @include mixins.for-size(desktop-md) {
+    padding: 0 8rem;
   }
 }

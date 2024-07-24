@@ -18,10 +18,17 @@
   &:hover {
     transform: scale(1.15);
   }
-}
 
-@media only screen and (max-width: var(--desktop-width)) {
-  .languageButton {
-    bottom: 95px;
+  @include mixins.for-size(tablet) {
+    padding: 0.75rem;
+
+    right: 3vw;
+    top: 40vh;
+  }
+
+  @include mixins.for-size(desktop-md) {
+    border-width: 3px;
+    padding: 1rem;
+    top: 41vh;
   }
 }

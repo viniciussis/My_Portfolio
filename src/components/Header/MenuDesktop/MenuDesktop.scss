@@ -1,12 +1,28 @@
 .menuDesktop {
   display: none;
-  gap: 1.5rem;
 
   &__link {
     font-size: 1.5rem;
   }
 
   @include mixins.for-size(tablet) {
+    justify-content: center;
+    align-items: center;
     display: flex;
+    gap: 2rem;
+  }
+
+  @include mixins.for-size(desktop) {
+    gap: 2rem;
+
+    &__link {
+      font-size: 1.75rem;
+    }
+  }
+
+  @include mixins.for-size(desktop-md) {
+    &__link {
+      font-size: 2rem;
+    }
   }
 }
