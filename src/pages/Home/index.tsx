@@ -1,39 +1,37 @@
-import circle from '../../images/others/circulo_colorido.png'
-import profile from '../../images/others/Profile06.jpg'
 import SocialMedia from '@/components/SocialMedia'
+import { useTranslation } from 'react-i18next'
 import './Home.scss'
 
 const Home = () => {
+  const { t } = useTranslation('global')
+
   return (
     <div className="home">
+      <div className="home__social">
+        <img
+          className="home__social__profile"
+          src="images/common/profile.jpg"
+          alt="Vinicius's profile picture"
+          aria-hidden={true}
+        />
+        <img
+          className="home__social__circle"
+          src="images/common/circle.png"
+          alt="background colorful circle"
+        />
+      </div>
       <div className="home__greets">
-        <h1 className="home__greets__title">Olá, me chamo Vinícius</h1>
-        <p className="home__greets__para">
-          Bem-vindo ao meu portfólio web. Eu sou Vinícius Silva Santos, um
-          desenvolvedor full-stack brasileiro!
-        </p>
+        <h1 className="home__greets__title">{t('homepage.title')}</h1>
+        <p className="home__greets__para">{t('homepage.para')}</p>
         <div className="home__greets__links">
           <a
             href="https://drive.google.com/file/d/167AD4TVa-fOxwcwTfgAVXYqsrb0l5DQO/view?usp=drive_link"
             className="home__greets__links__link"
           >
-            currículo
+            {t('homepage.curriculum')}
           </a>
           <SocialMedia />
         </div>
-      </div>
-      <div className="home__images">
-        <img
-          className="home__images__prof"
-          src={profile}
-          alt="profile"
-          aria-hidden={true}
-        />
-        <img
-          className="home__images__circle"
-          src={circle}
-          alt="background colorful circle"
-        />
       </div>
     </div>
   )

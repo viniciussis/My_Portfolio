@@ -1,5 +1,31 @@
+// device width
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-desktop-md: 1440px;
+$breakpoint-desktop-lg: 1880px;
+
 @mixin spread-map($map: ()) {
   @each $key, $value in $map {
     #{$key}: $value;
+  }
+}
+
+@mixin for-size($device) {
+  @if $device == tablet {
+    @media (min-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $device == desktop {
+    @media (min-width: $breakpoint-desktop) {
+      @content;
+    }
+  } @else if $device == desktop-md {
+    @media (min-width: $breakpoint-desktop-md) {
+      @content;
+    }
+  } @else if $device == desktop-lg {
+    @media (min-width: $breakpoint-desktop-lg) {
+      @content;
+    }
   }
 }

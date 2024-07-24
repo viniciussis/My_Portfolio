@@ -10,10 +10,10 @@ const Default = () => {
   return (
     <div className="default">
       <Header />
-      <Outlet />
-      <Footer />
       <LanguageButton />
       <ThemeButton />
+      <Outlet />
+      <Footer />
     </div>
   )
 }

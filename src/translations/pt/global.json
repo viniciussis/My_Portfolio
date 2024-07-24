@@ -1,0 +1,10 @@
+{
+  "homepage": {
+    "title": "Eai, sou o Vinícius",
+    "para": "Bem-vindo ao meu portfólio web. Eu sou um desenvolvedor full-stack, direto da Bahia, Brasil!",
+    "curriculum": "Currículo"
+  },
+  "footer": {
+    "para": "Copyright | Projeto para portfólio web criado por Vinícius Silva Santos | 2024"
+  }
+}

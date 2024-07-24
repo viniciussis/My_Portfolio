@@ -1,21 +1,16 @@
 .footer {
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+  border-top: 3px solid var(--theme-on-surface);
   background-color: var(--theme-background);
-  color: var(--theme-secondary);
-
-  justify-content: center;
-  box-sizing: border-box;
-  text-align: center;
-  position: fixed;
-  display: flex;
-  padding: 14px;
-  width: 100%;
-  z-index: 1;
-  bottom: 0;
+  padding: 1rem 2rem;
 
   &__para {
+    color: var(--theme-secondary);
     font-variant: small-caps;
+    text-align: center;
+    font-size: 1.5rem;
     font-weight: 900;
-    font-size: 21px;
+  }
+
+  @include mixins.for-size(tablet) {
   }
 }

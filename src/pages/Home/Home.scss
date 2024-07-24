@@ -1,30 +1,55 @@
 .home {
   background-color: var(--theme-background);
-  grid-template-columns: 1fr 1fr;
-  color: var(--theme-primary);
-  display: grid;
-  height: 100vh;
-  padding: 8rem;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  display: flex;
+  gap: 2rem;
+
+  &__social {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+
+    &__profile {
+      border-radius: 50%;
+      margin-right: 1rem;
+      width: 50vw;
+      z-index: 1;
+    }
+
+    &__circle {
+      position: absolute;
+      width: 40vw;
+      right: 20%;
+      top: 30%;
+    }
+  }
 
   &__greets {
+    flex-direction: column;
+    display: flex;
+    gap: 1.5rem;
+
     &__title {
-      font-size: 4rem;
-      margin-top: 4.875rem;
-      margin-bottom: 1rem;
+      color: var(--theme-primary);
+      text-align: center;
+      font-size: 3rem;
     }
 
     &__para {
       color: var(--theme-secondary);
-      margin-bottom: 1.5rem;
+      text-align: center;
       font-size: 1.5rem;
-      line-height: 2rem;
     }
 
     &__links {
+      flex-direction: column;
       align-items: center;
       display: flex;
+      padding: 1rem 0;
       width: 100%;
-      gap: 1rem;
+      gap: 1.5rem;
 
       &__link {
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
@@ -34,9 +59,9 @@
         transition-duration: 1s;
         border-radius: 0.75rem;
         text-decoration: none;
+        border-style: groove;
         font-size: 1.25rem;
         padding: 10px 20px;
-        border-style: none;
         font-weight: 700;
         cursor: pointer;
 
@@ -47,69 +72,90 @@
     }
   }
 
-  &__images {
-    position: relative;
-    height: 406px;
-    z-index: 0;
+  @include mixins.for-size(tablet) {
+    padding: 6rem 3rem;
+    gap: 2rem;
 
-    &__prof {
-      position: absolute;
-      z-index: 1;
-      right: 7vw;
-      bottom: 2.2vw;
-      width: 25vw;
-      border-radius: 50%;
+    &__social {
+      &__profile {
+        width: 30vw;
+        right: 35%;
+        top: 10%;
+      }
+
+      &__circle {
+        width: 25vw;
+        right: 32.5%;
+        top: 30%;
+      }
     }
 
-    &__circle {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 18vw;
-    }
-  }
-}
-
-@media only screen and (max-width: var(--mobile-width)) {
-  .home {
     &__greets {
-      &__links {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 0;
-      }
-      &__title {
-        margin: 3rem 0 0;
-        font-size: 3.5rem;
-      }
       &__para {
-        margin: 0;
-        font-size: 1.25rem;
+        font-size: 1.75rem;
       }
-      &__link {
-        margin: 1rem 0;
-      }
-    }
-    &__images {
-      &__circle {
-        width: 25vw;
-      }
-      &__prof {
-        width: 35vw;
+
+      &__links {
+        gap: 2rem;
+
+        &__link {
+          font-size: 1.75rem;
+          padding: 10px 30px;
+        }
       }
     }
   }
-}
 
-@media only screen and (min-width: var(--mobile-width)) and (max-width: var(--desktop-width)) {
-  .home {
-    &__images {
-      &__circle {
-        width: 25vw;
+  @include mixins.for-size(desktop) {
+    padding: 6rem 4rem;
+    gap: 4rem;
+
+    &__social {
+      &__profile {
+        width: 15vw;
+        right: 40%;
       }
-      &__prof {
-        width: 35vw;
+
+      &__circle {
+        width: 13vw;
+        top: 35%;
       }
     }
+
+    &__greets {
+      &__para {
+        font-size: 2rem;
+      }
+
+      &__links {
+        &__link {
+          font-size: 2rem;
+          padding: 10px 40px;
+        }
+      }
+    }
+  }
+
+  @include mixins.for-size(desktop-md) {
+    padding: 6rem 8rem;
+    gap: 6rem;
+
+    &__social {
+      &__profile {
+        width: 20vw;
+        right: 40%;
+      }
+
+      &__circle {
+        right: 37.5%;
+        width: 15vw;
+        top: 45%;
+      }
+    }
+  }
+
+  @include mixins.for-size(desktop-lg) {
+    padding: 8rem;
+    gap: 10rem;
   }
 }

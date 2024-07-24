@@ -1,19 +1,19 @@
 .languageButton {
   background-color: var(--theme-on-surface);
+  border: 2px var(--theme-primary) groove;
   color: var(--theme-primary);
   transition-duration: 0.8s;
   border-radius: 0.75rem;
   cursor: pointer;
   padding: 10px;
-  border: none;
 
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 4.5rem;
   display: flex;
-  right: 1rem;
-  z-index: 1;
+  right: 35vw;
+  z-index: 2;
+  top: 1rem;
 
   &:hover {
     transform: scale(1.15);

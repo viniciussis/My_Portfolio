@@ -19,28 +19,25 @@ $theme-map-light: (
 $theme-map-dark: (
   $--theme-primary: #f34c83,
   $--theme-secondary: #c298dc,
-  $--theme-surface: #2f2b2b,
+  $--theme-surface: #1a1a1a,
   $--theme-background: #1b1918,
-  $--theme-on-primary: #443e41,
+  $--theme-on-primary: #1b1918c4,
   $--theme-on-secondary: #000,
   $--theme-on-surface: #f5f1f2,
 );
 
-$font-titles: 'Poppins';
+// fonts
 $font-text: 'Montserrat';
+$font-titles: 'Poppins';
 $font-size: 18px;
-$mobile-width: 375px;
-$desktop-width: 1250px;
 
-// Other Colors
-$orange: hsl(17, 100%, 50%);
-$orange-light: hsl(27, 100%, 65%);
-$orange-dark: hsl(22, 85%, 43%);
-$blue-dark: hsl(222.63, 79.17%, 18.82%);
-$blue-light: hsl(185.37, 56.16%, 57.06%);
-$white: white;
-$black: black;
-$red: red;
-$red-light: rgb(255, 134, 134);
-$green: rgb(0, 190, 0);
-$green-light: rgb(102, 216, 102);
+$green: #96c11f;
+$green-opaque: #96c11f93;
+$green-dark: #96c11f48;
+$dark: #000000;
+$dark-black: #1a1a1a;
+$dark-black-opaque: #1a1a1afa;
+$dark-gray: #4e4e4e;
+$light: #f8f8f8;
+$light-cream: #f3f1ed;
+$light-gray: #babbbb;

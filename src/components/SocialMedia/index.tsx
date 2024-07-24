@@ -17,16 +17,10 @@ const SocialMedia = () => {
       >
         <FaLinkedinIn size={18} />
       </a>
-      <a
-        className="social__media"
-        href="https://twitter.com/dev_ilman_"
-      >
+      <a className="social__media" href="https://twitter.com/dev_ilman_">
         <FaTwitter size={18} />
       </a>
-      <a
-        className="social__media"
-        href="https://github.com/viniciussis"
-      >
+      <a className="social__media" href="https://github.com/viniciussis">
         <FaGithub size={18} />
       </a>
     </div>

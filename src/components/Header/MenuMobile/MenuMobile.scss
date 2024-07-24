@@ -1,0 +1,36 @@
+.menuMobile {
+  position: relative;
+  margin-right: 40%;
+  height: 100%;
+
+  &__dropbutton {
+    border-bottom: 3px solid var(--theme-primary);
+    border-right: 3px solid var(--theme-primary);
+    background-color: var(--theme-on-surface);
+    border-bottom-right-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    display: flex;
+  }
+
+  &__dropdown {
+    background-color: var(--theme-on-surface);
+    flex-direction: column;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 2;
+
+    &__link {
+      border: 3px solid var(--theme-primary);
+      font-size: 1.5rem;
+      font-weight: 800;
+      padding: 1.5rem;
+    }
+  }
+
+  @include mixins.for-size(tablet) {
+    display: none;
+  }
+}

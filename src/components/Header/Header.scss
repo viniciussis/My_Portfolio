@@ -1,15 +1,23 @@
 .header {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 10px var(--theme-on-primary);
   background-color: var(--theme-background);
-  color: var(--theme-secondary);
-  padding: 0 8rem;
+  color: var(--theme-primary);
+  position: sticky;
+  opacity: 0.9;
+  z-index: 2;
+  top: 0;
 
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   display: flex;
-  width: 100%;
-  z-index: 1;
-  height: 9%;
-  gap: 10%;
+
+  &__logo {
+    border-bottom: 3px solid var(--theme-on-surface);
+    border-left: 3px solid var(--theme-on-surface);
+    border-bottom-left-radius: 1rem;
+    width: 4.75rem;
+  }
+
+  @include mixins.for-size(tablet) {
+  }
 }
