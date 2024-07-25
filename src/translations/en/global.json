@@ -11,5 +11,8 @@
     "1": "Projects",
     "2": "Certificates",
     "3": "Contact"
+  },
+  "cardButton": {
+    "1": "Repository"
   }
 }

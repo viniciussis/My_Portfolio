@@ -7,23 +7,23 @@ $--theme-on-secondary: --theme-on-secondary;
 $--theme-on-surface: --theme-on-surface;
 
 $theme-map-light: (
-  $--theme-primary: #d75894,
-  $--theme-secondary: #9b3dca,
-  $--theme-surface: #fff,
-  $--theme-background: #fafafa,
-  $--theme-on-primary: #fff,
-  $--theme-on-secondary: #fff,
-  $--theme-on-surface: #000,
+  $--theme-primary: #5d7715,
+  $--theme-secondary: #000000,
+  $--theme-surface: #f3f1ed,
+  $--theme-background: #f3f1ed,
+  $--theme-on-primary: #96c11f,
+  $--theme-on-secondary: #f8f8f8,
+  $--theme-on-surface: #1a1a1a,
 );
 
 $theme-map-dark: (
-  $--theme-primary: #f34c83,
-  $--theme-secondary: #c298dc,
+  $--theme-primary: #96c11f,
+  $--theme-secondary: #f8f8f8,
   $--theme-surface: #1a1a1a,
-  $--theme-background: #1b1918,
-  $--theme-on-primary: #1b19188f,
-  $--theme-on-secondary: #000,
-  $--theme-on-surface: #f5f1f2,
+  $--theme-background: #1a1a1a,
+  $--theme-on-primary: #5d7715,
+  $--theme-on-secondary: #000000,
+  $--theme-on-surface: #f3f1ed,
 );
 
 // fonts
@@ -33,7 +33,7 @@ $font-size: 18px;
 
 $green: #96c11f;
 $green-opaque: #96c11f93;
-$green-dark: #96c11f48;
+$green-dark: #5d7715;
 $dark: #000000;
 $dark-black: #1a1a1a;
 $dark-black-opaque: #1a1a1afa;

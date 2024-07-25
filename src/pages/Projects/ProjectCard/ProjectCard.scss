@@ -1,0 +1,100 @@
+.project {
+  background-color: var(--theme-surface);
+  border: 3px solid var(--theme-primary);
+  border-radius: 1rem;
+  height: min-content;
+  overflow: hidden;
+
+  flex-direction: column;
+  display: flex;
+
+  &__banner {
+    border-bottom: 3px solid var(--theme-primary);
+    background-color: var(--theme-primary);
+    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 0.75rem;
+    object-fit: fill;
+    transition: 1s;
+    width: 100%;
+  }
+
+  &__content {
+    text-align: center;
+
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+
+    &__title {
+      color: var(--theme-primary);
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    &__description {
+      color: var(--theme-secondary);
+      text-align: justify;
+      font-size: 1.15rem;
+    }
+  }
+
+  &__stack {
+    display: flex;
+
+    &__tag {
+      border-top: 3px solid var(--theme-primary);
+      border-right: 3px solid var(--theme-primary);
+      text-align: center;
+      font-size: 1.15rem;
+      font-weight: 800;
+      padding: 1rem 0;
+      width: 100%;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  &__actions {
+    border-top: 3px solid var(--theme-primary);
+    background-color: var(--theme-on-surface);
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    display: flex;
+
+    a {
+      text-align: center;
+      font-weight: 800;
+      padding: 1rem 0;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    a:first-child {
+      border-right: 3px solid var(--theme-primary);
+    }
+  }
+
+  @include mixins.for-size(tablet) {
+    &__content {
+      padding: 1rem 2rem;
+      &__title {
+        font-size: 2rem;
+      }
+
+      &__description {
+        font-size: 1.25rem;
+      }
+    }
+
+    &__actions {
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

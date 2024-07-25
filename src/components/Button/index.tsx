@@ -1,7 +1,17 @@
+import React from 'react'
 import './Button.scss'
 
-const Button = ({ size = 'normal' }) => {
-  return <a className={`button button--light button--${size}`}></a>
+interface ButtonProps {
+  children: React.ReactNode
+  type?: 'button' | 'submit' | 'reset'
+}
+
+const Button: React.FC<ButtonProps> = ({ children, type = 'button' }) => {
+  return (
+    <button type={type} className="button">
+      {children}
+    </button>
+  )
 }
 
 export default Button

@@ -1,7 +1,7 @@
 .themeButton {
   background-color: var(--theme-on-surface);
-  border: 2px var(--theme-primary) groove;
-  color: var(--theme-primary);
+  border: 2px solid var(--theme-primary);
+  color: var(--theme-on-primary);
   transition-duration: 0.8s;
   border-radius: 0.75rem;
   cursor: pointer;
@@ -22,7 +22,7 @@
   @include mixins.for-size(tablet) {
     padding: 0.75rem;
 
-    bottom: 42vh;
+    bottom: 44vh;
     right: 3vw;
     left: unset;
     top: unset;
@@ -33,5 +33,4 @@
     padding: 1rem;
     bottom: 42vh;
   }
-
 }

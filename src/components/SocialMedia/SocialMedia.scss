@@ -6,8 +6,8 @@
 
   &__media {
     background-color: var(--theme-on-surface);
-    border: 2px var(--theme-primary) groove;
-    color: var(--theme-primary);
+    border: 2px solid var(--theme-primary);
+    color: var(--theme-on-primary);
     transition-duration: 0.8s;
     justify-content: center;
     border-radius: 0.75rem;

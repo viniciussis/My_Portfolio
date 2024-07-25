@@ -52,14 +52,13 @@
       gap: 1.5rem;
 
       &__link {
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
         background-color: var(--theme-on-surface);
-        color: var(--theme-primary);
+        border: 3px solid var(--theme-primary);
+        color: var(--theme-on-primary);
         text-transform: capitalize;
         transition-duration: 1s;
         border-radius: 0.75rem;
         text-decoration: none;
-        border-style: groove;
         font-size: 1.25rem;
         padding: 10px 20px;
         font-weight: 700;

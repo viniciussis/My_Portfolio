@@ -1,4 +1,3 @@
-import certificatesData from '@/data/certificatesData'
 import './Certificates.scss'
 
 const Certificates = () => {
@@ -6,7 +5,7 @@ const Certificates = () => {
     <div className={`certificates certificates--light`}>
       <h1 className="certificates__title">Certificados</h1>
       <div className="certificates__container">
-        {certificatesData.map((certificate) => (
+        {/*         {certificatesData.map((certificate) => (
           <div key={certificate.id}>
             <img
               className="certificates__image"
@@ -14,7 +13,7 @@ const Certificates = () => {
               alt={certificate.name}
             />
           </div>
-        ))}
+        ))}*/}
       </div>
     </div>
   )

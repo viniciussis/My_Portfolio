@@ -1,29 +1,18 @@
-import Field from '@/components/Field'
 import SocialMedia from '../../components/SocialMedia'
+import ContactForm from './Form'
 import './Contact.scss'
-import Modal from '@/components/Modal'
-import Dropdown from '@/components/Dropdown'
 
 const Contact = () => {
   return (
-    <div className={`contact contact--light`}>
-      <form className="contact__form">
-        <h2 className="contact__form__title">Contato</h2>
-        <Field mandatory />
-        <Field mandatory type="email" />
-        <Dropdown />
-        <Field mandatory />
-        <button className="contact__button" type="submit">
-          Enviar
-        </button>
-      </form>
+    <div className="contact">
+      <h2 className="contact__title">Contato</h2>
+      <ContactForm />
       <div className="contact__media">
-        <h3 className="contact__subtitle">Email para Contato</h3>
+        <h3 className="contact__sub">Email para Contato</h3>
         <p className="contact__para">vinicius01012@gmail.com</p>
-        <h3 className="contact__subtitle">Adicione nas redes</h3>
+        <h3 className="contact__sub">Adicione nas redes</h3>
         <SocialMedia />
       </div>
-      <Modal />
     </div>
   )
 }
