@@ -21,16 +21,32 @@ const MenuMobile = () => {
           onMouseEnter={() => setDropdown(true)}
           onMouseLeave={() => setDropdown(false)}
         >
-          <Link className="menuMobile__dropdown__link" to="/">
+          <Link
+            onClick={() => setDropdown(false)}
+            className="menuMobile__dropdown__link"
+            to="/"
+          >
             Home
           </Link>
-          <Link className="menuMobile__dropdown__link" to="/projects">
+          <Link
+            onClick={() => setDropdown(false)}
+            className="menuMobile__dropdown__link"
+            to="/projects"
+          >
             Projetos
           </Link>
-          <Link className="menuMobile__dropdown__link" to="/certificates">
+          <Link
+            onClick={() => setDropdown(false)}
+            className="menuMobile__dropdown__link"
+            to="/certificates"
+          >
             Certificados
           </Link>
-          <Link className="menuMobile__dropdown__link" to="/contact">
+          <Link
+            onClick={() => setDropdown(false)}
+            className="menuMobile__dropdown__link"
+            to="/contact"
+          >
             Contact
           </Link>
         </nav>

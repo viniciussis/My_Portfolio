@@ -41,16 +41,17 @@
   }
 
   &__stack {
+    flex-wrap: wrap;
     display: flex;
 
     &__tag {
-      border-top: 3px solid var(--theme-primary);
       border-right: 3px solid var(--theme-primary);
+      border-top: 3px solid var(--theme-primary);
+      padding: 0.5rem 1rem;
       text-align: center;
       font-size: 1.15rem;
       font-weight: 800;
-      padding: 1rem 0;
-      width: 100%;
+      flex-grow: 1;
 
       &:last-child {
         border-right: none;

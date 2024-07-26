@@ -1,10 +1,9 @@
 export default interface IRepository {
   id: number
   name: string
-  stacks?: string[]
+  demo: string
   github: string
-  deploy: string
-  description: string
-  stack_url: string
   branch: string
+  topics?: string[]
+  description: string
 }

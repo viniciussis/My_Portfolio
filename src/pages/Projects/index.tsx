@@ -17,11 +17,11 @@ const Projects = () => {
             <ProjectCard
               img={`https://raw.githubusercontent.com/viniciussis/${project.name}/${project.branch}/public/screenshot.png`}
               description={project.description}
-              demo={project.deploy}
+              topics={project.topics}
               repo={project.github}
-              title={project.name}
+              demo={project.demo}
+              name={project.name}
               key={project.id}
-              stacks={project.stacks}
             ></ProjectCard>
           ))}
         </div>
