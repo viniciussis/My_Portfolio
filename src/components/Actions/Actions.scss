@@ -1,0 +1,24 @@
+.actions {
+  justify-content: center;
+  position: fixed;
+  display: flex;
+  width: 80vw;
+  gap: 2.5rem;
+  z-index: 2;
+  left: 10vw;
+  top: 1rem;
+
+  @include mixins.for-size(tablet) {
+    flex-direction: column;
+    width: fit-content;
+    height: 100vh;
+    left: initial;
+    right: 3vw;
+    gap: 1rem;
+    top: 0;
+  }
+
+  @include mixins.for-size(desktop-md) {
+    right: 4vw;
+  }
+}

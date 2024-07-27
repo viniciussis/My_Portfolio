@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next'
 import { MdGTranslate } from 'react-icons/md'
 
-import './LanguageButton.scss'
+import './LangBtn.scss'
 
-const LanguageButton = () => {
+const LangBtn = () => {
   const { i18n } = useTranslation('global')
 
   const toggleLanguage = () => {
@@ -11,10 +11,10 @@ const LanguageButton = () => {
   }
 
   return (
-    <button className="languageButton" onClick={toggleLanguage}>
+    <button className="langBtn" onClick={toggleLanguage}>
       <MdGTranslate size={20} />
     </button>
   )
 }
 
-export default LanguageButton
+export default LangBtn

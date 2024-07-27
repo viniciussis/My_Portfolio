@@ -6,7 +6,7 @@ const MenuDesktop = () => {
   const { t } = useTranslation('global')
 
   return (
-    <nav className="menuDesktop">
+    <div className="menuDesktop">
       <Link className="menuDesktop__link" to="/">
         Home
       </Link>
@@ -19,7 +19,7 @@ const MenuDesktop = () => {
       <Link className="menuDesktop__link" to="/contact">
         {t('headerMenu.3')}
       </Link>
-    </nav>
+    </div>
   )
 }
 

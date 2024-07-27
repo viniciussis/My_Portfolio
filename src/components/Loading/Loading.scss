@@ -1,12 +1,17 @@
 .loading {
-  display: flex;
   flex-direction: column;
+  margin: 3rem 10vw;
+  display: flex;
   gap: 2rem;
-  margin: 3rem 0;
 
   &__title {
     color: var(--theme-primary);
-    font-style: italic;
-    font-size: 3.5rem;
+    font-size: 2rem;
+  }
+
+  @include mixins.for-size(desktop) {
+    &__title {
+      font-size: 3.5rem;
+    }
   }
 }

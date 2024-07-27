@@ -1,75 +1,21 @@
 .contact {
   background-color: var(--dark-primary);
-  width: 100%;
+  justify-content: center;
+  align-items: center;
   min-height: 80vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
   gap: 3%;
-}
 
-.contact__form {
-  width: 62%;
-}
+  @include mixins.for-size(tablet) {
+    padding: 6rem 13vw;
 
-.contact__form__title {
-  font-size: 2.5rem;
-}
-
-.contact__button {
-  padding: 10px 20px;
-  margin-top: 8px;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: white;
-  background-color: var(--green);
-  transition-duration: 1s;
-  border-radius: 12px;
-  border-style: none;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-}
-
-.contact__button:hover {
-  background-color: mediumvioletred;
-  transform: scale(1.15);
-}
-
-.contact__media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 22%;
-}
-
-.contact__subtitle {
-  margin-top: 8px;
-  font-size: 2rem;
-}
-
-.contact__para {
-  font-size: 1.25rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .contact {
-    gap: 2%;
+    &__title {
+      display: none;
+    }
   }
-  .contact__form {
-    width: 43%;
-  }
-  .contact__media {
-    width: 43%;
-  }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 1150px) {
-  .contact__form {
-    width: 53%;
-  }
-  .contact__media {
-    width: 33%;
+  @include mixins.for-size(desktop-md) {
+    padding: 8rem 13vw;
   }
 }

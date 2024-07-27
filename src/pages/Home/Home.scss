@@ -2,6 +2,7 @@
   background-color: var(--theme-background);
   flex-direction: column;
   padding: 4rem 2rem;
+  min-height: 80vh;
   display: flex;
   gap: 2rem;
 
@@ -16,13 +17,7 @@
       margin-right: 1rem;
       width: 50vw;
       z-index: 1;
-    }
-
-    &__circle {
-      position: absolute;
-      width: 40vw;
-      right: 20%;
-      top: 30%;
+      border: 3px solid var(--theme-primary);
     }
   }
 
@@ -81,12 +76,6 @@
         right: 35%;
         top: 10%;
       }
-
-      &__circle {
-        width: 25vw;
-        right: 29%;
-        top: 25%;
-      }
     }
 
     &__greets {
@@ -114,11 +103,6 @@
         width: 25vw;
         right: 40%;
       }
-
-      &__circle {
-        width: 20vw;
-        top: 30%;
-      }
     }
 
     &__greets {
@@ -143,12 +127,6 @@
       &__profile {
         width: 20vw;
         right: 40%;
-      }
-
-      &__circle {
-        right: 35%;
-        width: 15vw;
-        top: 35%;
       }
     }
   }

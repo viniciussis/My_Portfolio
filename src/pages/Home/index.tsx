@@ -14,11 +14,6 @@ const Home = () => {
           alt="Vinicius's profile picture"
           aria-hidden={true}
         />
-        <img
-          className="home__social__circle"
-          src="images/common/circle.png"
-          alt="background colorful circle"
-        />
       </div>
       <div className="home__greets">
         <h1 className="home__greets__title">{t('homepage.title')}</h1>

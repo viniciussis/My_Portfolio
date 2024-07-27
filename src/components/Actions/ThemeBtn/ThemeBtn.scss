@@ -1,4 +1,4 @@
-.themeButton {
+.themeBtn {
   background-color: var(--theme-on-surface);
   border: 2px solid var(--theme-primary);
   color: var(--theme-on-primary);
@@ -9,11 +9,7 @@
 
   justify-content: center;
   align-items: center;
-  position: fixed;
   display: flex;
-  z-index: 2;
-  left: 35vw;
-  top: 1rem;
 
   &:hover {
     transform: scale(1.15);
@@ -21,16 +17,10 @@
 
   @include mixins.for-size(tablet) {
     padding: 0.75rem;
-
-    bottom: 44vh;
-    right: 3vw;
-    left: unset;
-    top: unset;
   }
 
   @include mixins.for-size(desktop-md) {
     border-width: 3px;
     padding: 1rem;
-    bottom: 42vh;
   }
 }

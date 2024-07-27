@@ -2,9 +2,9 @@ import { CiLight, CiDark } from 'react-icons/ci'
 import useTheme from '@/context/useTheme'
 import { useEffect } from 'react'
 
-import './ThemeButton.scss'
+import './ThemeBtn.scss'
 
-const ThemeButton = () => {
+const ThemeBtn = () => {
   const { theme, toggleTheme } = useTheme()
 
   useEffect(() => {
@@ -12,10 +12,10 @@ const ThemeButton = () => {
   }, [theme])
 
   return (
-    <button className="themeButton" onClick={toggleTheme}>
+    <button className="themeBtn" onClick={toggleTheme}>
       {theme == 'light' ? <CiLight size={20} /> : <CiDark size={20} />}
     </button>
   )
 }
 
-export default ThemeButton
+export default ThemeBtn

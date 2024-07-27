@@ -3,19 +3,16 @@
 
   &__link {
     font-size: 1.5rem;
-    font-weight: 800;
+    padding: 0 1rem;
   }
 
   @include mixins.for-size(tablet) {
-    justify-content: center;
-    align-items: center;
+    max-height: 10vh;
+    height: fit-content;
     display: flex;
-    gap: 2rem;
   }
 
   @include mixins.for-size(desktop) {
-    gap: 2rem;
-
     &__link {
       font-size: 1.75rem;
     }
@@ -23,7 +20,14 @@
 
   @include mixins.for-size(desktop-md) {
     &__link {
+      padding: 0 2rem;
       font-size: 2rem;
+    }
+  }
+
+  @include mixins.for-size(desktop-lg) {
+    &__link {
+      font-size: 2.75rem;
     }
   }
 }

@@ -1,19 +1,15 @@
-.languageButton {
+.langBtn {
   background-color: var(--theme-on-surface);
   border: 2px solid var(--theme-primary);
   color: var(--theme-on-primary);
-  transition-duration: 0.8s;
   border-radius: 0.75rem;
   cursor: pointer;
+  transition: 1s;
   padding: 10px;
 
   justify-content: center;
   align-items: center;
-  position: fixed;
   display: flex;
-  right: 35vw;
-  z-index: 2;
-  top: 1rem;
 
   &:hover {
     transform: scale(1.15);
@@ -21,14 +17,10 @@
 
   @include mixins.for-size(tablet) {
     padding: 0.75rem;
-
-    right: 3vw;
-    top: 44vh;
   }
 
   @include mixins.for-size(desktop-md) {
     border-width: 3px;
     padding: 1rem;
-    top: 41vh;
   }
 }

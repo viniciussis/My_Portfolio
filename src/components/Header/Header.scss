@@ -24,26 +24,29 @@
   }
 
   @include mixins.for-size(tablet) {
-    border-bottom: 3px solid var(--theme-on-surface);
+    border-bottom: 1.5px solid var(--theme-on-surface);
     box-shadow: none;
+    min-height: 10vh;
     padding: 0 3rem;
     opacity: unset;
 
     &__logo {
+      border-right: 1.5px solid var(--theme-on-surface);
+      border-left: 1.5px solid var(--theme-on-surface);
       border-bottom-left-radius: 0;
       border-bottom: none;
-      border-right: 3px solid var(--theme-on-surface);
     }
   }
 
   @include mixins.for-size(desktop) {
+    padding: 0 4rem;
     &__logo {
       display: none;
 
       &--lg {
-        border-left: 3px solid var(--theme-on-surface);
-        border-right: 3px solid var(--theme-on-surface);
-        height: 4.75rem;
+        border-left: 1.5px solid var(--theme-on-surface);
+        border-right: 1.5px solid var(--theme-on-surface);
+        max-height: 10vh;
         display: flex;
       }
     }

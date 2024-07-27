@@ -1,14 +1,16 @@
 import { useProjectsQuery } from '@/hooks/api/useProjectsQuery'
+import { useTranslation } from 'react-i18next'
 import Loading from '@/components/Loading'
 import ProjectCard from './ProjectCard'
 import './Projects.scss'
 
 const Projects = () => {
   const { data, isLoading } = useProjectsQuery()
+  const { t } = useTranslation('global')
 
   return (
     <div className="projects">
-      <h1 className="projects__title">Projetos</h1>
+      <h1 className="projects__title">{t('headerMenu.1')}</h1>
       {isLoading ? (
         <Loading />
       ) : (

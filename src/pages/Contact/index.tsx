@@ -1,11 +1,13 @@
 import SocialMedia from '../../components/SocialMedia'
+import { useTranslation } from 'react-i18next'
 import ContactForm from './Form'
 import './Contact.scss'
 
 const Contact = () => {
+  const { t } = useTranslation('global')
   return (
     <div className="contact">
-      <h2 className="contact__title">Contato</h2>
+      <h2 className="contact__title">{t('headerMenu.3')}</h2>
       <ContactForm />
       <div className="contact__media">
         <h3 className="contact__sub">Email para Contato</h3>
