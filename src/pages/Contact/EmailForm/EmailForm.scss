@@ -1,0 +1,13 @@
+.emailForm {
+  @include mixins.for-size(tablet) {
+  }
+
+  @include mixins.for-size(desktop) {
+  }
+
+  @include mixins.for-size(desktop-md) {
+  }
+
+  @include mixins.for-size(desktop-md) {
+  }
+}

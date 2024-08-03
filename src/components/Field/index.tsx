@@ -1,14 +1,27 @@
+import React from 'react'
 import './Field.scss'
 
-const Field = ({ type = 'text', mandatory = false }) => {
+interface FieldProps {
+  type?: 'text' | 'number'
+  placeholder: string
+  mandatory?: boolean
+  label: string
+}
+
+const Field: React.FC<FieldProps> = ({
+  type = 'text',
+  mandatory = false,
+  label,
+  placeholder,
+}) => {
   return (
     <div className="field">
-      <label className="field__label"></label>
+      <label className="field__label">{label}</label>
       <input
-        className={`field__input field__input--light`}
+        className="field__input"
         type={type}
         required={mandatory}
-        placeholder=""
+        placeholder={placeholder}
       />
     </div>
   )
