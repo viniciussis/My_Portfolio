@@ -1,4 +1,8 @@
 .emailForm {
+  flex-direction: column;
+  display: flex;
+  gap: 3vh;
+
   @include mixins.for-size(tablet) {
   }
 

@@ -1,16 +1,17 @@
 .button {
   background-color: var(--theme-on-surface);
-  color: var(--theme-primary);
-  transition-duration: 0.4s;
+  border: 3px solid var(--theme-primary);
+  color: var(--theme-on-primary);
+  text-transform: capitalize;
+  transition-duration: 1s;
+  border-radius: 0.75rem;
   text-decoration: none;
-  border-radius: 12px;
+  font-size: 1.25rem;
   padding: 10px 20px;
-  border-style: none;
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
   cursor: pointer;
 
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  &:hover {
+    transform: scale(1.15);
+  }
 }

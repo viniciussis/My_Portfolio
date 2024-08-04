@@ -3,27 +3,20 @@ import './Field.scss'
 
 interface FieldProps {
   type?: 'text' | 'number'
-  placeholder: string
   mandatory?: boolean
   label: string
 }
 
 const Field: React.FC<FieldProps> = ({
-  type = 'text',
   mandatory = false,
+  type = 'text',
   label,
-  placeholder,
 }) => {
   return (
-    <div className="field">
-      <label className="field__label">{label}</label>
-      <input
-        className="field__input"
-        type={type}
-        required={mandatory}
-        placeholder={placeholder}
-      />
-    </div>
+    <label className="field">
+      <input className="field__input" type={type} required={mandatory} />
+      <span className="field__label">{label}</span>
+    </label>
   )
 }
 

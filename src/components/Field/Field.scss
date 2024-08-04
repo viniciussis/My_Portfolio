@@ -1,24 +1,36 @@
 .field {
-  color: var(--theme-secondary);
+  color: var(--theme-primary);
+  position: relative;
   width: 100%;
 
-  &__label {
+  &__input {
+    background-color: var(--theme-background);
+    border: 3px solid var(--theme-primary);
+    padding: calc(0.5rem * 1.5) 1.5rem;
+    caret-color: var(--theme-primary);
+    box-sizing: border-box;
+    border-radius: 0.75rem;
+    font-size: 1rem;
     display: block;
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 4px;
-    margin-left: 8px;
+    outline: none;
+    width: 100%;
+
+    &:focus {
+      & + .field__label {
+        transform: translate(0.25rem, -65%) scale(0.9);
+      }
+    }
   }
 
-  &__input {
-    color: var(--dark-primary);
-    background-color: white;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-    border-radius: 12px;
-    border: none;
-    box-sizing: border-box;
-    font-size: 1rem;
-    padding: 16px;
-    width: 100%;
+  &__label {
+    margin: calc(0.5rem * 0.75 + 3px) calc(1.5rem * 0.5);
+    padding: calc(0.5rem * 0.75) calc(1.5rem * 0.5);
+    background-color: var(--theme-background);
+    transition: transform 120ms ease-in;
+    border-radius: 0.75rem;
+    transform-origin: 0 0;
+    position: absolute;
+    font-weight: 700;
+    top: 0;
   }
 }

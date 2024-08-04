@@ -10,9 +10,9 @@ const Contact = () => {
       <h2 className="contact__title">{t('headerMenu.3')}</h2>
       <EmailForm />
       <div className="contact__media">
-        <h3 className="contact__sub">Email para Contato</h3>
-        <p className="contact__para">vinicius01012@gmail.com</p>
-        <h3 className="contact__sub">Adicione nas redes</h3>
+        <h3 className="contact__media__sub">{t('contact.sub1')}</h3>
+        <p className="contact__media__para">vinicius01012@gmail.com</p>
+        <h3 className="contact__media__sub">{t('contact.sub2')}</h3>
         <SocialMedia />
       </div>
     </div>

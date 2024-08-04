@@ -2,10 +2,10 @@
   justify-content: center;
   position: fixed;
   display: flex;
-  width: 80vw;
+  width: 60vw;
   gap: 2.5rem;
   z-index: 2;
-  left: 10vw;
+  left: 20vw;
   top: 1rem;
 
   @include mixins.for-size(tablet) {

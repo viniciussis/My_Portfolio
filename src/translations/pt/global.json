@@ -14,5 +14,15 @@
   },
   "cardButton": {
     "1": "Repositório"
+  },
+  "emailForm": {
+    "1": "Nome",
+    "2": "Assunto",
+    "3": "Mensagem",
+    "button": "Enviar"
+  },
+  "contact": {
+    "sub1": "Email para Contato",
+    "sub2": "Adicione nas Redes"
   }
 }

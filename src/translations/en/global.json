@@ -14,5 +14,15 @@
   },
   "cardButton": {
     "1": "Repository"
+  },
+  "emailForm": {
+    "1": "Name",
+    "2": "Subject",
+    "3": "Message",
+    "button": "Send"
+  },
+  "contact": {
+    "sub1": "Contact Email",
+    "sub2": "Social Media"
   }
 }
