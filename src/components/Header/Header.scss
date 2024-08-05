@@ -26,15 +26,17 @@
   @include mixins.for-size(tablet) {
     border-bottom: 1.5px solid var(--theme-on-surface);
     box-shadow: none;
-    min-height: 10vh;
     padding: 0 3rem;
     opacity: unset;
+    height: 10vh;
 
     &__logo {
       border-right: 1.5px solid var(--theme-on-surface);
       border-left: 1.5px solid var(--theme-on-surface);
       border-bottom-left-radius: 0;
       border-bottom: none;
+      width: unset;
+      height: 100%;
     }
   }
 
@@ -46,8 +48,8 @@
       &--lg {
         border-left: 1.5px solid var(--theme-on-surface);
         border-right: 1.5px solid var(--theme-on-surface);
-        max-height: 10vh;
         display: flex;
+        height: 100%;
       }
     }
   }

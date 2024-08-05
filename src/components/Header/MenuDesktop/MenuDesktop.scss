@@ -2,14 +2,27 @@
   display: none;
 
   &__link {
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
     padding: 0 1rem;
+    transition: 1s;
+    display: flex;
+    height: 100%;
+
+    &--active {
+      border-right: 2px solid var(--theme-primary);
+      border-left: 2px solid var(--theme-primary);
+      background-color: var(--theme-on-surface);
+      color: var(--theme-on-primary);
+    }
   }
 
   @include mixins.for-size(tablet) {
-    max-height: 10vh;
-    height: fit-content;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    height: 100%;
   }
 
   @include mixins.for-size(desktop) {
