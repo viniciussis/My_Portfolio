@@ -24,5 +24,8 @@
   "contact": {
     "sub1": "Contact Email",
     "sub2": "Social Media"
+  },
+  "dropdown": {
+    "1": "choose an option"
   }
 }
