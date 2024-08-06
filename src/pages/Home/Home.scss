@@ -54,8 +54,8 @@
         transition-duration: 1s;
         border-radius: 0.75rem;
         text-decoration: none;
+        padding: 0.5rem 2rem;
         font-size: 1.25rem;
-        padding: 10px 20px;
         font-weight: 700;
         cursor: pointer;
 
@@ -87,8 +87,7 @@
         gap: 2rem;
 
         &__link {
-          font-size: 1.75rem;
-          padding: 10px 30px;
+          font-size: 1.5rem;
         }
       }
     }
@@ -112,8 +111,8 @@
 
       &__links {
         &__link {
-          font-size: 2rem;
-          padding: 10px 40px;
+          padding: 0.5rem 2.5rem;
+          font-size: 1.75rem;
         }
       }
     }
@@ -129,10 +128,28 @@
         right: 40%;
       }
     }
+
+    &__greets {
+      &__links {
+        &__link {
+          padding: 0.5rem 2.5rem;
+          font-size: 1.75rem;
+        }
+      }
+    }
   }
 
   @include mixins.for-size(desktop-lg) {
     padding: 8rem;
     gap: 10rem;
+
+    &__greets {
+      &__links {
+        &__link {
+          padding: 0.75rem 2.75rem;
+          font-size: 2.25rem;
+        }
+      }
+    }
   }
 }

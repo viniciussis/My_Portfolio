@@ -22,8 +22,9 @@
     "button": "Enviar"
   },
   "contact": {
-    "sub1": "Email para Contato",
-    "sub2": "Adicione nas Redes"
+    "sub1": "Vamos nos conectar!",
+    "sub2": "Email para Contato",
+    "sub3": "Adicione nas Redes"
   },
   "dropdown": {
     "1": "escolha uma opção"

@@ -8,6 +8,7 @@ const EmailForm = () => {
 
   return (
     <form className="emailForm">
+      <h3 className="emailForm__sub">{t('contact.sub1')}</h3>
       <Field label={t('emailForm.1')} />
       <Field label="Email" />
       <Field label={t('emailForm.2')} />

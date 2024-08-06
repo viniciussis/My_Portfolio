@@ -22,8 +22,9 @@
     "button": "Send"
   },
   "contact": {
-    "sub1": "Contact Email",
-    "sub2": "Social Media"
+    "sub1": "Let's connect!",
+    "sub2": "Contact Email",
+    "sub3": "Social Media"
   },
   "dropdown": {
     "1": "choose an option"

@@ -6,7 +6,6 @@
   textarea {
     max-height: 50vh;
     resize: vertical;
-    
   }
 
   &__input {
@@ -38,5 +37,15 @@
     position: absolute;
     font-weight: 700;
     top: 0;
+  }
+
+  @include mixins.for-size(desktop-lg) {
+    &__input {
+      padding: calc(1rem * 1.5) 1.5rem;
+    }
+
+    &__label {
+      font-size: 2rem;
+    }
   }
 }
