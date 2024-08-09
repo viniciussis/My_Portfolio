@@ -1,9 +1,8 @@
 .header {
+  background-color: var(--theme-background-opaque);
   box-shadow: 0 10px 10px var(--theme-background);
-  background-color: var(--theme-background);
   color: var(--theme-primary);
   position: sticky;
-  opacity: 0.9;
   z-index: 2;
   top: 0;
 
@@ -25,6 +24,7 @@
 
   @include mixins.for-size(tablet) {
     border-bottom: 1.5px solid var(--theme-on-surface);
+    background-color: var(--theme-background);
     box-shadow: none;
     padding: 0 3rem;
     opacity: unset;

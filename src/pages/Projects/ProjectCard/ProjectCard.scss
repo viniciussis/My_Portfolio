@@ -1,4 +1,6 @@
 .project {
+  box-shadow: 12px 12px 20px var(--theme-smoke-down),
+    -8px -8px 15px var(--theme-smoke-up);
   background-color: var(--theme-surface);
   border: 3px solid var(--theme-primary);
   border-radius: 1rem;
@@ -22,6 +24,7 @@
 
   &__content {
     text-align: center;
+    transition: 0.5s;
     flex: 1;
 
     justify-content: center;
@@ -41,6 +44,11 @@
       text-align: justify;
       font-size: 1.15rem;
     }
+
+    &:hover {
+      box-shadow: 10px 10px 20px var(--theme-smoke-down) inset,
+        -8px -8px 20px var(--theme-smoke-up) inset;
+    }
   }
 
   &__stack {
@@ -54,10 +62,16 @@
       text-align: center;
       font-size: 1.15rem;
       font-weight: 800;
+      transition: 1s;
       flex-grow: 1;
 
       &:last-child {
         border-right: none;
+      }
+
+      &:hover {
+        box-shadow: 5px 5px 20px var(--theme-smoke-down) inset,
+        -5px -5px 8px var(--theme-smoke-up) inset;
       }
     }
   }

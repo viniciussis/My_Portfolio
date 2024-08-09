@@ -5,16 +5,24 @@ $--theme-background: --theme-background;
 $--theme-on-primary: --theme-on-primary;
 $--theme-on-secondary: --theme-on-secondary;
 $--theme-on-surface: --theme-on-surface;
+$--theme-smoke-down: --theme-smoke-down;
+$--theme-smoke-up: --theme-smoke-up;
+$--theme-higher-contrast: --theme-higher-contrast;
+$--theme-background-opaque: --theme-background-opaque;
 
+// themes
 $theme-map-light: (
   $--theme-primary: #5d7715,
   $--theme-secondary: #000000,
   $--theme-surface: #f3f1ed,
-  
   $--theme-background: #f3f1ed,
+  $--theme-background-opaque: #f3f1edda,
   $--theme-on-primary: #96c11f,
   $--theme-on-secondary: #f8f8f8,
   $--theme-on-surface: #1a1a1a,
+  $--theme-smoke-down: #0000004d,
+  $--theme-smoke-up: #ffffff,
+  $--theme-higher-contrast: #ffffff,
 );
 
 $theme-map-dark: (
@@ -22,9 +30,13 @@ $theme-map-dark: (
   $--theme-secondary: #f8f8f8,
   $--theme-surface: #1a1a1a,
   $--theme-background: #1a1a1a,
+  $--theme-background-opaque: #1a1a1ad2,
   $--theme-on-primary: #5d7715,
   $--theme-on-secondary: #000000,
   $--theme-on-surface: #f3f1ed,
+  $--theme-smoke-down: #000000,
+  $--theme-smoke-up: #ffffff25,
+  $--theme-higher-contrast: #000000,
 );
 
 // fonts
@@ -32,6 +44,7 @@ $font-text: 'Montserrat';
 $font-titles: 'Poppins';
 $font-size: 18px;
 
+// colors
 $green: #96c11f;
 $green-opaque: #96c11f93;
 $green-dark: #5d7715;
@@ -42,3 +55,9 @@ $dark-gray: #4e4e4e;
 $light: #f8f8f8;
 $light-cream: #f3f1ed;
 $light-gray: #babbbb;
+
+// devices widths
+$breakpoint-tablet: 767px;
+$breakpoint-desktop: 1024px;
+$breakpoint-desktop-md: 1440px;
+$breakpoint-desktop-lg: 1880px;

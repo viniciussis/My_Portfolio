@@ -14,8 +14,11 @@
   }
 
   &__container {
-    border-radius: 1rem;
+    box-shadow: 12px 12px 20px var(--theme-smoke-down),
+      -8px -8px 15px var(--theme-smoke-up);
     border: 3px solid var(--theme-primary);
+    background-color: var(--theme-primary);
+    border-radius: 1rem;
   }
 
   @include mixins.for-size(tablet) {
@@ -27,7 +30,7 @@
   }
 
   @include mixins.for-size(desktop) {
-    padding: 6rem 11vw;
+    padding: 4rem 11vw;
   }
 
   @include mixins.for-size(desktop-md) {

@@ -1,8 +1,4 @@
-// device width
-$breakpoint-tablet: 767px;
-$breakpoint-desktop: 1024px;
-$breakpoint-desktop-md: 1440px;
-$breakpoint-desktop-lg: 1880px;
+@use './variables.scss' as *;
 
 @mixin spread-map($map: ()) {
   @each $key, $value in $map {

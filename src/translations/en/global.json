@@ -28,5 +28,8 @@
   },
   "dropdown": {
     "1": "choose an option"
+  },
+  "loading": {
+    "1": "Loading"
   }
 }
