@@ -1,4 +1,4 @@
-.field {
+.areafield {
   border-radius: 0.75rem;
   position: relative;
   width: 100%;
@@ -11,6 +11,9 @@
     color: var(--theme-on-surface);
     box-sizing: border-box;
     border-radius: 0.75rem;
+    max-height: 40vh;
+    min-height: 15vh;
+    resize: vertical;
     font-size: 1rem;
     display: block;
     outline: none;
@@ -18,7 +21,7 @@
 
     &:focus,
     &:not(:placeholder-shown) {
-      & + .field__label {
+      & + .areafield__label {
         transform: translate(0.25rem, -65%) scale(0.9);
       }
     }
@@ -45,17 +48,17 @@
     transform: translate(-50%);
     position: absolute;
     font-size: 0.85rem;
-    transition: 1s;
     font-weight: 700;
     bottom: -1.25rem;
     color: red;
     left: 50%;
   }
 
-  &:has(.field__error) {
-    .field__input {
+  &:has(.areafield__error) {
+    .areafield__input {
       border-color: var(--theme-on-primary);
     }
+
   }
 
   @include mixins.for-size(desktop-lg) {

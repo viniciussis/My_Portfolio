@@ -6,7 +6,9 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <p className="footer__para">&copy; {t('footer.para')}</p>
+      <p className="footer__para">
+        &copy; {t('footer.para')} {new Date().getFullYear()}
+      </p>
     </footer>
   )
 }

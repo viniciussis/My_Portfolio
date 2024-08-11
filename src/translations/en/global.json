@@ -5,7 +5,7 @@
     "curriculum": "Curriculum"
   },
   "footer": {
-    "para": "Copyright | Web portfolio project created by Vinícius Silva Santos | 2024"
+    "para": "Copyright | Web portfolio project created by Vinícius Silva Santos | "
   },
   "headerMenu": {
     "1": "Projects",
@@ -16,9 +16,29 @@
     "1": "Repository"
   },
   "emailForm": {
-    "1": "Name",
-    "2": "Subject",
-    "3": "Message",
+    "name": {
+      "label": "Name",
+      "errors": {
+        "1": "Name is required"
+      }
+    },
+    "subject": {
+      "label": "Subject",
+      "errors": {
+        "1": "Subject is required"
+      }
+    },
+    "message": {
+      "label": "Message",
+      "errors": {
+        "1": "Message is required"
+      }
+    },
+    "email": {
+      "errors": {
+        "1": "Email is required"
+      }
+    },
     "button": "Send"
   },
   "contact": {

@@ -1,29 +1,39 @@
-import React from 'react'
+import { forwardRef, InputHTMLAttributes } from 'react'
 import './Field.scss'
 
-interface FieldProps {
-  type?: 'text' | 'number'
-  textArea?: boolean
-  mandatory?: boolean
+interface FieldProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string
+  errors?: string
 }
 
-const Field: React.FC<FieldProps> = ({
-  mandatory = false,
-  textArea = false,
-  type = 'text',
-  label,
-}) => {
-  return (
-    <label className="field">
-      {textArea ? (
-        <textarea className="field__input" maxLength={400} required />
-      ) : (
-        <input className="field__input" type={type} required={mandatory} />
-      )}
-      <span className="field__label">{label}</span>
-    </label>
-  )
-}
+const Field = forwardRef<HTMLInputElement, FieldProps>(
+  (
+    {
+      required = false,
+      type = 'text',
+      label,
+      errors,
+      autoComplete = 'off',
+      ...rest
+    },
+    ref,
+  ) => {
+    return (
+      <label className="field">
+        <input
+          autoComplete={autoComplete}
+          className="field__input"
+          required={required}
+          placeholder=""
+          type={type}
+          ref={ref}
+          {...rest}
+        />
+        <span className="field__label">{label}</span>
+        {errors && <span className="field__error">{errors}</span>}
+      </label>
+    )
+  },
+)
 
 export default Field

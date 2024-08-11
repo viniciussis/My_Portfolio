@@ -5,7 +5,7 @@
     "curriculum": "Currículo"
   },
   "footer": {
-    "para": "Copyright | Projeto para portfólio web criado por Vinícius Silva Santos | 2024"
+    "para": "Copyright | Projeto para portfólio web criado por Vinícius Silva Santos | "
   },
   "headerMenu": {
     "1": "Projetos",
@@ -16,9 +16,29 @@
     "1": "Repositório"
   },
   "emailForm": {
-    "1": "Nome",
-    "2": "Assunto",
-    "3": "Mensagem",
+    "name": {
+      "label": "Nome",
+      "errors": {
+        "1": "Informe um nome"
+      }
+    },
+    "subject": {
+      "label": "Assunto",
+      "errors": {
+        "1": "Informe um assunto"
+      }
+    },
+    "message": {
+      "label": "Mensagem",
+      "errors": {
+        "1": "Informe uma mensagem"
+      }
+    },
+    "email": {
+      "errors": {
+        "1": "Informe um email"
+      }
+    },
     "button": "Enviar"
   },
   "contact": {
