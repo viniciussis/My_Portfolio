@@ -29,6 +29,7 @@
     gap: 1.5rem;
 
     &__title {
+      font-family: variables.$font-titles;
       color: var(--theme-primary);
       text-align: center;
       font-size: 3rem;
