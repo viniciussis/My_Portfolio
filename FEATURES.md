@@ -10,7 +10,7 @@
 # UI and Design Features
 
 - [x] Choose a Personality (What do I want?) - _Professional and Confident_
-  - [ ] Fonts
+  - [x] Fonts
   - [ ] Colors
   - [ ] Border Radius
   - [ ] Language
@@ -22,3 +22,6 @@
   - [ ] Box shadows, border radius and width
 
 # Nice-to-have Features
+
+- [ ] Filter projects by frontend/backend/fullstack
+- [ ] Filter projects by tags
