@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next'
 import AreaField from '@/components/AreaField'
-import { DevTool } from '@hookform/devtools'
 import { useForm } from 'react-hook-form'
 import Button from '@/components/Button'
 import Field from '@/components/Field'
@@ -16,7 +15,6 @@ interface EmailForm {
 const EmailForm = () => {
   const { t } = useTranslation('global')
   const {
-    control,
     register,
     handleSubmit,
     formState: { errors },
@@ -56,7 +54,6 @@ const EmailForm = () => {
         />
         <Button type="submit">{t('emailForm.button')}</Button>
       </form>
-      <DevTool placement="top-right" control={control} />
     </>
   )
 }

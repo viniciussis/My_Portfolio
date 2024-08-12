@@ -15,11 +15,17 @@
     background-color: var(--theme-primary);
     border-top-right-radius: 0.75rem;
     border-top-left-radius: 0.75rem;
+
     object-position: 0;
     object-fit: cover;
     transition: 1s;
     flex-grow: 0.4;
     width: 100%;
+
+    &:hover {
+      box-shadow: 5px 5px 20px var(--theme-smoke-down) inset,
+        -5px -5px 8px var(--theme-smoke-up) inset;
+    }
   }
 
   &__content {
@@ -45,11 +51,6 @@
       text-align: justify;
       font-size: 1.15rem;
     }
-
-    &:hover {
-      box-shadow: 10px 10px 20px var(--theme-smoke-down) inset,
-        -8px -8px 20px var(--theme-smoke-up) inset;
-    }
   }
 
   &__stack {
@@ -69,11 +70,6 @@
 
       &:last-child {
         border-right: none;
-      }
-
-      &:hover {
-        box-shadow: 5px 5px 20px var(--theme-smoke-down) inset,
-          -5px -5px 8px var(--theme-smoke-up) inset;
       }
     }
   }
