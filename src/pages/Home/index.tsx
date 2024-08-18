@@ -1,18 +1,24 @@
 import SocialMedia from '@/components/SocialMedia'
 import { useTranslation } from 'react-i18next'
 import './Home.scss'
+import { motion } from 'framer-motion'
 
 const Home = () => {
   const { t } = useTranslation('global')
 
   return (
-    <div className="home">
+    <motion.div
+      animate={{ x: 0 }}
+      initial={{ x: '-100vw' }}
+      exit={{ x: '100vw' }}
+      transition={{ delay: 0.5, duration: 1 }}
+      className="home"
+    >
       <div className="home__social">
         <img
           className="home__social__profile"
           src="images/common/profile.jpg"
           alt="Vinicius's profile picture"
-          aria-hidden={true}
         />
       </div>
       <div className="home__greets">
@@ -28,7 +34,7 @@ const Home = () => {
           <SocialMedia />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

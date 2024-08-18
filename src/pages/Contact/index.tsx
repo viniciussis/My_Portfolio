@@ -2,11 +2,18 @@ import SocialMedia from '../../components/SocialMedia'
 import { useTranslation } from 'react-i18next'
 import EmailForm from './EmailForm'
 import './Contact.scss'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
   const { t } = useTranslation('global')
   return (
-    <div className="contact">
+    <motion.div
+      animate={{ x: 0 }}
+      initial={{ x: '-100vw' }}
+      exit={{ x: '100vw' }}
+      transition={{ delay: 0.5, duration: 1 }}
+      className="contact"
+    >
       <h2 className="contact__title">{t('headerMenu.3')}</h2>
       <EmailForm />
       <div className="contact__media">
@@ -15,7 +22,7 @@ const Contact = () => {
         <h3 className="contact__media__sub">{t('contact.sub3')}</h3>
         <SocialMedia />
       </div>
-    </div>
+    </motion.div>
   )
 }
 

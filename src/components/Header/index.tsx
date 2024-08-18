@@ -2,12 +2,18 @@ import useTheme from '@/context/useTheme'
 import MenuDesktop from './MenuDesktop'
 import MenuMobile from './MenuMobile'
 import './Header.scss'
+import { motion } from 'framer-motion'
 
 const Header = () => {
   const { theme } = useTheme()
 
   return (
-    <header className="header">
+    <motion.header
+      animate={{ y: 0 }}
+      initial={{ y: '-100%' }}
+      transition={{ delay: 0.5, duration: 1, type: 'tween' }}
+      className="header"
+    >
       <MenuMobile />
       <MenuDesktop />
       <img
@@ -28,7 +34,7 @@ const Header = () => {
         className="header__logo--lg"
         alt="logo"
       />
-    </header>
+    </motion.header>
   )
 }
 

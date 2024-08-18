@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import './Certificates.scss'
 import { ImageList, ImageListItem, useMediaQuery } from '@mui/material'
+import { motion } from 'framer-motion'
 
 const Certificates = () => {
   const images = Array.from({ length: 24 }, (_, i) => i + 1)
@@ -17,7 +18,13 @@ const Certificates = () => {
   }
 
   return (
-    <div className="certificates">
+    <motion.div
+      animate={{ x: 0 }}
+      initial={{ x: '-100vw' }}
+      exit={{ x: '100vw' }}
+      transition={{ delay: 0.5, duration: 1 }}
+      className="certificates"
+    >
       <h1 className="certificates__title">{t('headerMenu.2')}</h1>
       <ImageList
         sx={{ maxHeight: '75vh' }}
@@ -37,7 +44,7 @@ const Certificates = () => {
           </ImageListItem>
         ))}
       </ImageList>
-    </div>
+    </motion.div>
   )
 }
 

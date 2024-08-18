@@ -3,13 +3,20 @@ import { useTranslation } from 'react-i18next'
 import Loading from '@/components/Loading'
 import ProjectCard from './ProjectCard'
 import './Projects.scss'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
   const { data, isLoading } = useProjectsQuery()
   const { t } = useTranslation('global')
 
   return (
-    <div className="projects">
+    <motion.div
+      animate={{ x: 0 }}
+      initial={{ x: '-100vw' }}
+      exit={{ x: '100vw' }}
+      transition={{ delay: 0.5, duration: 1 }}
+      className="projects"
+    >
       <h1 className="projects__title">{t('headerMenu.1')}</h1>
       {isLoading ? (
         <Loading />
@@ -28,7 +35,7 @@ const Projects = () => {
           ))}
         </div>
       )}
-    </div>
+    </motion.div>
   )
 }
 
