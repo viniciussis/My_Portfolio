@@ -1,5 +1,5 @@
 // src/store/useStore.ts
-import IRepository from '@/shared/interface/IRepository'
+import { IRepository } from '@/shared/interfaces'
 import { create } from 'zustand'
 
 type ProjectState = {

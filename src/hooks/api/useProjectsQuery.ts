@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import IRepository from '@/shared/interface/IRepository'
+import { IRepository } from '@/shared/interfaces'
 import { useQuery } from '@tanstack/react-query'
 import axios from 'axios'
 
