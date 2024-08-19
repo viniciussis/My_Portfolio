@@ -7,10 +7,10 @@
   &__media {
     background-color: var(--theme-on-surface);
     border: 2px solid var(--theme-primary);
+    border-radius: variables.$br-default;
     color: var(--theme-on-primary);
     transition-duration: 0.8s;
     justify-content: center;
-    border-radius: 0.75rem;
     border-style: groove;
     align-items: center;
     cursor: pointer;
@@ -23,11 +23,11 @@
 
     @include mixins.for-size(tablet) {
       padding: 0.75rem;
-    }  
+    }
 
     @include mixins.for-size(desktop-md) {
       border-width: 3px;
       padding: 1rem;
-    }  
+    }
   }
 }

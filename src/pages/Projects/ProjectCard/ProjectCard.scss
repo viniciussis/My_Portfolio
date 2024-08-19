@@ -3,7 +3,7 @@
     -8px -8px 15px var(--theme-smoke-up);
   background-color: var(--theme-background);
   border: 3px solid var(--theme-primary);
-  border-radius: 1rem;
+  border-radius: variables.$br-default;
   height: 100%;
   overflow: hidden;
 
@@ -11,10 +11,10 @@
   display: flex;
 
   &__banner {
+    border-top-right-radius: variables.$br-default;
+    border-top-left-radius: variables.$br-default;
     border-bottom: 3px solid var(--theme-primary);
     background-color: var(--theme-primary);
-    border-top-right-radius: 0.75rem;
-    border-top-left-radius: 0.75rem;
 
     object-position: 0;
     object-fit: cover;
@@ -78,10 +78,10 @@
   }
 
   &__actions {
+    border-bottom-right-radius: variables.$br-default;
+    border-bottom-left-radius: variables.$br-default;
     border-top: 3px solid var(--theme-primary);
     background-color: var(--theme-on-surface);
-    border-bottom-right-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
     display: flex;
 
     a {

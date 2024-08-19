@@ -17,7 +17,7 @@
       -8px -8px 15px var(--theme-smoke-up);
     border: 3px solid var(--theme-primary);
     background-color: var(--theme-primary);
-    border-radius: 1rem;
+    border-radius: variables.$br-default;
   }
 
   @include mixins.for-size(tablet) {

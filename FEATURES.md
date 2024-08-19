@@ -11,8 +11,8 @@
 
 - [x] Choose a Personality (What do I want?) - _Professional and Confident_
   - [x] Fonts
-  - [ ] Colors
-  - [ ] Border Radius
+  - [x] Colors
+  - [x] Border Radius
   - [ ] Language
 - [ ] Systematizing everything that repeats
   - [ ] Font size, weight, line height

@@ -8,7 +8,7 @@ const SocialMedia = () => {
       <a
         className="social__media"
         target="_blank"
-        href="https://www.instagram.com/_viniciussis/"
+        href="https://www.instagram.com/_devinicius/"
       >
         <RiInstagramFill size={18} />
       </a>

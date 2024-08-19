@@ -13,9 +13,9 @@
   display: flex;
 
   &__logo {
+    border-bottom-right-radius: variables.$br-default;
     border-bottom: 3px solid var(--theme-on-surface);
     border-right: 3px solid var(--theme-on-surface);
-    border-bottom-right-radius: 1rem;
     transition: 0.5s;
 
     width: 4.75rem;
@@ -30,15 +30,15 @@
   @include mixins.for-size(tablet) {
     box-shadow: 0 1px 16px var(--theme-primary);
     background-color: var(--theme-background);
-    
+
     padding: 0 3rem;
     opacity: unset;
     height: 10vh;
 
     &__logo {
-      border-left: unset;
-      border-bottom-left-radius: 0;
+      border-bottom-left-radius: unset;
       border-bottom: none;
+      border-left: unset;
       width: unset;
       height: 100%;
     }

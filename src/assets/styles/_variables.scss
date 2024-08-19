@@ -38,6 +38,16 @@ $gray-dark: hsl(160, 3%, 17%);
 $gray-darker: hsl(165, 3%, 12%);
 $gray-darkest: hsl(180, 3%, 7%);
 
+// borders
+// radius
+$border-radius-xs: 2px;
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+$border-radius-xl: 24px;
+$border-radius-rounded: 50%;
+$br-default: $border-radius-md;
+
 // devices widths
 $breakpoint-tablet: 767px;
 $breakpoint-desktop: 1024px;

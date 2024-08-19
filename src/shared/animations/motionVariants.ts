@@ -24,7 +24,7 @@ export const pageTransition = {
     x: '-100vw',
     transition: {
       ease: 'easeInOut',
-      delay: 0.5,
+      delay: 0.75,
       duration: 0.5,
     },
   },

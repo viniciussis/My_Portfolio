@@ -3,7 +3,7 @@
   border: 2px solid var(--theme-primary);
   color: var(--theme-on-primary);
   transition-duration: 0.8s;
-  border-radius: 0.75rem;
+  border-radius: variables.$br-default;
   padding: 0.75rem;
   cursor: pointer;
 
