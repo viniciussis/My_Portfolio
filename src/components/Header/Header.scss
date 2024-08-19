@@ -17,7 +17,7 @@
     width: 4.75rem;
     display: flex;
 
-    &--lg {
+    &--md {
       display: none;
     }
   }
@@ -45,7 +45,7 @@
     &__logo {
       display: none;
 
-      &--lg {
+      &--md {
         border-left: 1.5px solid var(--theme-on-surface);
         border-right: 1.5px solid var(--theme-on-surface);
         display: flex;

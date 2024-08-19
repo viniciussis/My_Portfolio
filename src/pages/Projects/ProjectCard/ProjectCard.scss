@@ -1,7 +1,7 @@
 .project {
   box-shadow: 12px 12px 20px var(--theme-smoke-down),
     -8px -8px 15px var(--theme-smoke-up);
-  background-color: var(--theme-surface);
+  background-color: var(--theme-background);
   border: 3px solid var(--theme-primary);
   border-radius: 1rem;
   height: 100%;
@@ -42,6 +42,8 @@
     &__title {
       color: var(--theme-primary);
       font-family: variables.$font-title;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
       font-size: 1.5rem;
       font-weight: 800;
     }
@@ -63,7 +65,8 @@
       border-top: 3px solid var(--theme-primary);
       padding: 0.5rem 1rem;
       text-align: center;
-      font-size: 1.15rem;
+      letter-spacing: 1.25px;
+      font-size: 0.75rem;
       font-weight: 800;
       transition: 1s;
       flex-grow: 1;
@@ -82,10 +85,11 @@
     display: flex;
 
     a {
+      color: var(--theme-on-primary);
       text-align: center;
       font-weight: 800;
       padding: 1rem 0;
-      font-size: 1rem;
+      font-size: 1.15rem;
       cursor: pointer;
       width: 100%;
     }

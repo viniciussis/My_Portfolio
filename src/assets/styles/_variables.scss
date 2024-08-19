@@ -12,12 +12,12 @@ $--theme-background-opaque: --theme-background-opaque;
 
 // themes
 $theme-map-light: (
-  $--theme-primary: #5d7715,
-  $--theme-secondary: #000000,
-  $--theme-surface: #f3f1ed,
-  $--theme-background: #f3f1ed,
+  $--theme-primary: hsl(120, 61%, 28%),
+  $--theme-secondary: hsl(0, 0%, 0%),
+  $--theme-surface: hsl(161, 19%, 85%),
+  $--theme-background: hsl(0, 0%, 100%),
   $--theme-background-opaque: #f3f1edda,
-  $--theme-on-primary: #96c11f,
+  $--theme-on-primary: hsl(120, 61%, 50%),
   $--theme-on-secondary: #f8f8f8,
   $--theme-on-surface: #1a1a1a,
   $--theme-smoke-down: #0000004d,
@@ -26,12 +26,12 @@ $theme-map-light: (
 );
 
 $theme-map-dark: (
-  $--theme-primary: #96c11f,
-  $--theme-secondary: #f8f8f8,
+  $--theme-primary: hsl(120, 61%, 50%),
+  $--theme-secondary: hsl(161, 25%, 88%),
   $--theme-surface: #1a1a1a,
-  $--theme-background: #1a1a1a,
+  $--theme-background: hsl(180, 3%, 7%),
   $--theme-background-opaque: #1a1a1ad2,
-  $--theme-on-primary: #5d7715,
+  $--theme-on-primary: hsl(120, 61%, 28%),
   $--theme-on-secondary: #000000,
   $--theme-on-surface: #f3f1ed,
   $--theme-smoke-down: #000000,
@@ -54,7 +54,38 @@ $dark-gray: #4e4e4e;
 $light: #f8f8f8;
 $light-cream: #f3f1ed;
 $light-gray: #babbbb;
+// primary color - green
+$green-lightest: hsl(120, 74%, 77%);
+$green-lighter: hsl(120, 69%, 71%);
+$green-light: hsl(120, 65%, 64%);
+$green-neutral-light: hsl(120, 63%, 57%);
+$green-neutral: hsl(120, 61%, 50%);
+$green-neutral-dark: hsl(120, 61%, 39%);
+$green-dark: hsl(120, 61%, 28%);
+$green-darker: hsl(120, 60%, 17%);
+$green-darkest: hsl(120, 64%, 5%);
+// secondary color - red
+$red-lightest: hsl(350, 100%, 78%);
+$red-light: hsl(354, 85%, 62%);
+$red-neutral: hsl(356, 95%, 46%);
+$red-dark: hsl(356, 96%, 33%);
+$red-darkest: hsl(353, 100%, 20%);
+// secondary color - yellow
+$yellow-lightest: hsl(58, 96%, 71%);
+$yellow-light: hsl(57, 99%, 61%);
+$yellow-neutral: hsl(56, 100%, 50%);
+$yellow-dark: hsl(48, 94%, 48%);
+$yellow-darkest: hsl(38, 88%, 45%);
 // grays
+$gray-lightest: hsl(161, 25%, 88%);
+$gray-lighter: hsl(161, 22%, 83%);
+$gray-light: hsl(161, 19%, 78%);
+$gray-neutral-light: hsl(161, 17%, 68%);
+$gray-neutral: hsl(161, 8%, 48%);
+$gray-neutral-dark: hsl(162, 7%, 27%);
+$gray-dark: hsl(160, 7%, 17%);
+$gray-darker: hsl(165, 6%, 12%);
+$gray-darkest: hsl(180, 3%, 7%);
 
 // devices widths
 $breakpoint-tablet: 767px;

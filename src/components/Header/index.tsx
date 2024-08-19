@@ -19,8 +19,8 @@ const Header = () => {
       <img
         src={
           theme == 'light'
-            ? 'images/common/logo-sm-light.png'
-            : 'images/common/logo-sm-dark.png'
+            ? 'images/brand/brand-sm-light.png'
+            : 'images/brand/brand-sm-dark.png'
         }
         className="header__logo"
         alt="logo"
@@ -28,10 +28,10 @@ const Header = () => {
       <img
         src={
           theme == 'light'
-            ? 'images/common/logo-lg-light.png'
-            : 'images/common/logo-lg-dark.png'
-        }
-        className="header__logo--lg"
+          ? 'images/brand/brand-md-light.png'
+          : 'images/brand/brand-md-dark.png'
+      }
+        className="header__logo--md"
         alt="logo"
       />
     </motion.header>
