@@ -3,27 +3,22 @@
 
   &__link {
     font-family: variables.$font-title;
+    color: var(--theme-secondary);
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     min-width: 140px;
     padding: 0 1rem;
-    transition: 1s;
+    transition: 0.5s;
     display: flex;
     height: 100%;
 
     &:hover {
-      box-shadow: 10px 10px 10px var(--theme-smoke-down) inset,
-        -8px -8px 12px var(--theme-smoke-up) inset;
+      color: var(--theme-primary);
     }
 
     &--active {
-      background-color: var(--theme-on-surface);
-      color: var(--theme-on-primary);
-
-      &:hover {
-        box-shadow: unset;
-      }
+      color: var(--theme-primary);
     }
   }
 
@@ -48,12 +43,6 @@
     &__link {
       padding: 0 2rem;
       font-size: 1.75rem;
-    }
-  }
-
-  @include mixins.for-size(desktop-lg) {
-    &__link {
-      font-size: 2.5rem;
     }
   }
 }

@@ -143,8 +143,8 @@
   }
 
   @include mixins.for-size(desktop-lg) {
-    padding: 8rem;
-    gap: 10rem;
+    padding: 4rem;
+    gap: 4rem;
 
     &__greets {
       &__links {

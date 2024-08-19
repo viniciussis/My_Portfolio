@@ -1,14 +1,18 @@
+import { hiddenTransition } from '@/shared/animations/motionVariants'
+import { useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import ThemeBtn from './ThemeBtn'
 import LangBtn from './LangBtn'
 import './Actions.scss'
 
 const Actions = () => {
+  const location = useLocation()
+
   return (
     <motion.div
-      animate={{ opacity: 1 }}
-      initial={{ opacity: 0 }}
-      transition={{ delay: 0.5, duration: 0.5, ease: 'easeIn' }}
+      variants={hiddenTransition}
+      initial={location.pathname === '/' ? 'hidden' : false}
+      animate={location.pathname === '/' ? 'shown' : false}
       className="actions"
     >
       <LangBtn />

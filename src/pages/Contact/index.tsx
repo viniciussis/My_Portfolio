@@ -3,15 +3,16 @@ import { useTranslation } from 'react-i18next'
 import EmailForm from './EmailForm'
 import './Contact.scss'
 import { motion } from 'framer-motion'
+import { pageTransition } from '@/shared/animations/motionVariants'
 
 const Contact = () => {
   const { t } = useTranslation('global')
   return (
     <motion.div
-      animate={{ x: 0 }}
-      initial={{ x: '-100vw' }}
-      exit={{ x: '100vw' }}
-      transition={{ delay: 0.5, duration: 1 }}
+      variants={pageTransition}
+      animate="onScreen"
+      exit="offScreen"
+      initial="outScreen"
       className="contact"
     >
       <h2 className="contact__title">{t('headerMenu.3')}</h2>

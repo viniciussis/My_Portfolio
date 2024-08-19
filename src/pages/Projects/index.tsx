@@ -4,6 +4,7 @@ import Loading from '@/components/Loading'
 import ProjectCard from './ProjectCard'
 import './Projects.scss'
 import { motion } from 'framer-motion'
+import { pageTransition } from '@/shared/animations/motionVariants'
 
 const Projects = () => {
   const { data, isLoading } = useProjectsQuery()
@@ -11,10 +12,10 @@ const Projects = () => {
 
   return (
     <motion.div
-      animate={{ x: 0 }}
-      initial={{ x: '-100vw' }}
-      exit={{ x: '100vw' }}
-      transition={{ delay: 0.5, duration: 1 }}
+      variants={pageTransition}
+      animate="onScreen"
+      exit="offScreen"
+      initial="outScreen"
       className="projects"
     >
       <h1 className="projects__title">{t('headerMenu.1')}</h1>

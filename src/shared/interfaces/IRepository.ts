@@ -1,4 +1,4 @@
-export default interface IRepository {
+export interface IRepository {
   id: number
   name: string
   demo: string

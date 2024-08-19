@@ -1,6 +1,8 @@
 .header {
-  background-color: var(--theme-background-opaque);
-  box-shadow: 0 10px 10px var(--theme-background);
+  background-color: var(--theme-surface);
+  box-shadow: 0 10px 10px var(--theme-surface);
+  transition: 0.5s;
+
   color: var(--theme-primary);
   position: sticky;
   z-index: 2;
@@ -12,10 +14,13 @@
 
   &__logo {
     border-bottom: 3px solid var(--theme-on-surface);
-    border-left: 3px solid var(--theme-on-surface);
-    border-bottom-left-radius: 1rem;
+    border-right: 3px solid var(--theme-on-surface);
+    border-bottom-right-radius: 1rem;
+    transition: 0.5s;
+
     width: 4.75rem;
     display: flex;
+    order: -1;
 
     &--md {
       display: none;
@@ -23,16 +28,15 @@
   }
 
   @include mixins.for-size(tablet) {
-    border-bottom: 1.5px solid var(--theme-on-surface);
+    box-shadow: 0 1px 16px var(--theme-primary);
     background-color: var(--theme-background);
-    box-shadow: none;
+    
     padding: 0 3rem;
     opacity: unset;
     height: 10vh;
 
     &__logo {
-      border-right: 1.5px solid var(--theme-on-surface);
-      border-left: 1.5px solid var(--theme-on-surface);
+      border-left: unset;
       border-bottom-left-radius: 0;
       border-bottom: none;
       width: unset;
@@ -46,8 +50,6 @@
       display: none;
 
       &--md {
-        border-left: 1.5px solid var(--theme-on-surface);
-        border-right: 1.5px solid var(--theme-on-surface);
         display: flex;
         height: 100%;
       }
