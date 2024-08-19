@@ -1,6 +1,6 @@
 .header {
-  background-color: var(--theme-surface);
-  box-shadow: 0 10px 10px var(--theme-surface);
+  box-shadow: 0 10px 10px var(--theme-gradient);
+  background: var(--theme-gradient);
   transition: 0.5s;
 
   color: var(--theme-primary);
@@ -29,16 +29,17 @@
 
   @include mixins.for-size(tablet) {
     box-shadow: 0 1px 16px var(--theme-primary);
-    background-color: var(--theme-background);
+    background: var(--theme-background);
 
+    overflow: hidden;
     padding: 0 3rem;
     opacity: unset;
     height: 10vh;
 
     &__logo {
       border-bottom-left-radius: unset;
-      border-bottom: none;
-      border-left: unset;
+      border-bottom: unset;
+      border-right: unset;
       width: unset;
       height: 100%;
     }

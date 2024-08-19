@@ -13,10 +13,10 @@
   - [x] Fonts
   - [x] Colors
   - [x] Border Radius
-  - [ ] Language
+  - [x] Language
 - [ ] Systematizing everything that repeats
   - [ ] Font size, weight, line height
-  - [ ] Color and opacity
+  - [x] Color and opacity
   - [ ] Margin and padding
   - [ ] Width and height
   - [ ] Box shadows, border radius and width
@@ -25,3 +25,6 @@
 
 - [ ] Filter projects by frontend/backend/fullstack
 - [ ] Filter projects by tags
+- [ ] Bookshelf
+- [ ] Tools
+- [ ] Posts

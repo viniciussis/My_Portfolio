@@ -4,11 +4,11 @@
   order: -1;
 
   &__dropbutton {
+    border-bottom-left-radius: variables.$br-default;
     border-bottom: 3px solid var(--theme-primary);
     border-left: 3px solid var(--theme-primary);
     background-color: var(--theme-on-surface);
     color: var(--theme-on-primary);
-    border-bottom-left-radius: variables.$br-default;
     justify-content: center;
     align-items: center;
     padding: 1.2rem;

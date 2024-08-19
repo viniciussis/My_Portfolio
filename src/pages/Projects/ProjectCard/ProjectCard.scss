@@ -117,4 +117,12 @@
       }
     }
   }
+
+  @include mixins.for-size(desktop) {
+    &__stack {
+      &__tag {
+        font-size: 1rem;
+      }
+    }
+  }
 }
