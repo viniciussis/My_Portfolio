@@ -1,78 +1,79 @@
-# Meu Portfólio Pessoal
+# My Portfolio
 
-Bem-vindo ao meu portfólio pessoal! Este é um espaço onde compartilho informações sobre mim, meu trabalho e projetos anteriores. Seja livre para explorar e conhecer um pouco mais sobre minha jornada como desenvolvedor.
+Welcome to my personal portfolio! This is a space where I share information about myself, my work, and previous projects. Feel free to explore and learn more about my journey as a developer.
 
-## Conteúdo
+![Screenshot of the Homepage](public/screenshot.png)
 
-- [Visão Geral](#visão-geral)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Projetos Destacados](#projetos-destacados)
-- [Como Entrar em Contato](#como-entrar-em-contato)
-- [Instalação e Pré-requisitos](#pré-requisitos)
-- [Licença](#licença)
+## Content
 
-## Visão Geral
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Featured Projects](#featured-projects)
+- [How to Contact](#how-to-contact)
+- [License](#license)
 
-Este portfólio foi criado com o objetivo de apresentar minhas habilidades, experiências e projetos. Aqui você encontrará informações sobre minha formação, histórico profissional e uma seleção de projetos que demonstrem minhas habilidades e conhecimentos.
+## Overview
 
-Você também pode conferir a demonstração ao vivo do portfólio [aqui!](https://my-portfolio-rust-eight-80.vercel.app/)
+This portfolio was created to showcase my skills, experiences, and projects. Here, you will find information about my education, professional background, and a selection of projects that demonstrate my abilities and knowledge.
 
-## Tecnologias Utilizadas e Funcionalidades
+You can also check out the live demo of the portfolio [here!](https://my-portfolio-rust-eight-80.vercel.app/)
 
-- **HTML5, CSS3 e Tailwind:** Para a estrutura e estilo do site.
-- **JavaScript e React:** Para interatividade.
-- **Utilização de Hooks:** Aproveitamento de conceitos de Hooks do React para gerenciar estado e ciclo de vida dos componentes.
-- **React-icons:** Adição de ícones personalizados aos componentes.
-- **React-router-dom:** Para gerenciar as rotas e permitir uma experiência de navegação dinâmica.
+## Technologies Used and Features
 
-## Projetos Destacados
+- **TypeScript**: JavaScript superset that adds static typing.
+- **React**: Library for building UI.
+- **Vite**: Fast build tool for modern projects.
+- **Axios**: HTTP client for making requests.
+- **Tanstack Query**: Library for asynchronous state management and data caching.
+- **Zustand**: Library for client-side state management.
+- **React Hook Form**: Library for form management and validation.
+- **Zod**: Library for schema validation and type inference.
+- **MUI (Material-UI)**: UI component library.
+- **SASS**: CSS preprocessor for styling, using mixins and variables.
 
-Aqui estão alguns dos projetos destacados que fiz parte:
+## Works
 
-1. **Virtual Space**: um mini blog desenvolvido em React
-   - [Link para o Projeto](https://virtual-space-viniciussis-projects.vercel.app/)
-   - [Link para o Código-fonte](https://github.com/viniciussis/Virtual_Space.git)
+Here are some of the highlighted works and projects I've developed:
 
-2. **Projeto 2**: 
-   - [Link para o Projeto](URL)
-   - [Link para o Código-fonte](URL)
+1. **Snow Pet Shop**: A management system for a local pet shop
 
-3. **Projeto 3**: 
-   - [Link para o Projeto](URL)
-   - [Link para o Código-fonte](URL)
+   - [Project Link](snow-pet.vercel.app)
+   - [Source Code](https://github.com/viniciussis/Snow_Pet)
 
-## Como Entrar em Contato
+2. **URL Short**: A landing page integrated with the Clean URI API
 
-Estou sempre aberto para conversar e colaborar em projetos interessantes. Você pode entrar em contato comigo pelos seguintes meios:
+   - [Project Link](https://url-short-coral-two.vercel.app/)
+   - [Source Code](https://github.com/viniciussis/URL_Short)
+
+3. **Virtual Space**: A mini blog developed in React
+
+   - [Project Link](https://virtual-space-viniciussis-projects.vercel.app/)
+   - [Source Code](https://github.com/viniciussis/Virtual_Space.git)
+
+## How to Contact
+
+I'm always open to chatting and collaborating on interesting projects. You can reach out to me through the following channels:
 
 - Email: vinicius01012@gmail.com
-- LinkedIn: [https://www.linkedin.com/in/_viniciussis](URL)
-- GitHub: [https://github.com/viniciussis](URL)
+- LinkedIn: [\_viniciussis](https://www.linkedin.com/in/_viniciussis)
+- GitHub: [\viniciussis](https://github.com/viniciussis)
+- Instagram: [\_devinicius](https://www.instagram.com/_devinicius/)
+- Twitter: [\_devinicius](https://x.com/_devinicius)
 
-Fique à vontade para me contatar se tiver alguma pergunta, ideia ou oportunidade de colaboração!
+Feel free to contact me if you have any questions, ideas, or collaboration opportunities!
 
-## Pré-requisitos
+## Contributing
 
-- Node.js e npm instalados
+Feel free to contribute or open issues for suggestions and bug fixes. Pull requests are welcome!
 
-## Instalação
+## License
 
-1. Clone o repositório: `git clone https://github.com/viniciussis/My_Portfolio.git`
-2. Entre no diretório do projeto: `cd My_Portfolio`
-3. Instale as dependências: `npm install`
-
-## Como Usar
-
-1. Inicie o aplicativo: `npm start`
-2. Abra o navegador e acesse `http://localhost:3000`
-
-## Contribuindo
-
-Sinta-se à vontade para contribuir ou abrir issues para sugestões e correções de bugs. Pull requests são bem-vindos!
-
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ---
-**Desenvolvido por Vinícius Silva Santos**
+
+![GitHub license](https://img.shields.io/github/license/viniciussis/My_Portfolio)
+![GitHub stars](https://img.shields.io/github/stars/viniciussis/My_Portfolio)
+![GitHub forks](https://img.shields.io/github/forks/viniciussis/My_Portfolio)
+
+**Developed by Vinícius Silva Santos**
