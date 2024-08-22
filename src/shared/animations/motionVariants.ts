@@ -1,31 +1,47 @@
-export const pageTransition = {
-  hidden: {
-    opacity: 0,
-  },
-  shown: {
-    opacity: 1,
+export const slideIn = {
+  initial: {
+    scaleY: 1,
     transition: {
-      delay: 1.5,
-      duration: 1.5,
-    },
-  },
-  outScreen: {
-    x: '100vw',
-  },
-  onScreen: {
-    x: 0,
-    transition: {
-      ease: 'easeInOut',
-      delay: 0.5,
       duration: 1,
+      ease: [0.22, 1, 0.36, 1],
     },
   },
-  offScreen: {
-    x: '-100vw',
+  animate: {
+    scaleY: 0,
     transition: {
-      ease: 'easeInOut',
-      delay: 0.75,
-      duration: 0.5,
+      duration: 1,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+  exit: {
+    scaleY: 0,
+    transition: {
+      duration: 1,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+}
+
+export const slideOut = {
+  initial: {
+    scaleY: 0,
+    transition: {
+      duration: 1,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+  animate: {
+    scaleY: 0,
+    transition: {
+      duration: 1,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+  exit: {
+    scaleY: 1,
+    transition: {
+      duration: 1,
+      ease: [0.22, 1, 0.36, 1],
     },
   },
 }
@@ -39,29 +55,6 @@ export const hiddenTransition = {
     transition: {
       delay: 1.5,
       duration: 1.5,
-    },
-  },
-}
-
-export const topDownTransition = {
-  outScreen: {
-    y: '-100%',
-  },
-  onScreen: {
-    y: 0,
-    transition: {
-      ease: 'easeInOut',
-      delay: 0.5,
-      duration: 0.25,
-      type: 'tween',
-    },
-  },
-  offScreen: {
-    y: '-100%',
-    transition: {
-      ease: 'easeInOut',
-      delay: 0.5,
-      duration: 1,
     },
   },
 }

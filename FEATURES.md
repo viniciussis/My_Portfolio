@@ -28,3 +28,6 @@
 - [ ] Bookshelf
 - [ ] Tools
 - [ ] Posts
+- [ ] ReadME Gift
+- [ ] Tests
+- [ ] ReadME test coverage

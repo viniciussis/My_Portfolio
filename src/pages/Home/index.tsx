@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
 
-import { pageTransition } from '@/shared/animations/motionVariants'
 import SocialMedia from '@/components/SocialMedia'
 import './Home.scss'
 
@@ -9,13 +7,7 @@ const Home = () => {
   const { t } = useTranslation('global')
 
   return (
-    <motion.div
-      animate="shown"
-      initial="hidden"
-      exit="offScreen"
-      variants={pageTransition}
-      className="home"
-    >
+    <div className="home">
       <div className="home__social">
         <img
           className="home__social__profile"
@@ -36,7 +28,7 @@ const Home = () => {
           <SocialMedia />
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

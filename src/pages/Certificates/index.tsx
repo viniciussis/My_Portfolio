@@ -1,8 +1,6 @@
+import { ImageList, ImageListItem, useMediaQuery } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import './Certificates.scss'
-import { ImageList, ImageListItem, useMediaQuery } from '@mui/material'
-import { motion } from 'framer-motion'
-import { pageTransition } from '@/shared/animations/motionVariants'
 
 const Certificates = () => {
   const images = Array.from({ length: 24 }, (_, i) => i + 1)
@@ -19,13 +17,7 @@ const Certificates = () => {
   }
 
   return (
-    <motion.div
-      variants={pageTransition}
-      animate="onScreen"
-      exit="offScreen"
-      initial="outScreen"
-      className="certificates"
-    >
+    <div className="certificates">
       <h1 className="certificates__title">{t('headerMenu.2')}</h1>
       <ImageList
         sx={{ maxHeight: '75vh' }}
@@ -45,7 +37,7 @@ const Certificates = () => {
           </ImageListItem>
         ))}
       </ImageList>
-    </motion.div>
+    </div>
   )
 }
 

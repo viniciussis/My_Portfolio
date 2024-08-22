@@ -1,24 +1,13 @@
-import { useLocation } from 'react-router-dom'
-import { motion } from 'framer-motion'
-
-import { topDownTransition } from '@/shared/animations/motionVariants'
 import useTheme from '@/context/useTheme'
 import MenuDesktop from './MenuDesktop'
 import MenuMobile from './MenuMobile'
 import './Header.scss'
 
 const Header = () => {
-  const location = useLocation()
   const { theme } = useTheme()
 
   return (
-    <motion.header
-      variants={topDownTransition}
-      animate={location.pathname === '/' ? 'onScreen' : false}
-      initial={location.pathname === '/' ? 'outScreen' : false}
-      prefix="p"
-      className="header"
-    >
+    <header className="header">
       <img
         src={
           theme == 'light'
@@ -39,7 +28,7 @@ const Header = () => {
       />
       <MenuMobile />
       <MenuDesktop />
-    </motion.header>
+    </header>
   )
 }
 

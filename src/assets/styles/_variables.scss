@@ -80,6 +80,7 @@ $--theme-smoke-up: --theme-smoke-up;
 $--theme-higher-contrast: --theme-higher-contrast;
 $--theme-background-opaque: --theme-background-opaque;
 $--theme-gradient: --theme-gradient;
+$--theme-on-gradient: --theme-on-gradient;
 
 // themes
 $theme-map-light: (
@@ -96,6 +97,7 @@ $theme-map-light: (
   $--theme-smoke-up: #ffffff,
   $--theme-higher-contrast: #ffffff,
   $--theme-gradient: $gradient-light,
+  $--theme-on-gradient: $gradient-dark,
 );
 
 $theme-map-dark: (
@@ -112,4 +114,5 @@ $theme-map-dark: (
   $--theme-smoke-up: #ffffff25,
   $--theme-higher-contrast: #000000,
   $--theme-gradient: $gradient-dark,
+  $--theme-on-gradient: $gradient-light,
 );

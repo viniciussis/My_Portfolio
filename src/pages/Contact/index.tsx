@@ -2,19 +2,11 @@ import SocialMedia from '../../components/SocialMedia'
 import { useTranslation } from 'react-i18next'
 import EmailForm from './EmailForm'
 import './Contact.scss'
-import { motion } from 'framer-motion'
-import { pageTransition } from '@/shared/animations/motionVariants'
 
 const Contact = () => {
   const { t } = useTranslation('global')
   return (
-    <motion.div
-      variants={pageTransition}
-      animate="onScreen"
-      exit="offScreen"
-      initial="outScreen"
-      className="contact"
-    >
+    <div className="contact">
       <h2 className="contact__title">{t('headerMenu.3')}</h2>
       <EmailForm />
       <div className="contact__media">
@@ -23,7 +15,7 @@ const Contact = () => {
         <h3 className="contact__media__sub">{t('contact.sub3')}</h3>
         <SocialMedia />
       </div>
-    </motion.div>
+    </div>
   )
 }
 

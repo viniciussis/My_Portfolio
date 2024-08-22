@@ -1,5 +1,6 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
+import { useEffect } from 'react'
 
 import './assets/styles/typography.scss'
 import './assets/styles/normalize.scss'
@@ -12,13 +13,12 @@ import Projects from './pages/Projects'
 import NotFound from './pages/NotFound'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
-import { useEffect } from 'react'
 
 function AppRoutes() {
   const location = useLocation()
 
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="wait">
       <ScrollToTop />
       <Routes location={location} key={location.key}>
         <Route path="/" element={<Default />}>

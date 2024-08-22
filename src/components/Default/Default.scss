@@ -1,0 +1,18 @@
+.slideIn,
+.slideOut {
+  background: var(--theme-gradient);
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+
+.slideIn {
+  transform-origin: top;
+}
+
+.slideOut {
+  transform-origin: bottom;
+}
