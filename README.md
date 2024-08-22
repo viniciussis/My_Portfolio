@@ -15,7 +15,6 @@ Welcome to my personal portfolio! This is a space where I share information abou
 - [Technologies Used](#technologies-used)
 - [Featured Projects](#featured-projects)
 - [How to Contact](#how-to-contact)
-- [License](#license)
 
 ## Overview
 
