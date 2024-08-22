@@ -61,7 +61,7 @@ I'm always open to chatting and collaborating on interesting projects. You can r
 
 - Email: vinicius01012@gmail.com
 - LinkedIn: [\_viniciussis](https://www.linkedin.com/in/_viniciussis)
-- GitHub: [\viniciussis](https://github.com/viniciussis)
+- GitHub: [viniciussis](https://github.com/viniciussis)
 - Instagram: [\_devinicius](https://www.instagram.com/_devinicius/)
 - Twitter: [\_devinicius](https://x.com/_devinicius)
 
