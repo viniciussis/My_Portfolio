@@ -3,6 +3,11 @@
 Welcome to my personal portfolio! This is a space where I share information about myself, my work, and previous projects. Feel free to explore and learn more about my journey as a developer.
 
 ![Screenshot of the Homepage](public/screenshot.png)
+<p align="center">
+  <img src="https://img.shields.io/github/license/viniciussis/My_Portfolio" alt="GitHub license" />
+  <img src="https://img.shields.io/github/stars/viniciussis/My_Portfolio" alt="GitHub stars" />
+  <img src="https://img.shields.io/github/forks/viniciussis/My_Portfolio" alt="GitHub forks" />
+</p>
 
 ## Content
 
@@ -66,14 +71,6 @@ Feel free to contact me if you have any questions, ideas, or collaboration oppor
 
 Feel free to contribute or open issues for suggestions and bug fixes. Pull requests are welcome!
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ---
-
-![GitHub license](https://img.shields.io/github/license/viniciussis/My_Portfolio)
-![GitHub stars](https://img.shields.io/github/stars/viniciussis/My_Portfolio)
-![GitHub forks](https://img.shields.io/github/forks/viniciussis/My_Portfolio)
 
 **Developed by Vinícius Silva Santos**
