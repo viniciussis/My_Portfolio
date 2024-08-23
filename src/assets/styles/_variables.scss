@@ -47,7 +47,7 @@ $gradient-dark: linear-gradient(
 $gradient-light: linear-gradient(
   90deg,
   hsla(0, 0%, 100%, 1) 0%,
-  hsla(120, 74%, 77%, 1) 50%,
+  hsla(120, 85%, 90%, 1) 50%,
   hsla(0, 0%, 100%, 1) 98%
 );
 
@@ -70,49 +70,58 @@ $breakpoint-desktop-lg: 1880px;
 $--theme-primary: --theme-primary;
 $--theme-secondary: --theme-secondary;
 $--theme-surface: --theme-surface;
-$--theme-terciary: --theme-terciary;
+$--theme-tertiary: --theme-tertiary;
+$--theme-on-tertiary: --theme-on-tertiary;
 $--theme-background: --theme-background;
 $--theme-on-primary: --theme-on-primary;
 $--theme-on-secondary: --theme-on-secondary;
 $--theme-on-surface: --theme-on-surface;
 $--theme-smoke-down: --theme-smoke-down;
 $--theme-smoke-up: --theme-smoke-up;
-$--theme-higher-contrast: --theme-higher-contrast;
-$--theme-background-opaque: --theme-background-opaque;
+$--theme-lowest-contrast: --theme-higher-contrast;
 $--theme-gradient: --theme-gradient;
 $--theme-on-gradient: --theme-on-gradient;
+$--theme-danger-primary: --theme-danger-primary;
+$--theme-danger-secondary: --theme-danger-secondary;
+$--theme-danger-background: --theme-danger-background;
 
 // themes
 $theme-map-light: (
   $--theme-primary: $green-dark,
   $--theme-secondary: $gray-darkest,
-  $--theme-terciary: $green-darkest,
+  $--theme-tertiary: $green-darkest,
   $--theme-surface: $gray-lightest,
   $--theme-background: $light,
-  $--theme-background-opaque: $gray-light,
   $--theme-on-primary: $green-neutral,
   $--theme-on-secondary: $gray-neutral,
+  $--theme-on-tertiary: $green-darkest,
   $--theme-on-surface: #1a1a1a,
   $--theme-smoke-down: #0000004d,
   $--theme-smoke-up: #ffffff,
-  $--theme-higher-contrast: #ffffff,
+  $--theme-lowest-contrast: $light,
   $--theme-gradient: $gradient-light,
   $--theme-on-gradient: $gradient-dark,
+  $--theme-danger-primary: $red-light,
+  $--theme-danger-secondary: $red-dark,
+  $--theme-danger-background: $red-neutral,
 );
 
 $theme-map-dark: (
-  $--theme-primary: hsl(120, 61%, 50%),
-  $--theme-secondary: hsl(161, 25%, 88%),
-  $--theme-surface: #1a1a1a,
-  $--theme-terciary: $green-neutral,
-  $--theme-background: hsl(180, 3%, 7%),
-  $--theme-background-opaque: #1a1a1ad2,
+  $--theme-primary: $green-neutral,
+  $--theme-secondary: $gray-lightest,
+  $--theme-tertiary: $green-neutral,
+  $--theme-surface: $gray-lightest,
+  $--theme-background: $gray-darkest,
   $--theme-on-primary: hsl(120, 61%, 28%),
   $--theme-on-secondary: $gray-lightest,
+  $--theme-on-tertiary: $gray-neutral,
   $--theme-on-surface: #f3f1ed,
-  $--theme-smoke-down: #000000,
-  $--theme-smoke-up: #ffffff25,
-  $--theme-higher-contrast: #000000,
+  $--theme-smoke-down: $dark,
+  $--theme-smoke-up: $green-darker,
+  $--theme-lowest-contrast: $dark,
   $--theme-gradient: $gradient-dark,
   $--theme-on-gradient: $gradient-light,
+  $--theme-danger-primary: $red-dark,
+  $--theme-danger-secondary: $red-light,
+  $--theme-danger-background: $red-neutral,
 );

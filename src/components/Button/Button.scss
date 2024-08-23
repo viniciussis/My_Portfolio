@@ -1,4 +1,5 @@
-.button {
+.button,
+.button--disabled {
   background-color: var(--theme-on-surface);
   border: 3px solid var(--theme-primary);
   border-radius: variables.$br-default;
@@ -12,8 +13,11 @@
   font-weight: 700;
   cursor: pointer;
 
-  &:hover {
-    transform: scale(1.15);
+  &--disabled {
+    background-color: var(--theme-on-secondary);
+    border-color: var(--theme-on-tertiary);
+    color: var(--theme-background);
+    cursor: unset;
   }
 
   @include mixins.for-size(tablet) {

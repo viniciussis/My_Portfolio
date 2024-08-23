@@ -1,7 +1,12 @@
 .emailForm {
+  box-shadow: 0 5px 15px var(--theme-smoke-down),
+    0 -3px 10px var(--theme-smoke-up);
+  background-color: var(--theme-background);
+  border-radius: variables.$br-default;
   flex-direction: column;
   align-items: center;
   max-width: 85rem;
+  padding: 1rem;
   display: flex;
   width: 100%;
   gap: 3vh;
@@ -14,6 +19,8 @@
   }
 
   @include mixins.for-size(desktop) {
+    padding: 2rem;
+
     &__sub {
       margin-bottom: 1rem;
       font-size: 2rem;

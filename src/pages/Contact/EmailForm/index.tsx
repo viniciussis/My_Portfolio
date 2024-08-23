@@ -1,27 +1,40 @@
+import { zodResolver } from '@hookform/resolvers/zod'
 import { useTranslation } from 'react-i18next'
-import AreaField from '@/components/AreaField'
 import { useForm } from 'react-hook-form'
+import emailjs from '@emailjs/browser'
+
+import { SERVICE_ID, TEMPLATE_ID, EMAILJS_KEY } from '@/shared/constants'
+import { Email, emailSchema } from '@/shared/schemas'
+import AreaField from '@/components/AreaField'
 import Button from '@/components/Button'
 import Field from '@/components/Field'
 import './EmailForm.scss'
 
-interface EmailForm {
-  name: string
-  email: string
-  subject: string
-  message: string
-}
+type EmailForm = Record<string, unknown> & Email
 
 const EmailForm = () => {
   const { t } = useTranslation('global')
   const {
-    register,
     handleSubmit,
-    formState: { errors },
-  } = useForm<EmailForm>()
+    register,
+    reset,
+    formState: { errors, isDirty, isValid, isSubmitting },
+  } = useForm<EmailForm>({
+    defaultValues: {
+      email: '',
+      message: '',
+      name: '',
+      subject: '',
+    },
+    mode: 'onBlur',
+    resolver: zodResolver(emailSchema),
+  })
 
   const onSubmit = (data: EmailForm) => {
-    console.log(data)
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, data, EMAILJS_KEY)
+      .then(() => console.log('Email send with success!'))
+    reset()
   }
 
   return (
@@ -52,7 +65,11 @@ const EmailForm = () => {
           })}
           errors={errors.message?.message}
         />
-        <Button type="submit">{t('emailForm.button')}</Button>
+        <Button
+          text={t('emailForm.button')}
+          disabled={!isDirty || !isValid || isSubmitting}
+          type="submit"
+        />
       </form>
     </>
   )
