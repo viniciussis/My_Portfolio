@@ -1,17 +1,26 @@
+import { ModalInOut } from '@/shared/animations'
+import { motion } from 'framer-motion'
 import './Modal.scss'
 
-const Modal = () => {
+interface ModalProps {
+  type?: 'error' | 'warning' | 'success'
+  message?: string
+  title?: string
+}
+
+const Modal = ({ title, message, type }: ModalProps) => {
   return (
-    <>
-      <div className="modal">
-        <div className="modal__overlay"></div>
-        <div className={`modal__content modal__contant--light`}>
-          <h2 className="modal__title"></h2>
-          <p className="modal__para"></p>
-          <button className="modal__button">fechar</button>
-        </div>
+    <motion.div
+      variants={ModalInOut}
+      initial="initial"
+      animate="animate"
+      className={`modal modal${type ? `--${type}` : ''}`}
+    >
+      <div className="modal__content">
+        <h2 className="modal__content__title">{title}</h2>
+        <p className="modal__content__para">{message}</p>
       </div>
-    </>
+    </motion.div>
   )
 }
 

@@ -46,6 +46,30 @@ export const slideOut = {
   },
 }
 
+export const ModalInOut = {
+  initial: {
+    y: '-100vh',
+    transition: {
+      duration: 1,
+      ease: 'easeIn',
+    },
+  },
+  animate: {
+    y: 0,
+    transition: {
+      duration: 1,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+  exit: {
+    scaleY: 100,
+    transition: {
+      duration: 1,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+}
+
 export const hiddenTransition = {
   hidden: {
     opacity: 0,

@@ -4,7 +4,9 @@ $font-size: 18px;
 
 // colors
 $dark: #000000;
+$dark-opaque: #000000bd;
 $light: #ffffff;
+$light-opaque: #ffffffbd;
 // primary color - green
 $green-lightest: hsl(120, 74%, 77%);
 $green-lighter: hsl(120, 69%, 71%);
@@ -73,6 +75,7 @@ $--theme-surface: --theme-surface;
 $--theme-tertiary: --theme-tertiary;
 $--theme-on-tertiary: --theme-on-tertiary;
 $--theme-background: --theme-background;
+$--theme-background-opaque: --theme-background-opaque;
 $--theme-on-primary: --theme-on-primary;
 $--theme-on-secondary: --theme-on-secondary;
 $--theme-on-surface: --theme-on-surface;
@@ -92,6 +95,7 @@ $theme-map-light: (
   $--theme-tertiary: $green-darkest,
   $--theme-surface: $gray-lightest,
   $--theme-background: $light,
+  $--theme-background-opaque: $dark-opaque,
   $--theme-on-primary: $green-neutral,
   $--theme-on-secondary: $gray-neutral,
   $--theme-on-tertiary: $green-darkest,
@@ -112,6 +116,7 @@ $theme-map-dark: (
   $--theme-tertiary: $green-neutral,
   $--theme-surface: $gray-lightest,
   $--theme-background: $gray-darkest,
+  $--theme-background-opaque: $dark-opaque,
   $--theme-on-primary: hsl(120, 61%, 28%),
   $--theme-on-secondary: $gray-lightest,
   $--theme-on-tertiary: $gray-neutral,

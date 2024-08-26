@@ -51,5 +51,9 @@
   },
   "loading": {
     "1": "Carregando"
+  },
+  "modal": {
+    "title": "Email enviado!",
+    "message": "Obrigado! Sua mensagem foi enviada com sucesso. Em breve entrarei em contato com você. 😉"
   }
 }

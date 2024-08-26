@@ -1,5 +1,6 @@
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useTranslation } from 'react-i18next'
+import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
 
@@ -7,6 +8,7 @@ import { SERVICE_ID, TEMPLATE_ID, EMAILJS_KEY } from '@/shared/constants'
 import { Email, useEmailSchema } from '@/shared/schemas'
 import AreaField from '@/components/AreaField'
 import Button from '@/components/Button'
+import Modal from '@/components/Modal'
 import Field from '@/components/Field'
 import './EmailForm.scss'
 
@@ -19,7 +21,7 @@ const EmailForm = () => {
     handleSubmit,
     register,
     reset,
-    formState: { errors, isDirty, isValid, isSubmitting },
+    formState: { errors, isDirty, isValid, isSubmitting, isSubmitSuccessful },
   } = useForm<EmailForm>({
     defaultValues: {
       email: '',
@@ -30,13 +32,22 @@ const EmailForm = () => {
     mode: 'onBlur',
     resolver: zodResolver(emailSchema),
   })
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const onSubmit = (data: EmailForm) => {
-    emailjs
-      .send(SERVICE_ID, TEMPLATE_ID, data, EMAILJS_KEY)
-      .then(() => console.log('Email send with success!'))
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, data, EMAILJS_KEY)
+    //console.log(data, SERVICE_ID, TEMPLATE_ID, EMAILJS_KEY, emailjs, reset)
     reset()
   }
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      setIsModalOpen(true)
+      setTimeout(() => {
+        setIsModalOpen(false)
+      }, 5000)
+    }
+  }, [isSubmitSuccessful])
 
   return (
     <>
@@ -72,6 +83,9 @@ const EmailForm = () => {
           type="submit"
         />
       </form>
+      {isModalOpen && (
+        <Modal title={t('modal.title')} message={t('modal.message')} />
+      )}
     </>
   )
 }

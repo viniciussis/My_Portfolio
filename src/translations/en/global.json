@@ -51,5 +51,9 @@
   },
   "loading": {
     "1": "Loading"
+  },
+  "modal": {
+    "title": "Email sent!",
+    "message": "Thank you! Your message has been successfully sent. I will get back to you shortly. 😉"
   }
 }
