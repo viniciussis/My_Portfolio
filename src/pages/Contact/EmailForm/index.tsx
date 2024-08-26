@@ -11,6 +11,7 @@ import Button from '@/components/Button'
 import Modal from '@/components/Modal'
 import Field from '@/components/Field'
 import './EmailForm.scss'
+import { AnimatePresence } from 'framer-motion'
 
 type EmailForm = Record<string, unknown> & Email
 
@@ -35,17 +36,14 @@ const EmailForm = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const onSubmit = (data: EmailForm) => {
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, data, EMAILJS_KEY)
-    //console.log(data, SERVICE_ID, TEMPLATE_ID, EMAILJS_KEY, emailjs, reset)
+    // emailjs.send(SERVICE_ID, TEMPLATE_ID, data, EMAILJS_KEY)
+    console.log(data, SERVICE_ID, TEMPLATE_ID, EMAILJS_KEY, emailjs, reset)
     reset()
   }
 
   useEffect(() => {
     if (isSubmitSuccessful) {
       setIsModalOpen(true)
-      setTimeout(() => {
-        setIsModalOpen(false)
-      }, 5000)
     }
   }, [isSubmitSuccessful])
 
@@ -83,9 +81,15 @@ const EmailForm = () => {
           type="submit"
         />
       </form>
-      {isModalOpen && (
-        <Modal title={t('modal.title')} message={t('modal.message')} />
-      )}
+      <AnimatePresence initial={false} mode="wait">
+        {isModalOpen && (
+          <Modal
+            onClick={() => setIsModalOpen(!isModalOpen)}
+            title={t('modal.title')}
+            message={t('modal.message')}
+          />
+        )}
+      </AnimatePresence>
     </>
   )
 }

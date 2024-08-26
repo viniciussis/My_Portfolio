@@ -51,18 +51,20 @@ export const ModalInOut = {
     y: '-100vh',
     transition: {
       duration: 1,
-      ease: 'easeIn',
+      ease: [0.22, 1, 0.36, 1],
     },
   },
   animate: {
     y: 0,
     transition: {
-      duration: 1,
-      ease: [0.22, 1, 0.36, 1],
+      duration: 0.1,
+      type: 'spring',
+      damping: 25,
+      stiffness: 500,
     },
   },
   exit: {
-    scaleY: 100,
+    y: '100vh',
     transition: {
       duration: 1,
       ease: [0.22, 1, 0.36, 1],
@@ -71,14 +73,25 @@ export const ModalInOut = {
 }
 
 export const hiddenTransition = {
-  hidden: {
+  initial: {
     opacity: 0,
+    transition: {
+      duration: 1,
+      ease: [0.22, 1, 0.36, 1],
+    },
   },
-  shown: {
+  animate: {
     opacity: 1,
     transition: {
-      delay: 1.5,
-      duration: 1.5,
+      duration: 1,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      duration: 1,
+      ease: [0.22, 1, 0.36, 1],
     },
   },
 }
