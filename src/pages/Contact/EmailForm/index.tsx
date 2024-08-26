@@ -1,4 +1,5 @@
 import { zodResolver } from '@hookform/resolvers/zod'
+import { AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
@@ -11,11 +12,11 @@ import Button from '@/components/Button'
 import Modal from '@/components/Modal'
 import Field from '@/components/Field'
 import './EmailForm.scss'
-import { AnimatePresence } from 'framer-motion'
 
 type EmailForm = Record<string, unknown> & Email
 
 const EmailForm = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const { t } = useTranslation('global')
   const emailSchema = useEmailSchema()
   const {
@@ -33,11 +34,9 @@ const EmailForm = () => {
     mode: 'onBlur',
     resolver: zodResolver(emailSchema),
   })
-  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const onSubmit = (data: EmailForm) => {
-    // emailjs.send(SERVICE_ID, TEMPLATE_ID, data, EMAILJS_KEY)
-    console.log(data, SERVICE_ID, TEMPLATE_ID, EMAILJS_KEY, emailjs, reset)
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, data, EMAILJS_KEY)
     reset()
   }
 

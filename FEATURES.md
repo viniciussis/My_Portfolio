@@ -1,7 +1,7 @@
 # Core Features
 
 - [x] Email Form
-- [ ] Email Modal
+- [x] Email Modal
 - [ ] About Me Page
   - [ ] My Stack
   - [ ] My Timeline
