@@ -30,7 +30,6 @@
 
   &__content {
     text-align: center;
-    transition: 0.5s;
     flex: 1;
 
     justify-content: center;
@@ -68,7 +67,6 @@
       letter-spacing: 1.25px;
       font-size: 0.75rem;
       font-weight: 800;
-      transition: 1s;
       flex-grow: 1;
 
       &:last-child {

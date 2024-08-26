@@ -1,7 +1,6 @@
 .header {
   box-shadow: 0 10px 10px var(--theme-gradient);
   background: var(--theme-gradient);
-  transition: 0.5s;
 
   color: var(--theme-primary);
   position: sticky;
@@ -16,7 +15,6 @@
     border-bottom-right-radius: variables.$br-default;
     border-bottom: 3px solid var(--theme-on-surface);
     border-right: 3px solid var(--theme-on-surface);
-    transition: 0.5s;
 
     width: 4.75rem;
     display: flex;

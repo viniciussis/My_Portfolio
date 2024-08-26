@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
 
 import { SERVICE_ID, TEMPLATE_ID, EMAILJS_KEY } from '@/shared/constants'
-import { Email, emailSchema } from '@/shared/schemas'
+import { Email, useEmailSchema } from '@/shared/schemas'
 import AreaField from '@/components/AreaField'
 import Button from '@/components/Button'
 import Field from '@/components/Field'
@@ -14,6 +14,7 @@ type EmailForm = Record<string, unknown> & Email
 
 const EmailForm = () => {
   const { t } = useTranslation('global')
+  const emailSchema = useEmailSchema()
   const {
     handleSubmit,
     register,

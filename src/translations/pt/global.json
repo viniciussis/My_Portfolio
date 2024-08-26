@@ -36,7 +36,7 @@
     },
     "email": {
       "errors": {
-        "1": "Informe um email"
+        "1": "Email inválido"
       }
     },
     "button": "Enviar"
