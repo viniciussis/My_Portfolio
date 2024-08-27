@@ -12,6 +12,7 @@ import Default from './components/Default'
 import Projects from './pages/Projects'
 import NotFound from './pages/NotFound'
 import Contact from './pages/Contact'
+import About from './pages/About'
 import Home from './pages/Home'
 
 function AppRoutes() {
@@ -24,6 +25,7 @@ function AppRoutes() {
         <Route path="/" element={<Default />}>
           <Route index element={<Home />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/certificates" element={<Certificates />} />

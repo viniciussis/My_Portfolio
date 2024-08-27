@@ -10,7 +10,8 @@
   "headerMenu": {
     "1": "Projetos",
     "2": "Certificados",
-    "3": "Contato"
+    "3": "Contato",
+    "4": "Sobre Mim"
   },
   "cardButton": {
     "1": "Repositório"
@@ -55,5 +56,41 @@
   "modal": {
     "title": "Email enviado!",
     "message": "Obrigado! Sua mensagem foi enviada com sucesso. Em breve entrarei em contato com você. 😉"
+  },
+  "aboutpage": {
+    "title": "Sobre mim",
+    "greetings": {
+      "sub": "Olá! Eu sou Vinícius Silva Santos!",
+      "paras": {
+        "1": "Sou um desenvolvedor de software apaixonado por programação e desenvolvimento web, comprometido em impulsionar a inovação e a excelência em cada projeto que participo.",
+        "2": "Minha jornada educacional me levou a estudar em uma das melhores instituições de ensino da Bahia, o IFBA, e também na maior escola de tecnologia online do Brasil, a Alura. Estou constantemente em busca de novos desafios e oportunidades para crescer e aprender.",
+        "3": "Minhas principais habilidades incluem amplo conhecimento em linguagens de programação como Java, Python, Javascript e Typescript. Também tenho expertise em tecnologias web como HTML, CSS e SQL, além de frameworks como Vue e ReactJs. Sou proficiente no controle de versão usando GIT & GitHub e tenho conhecimento de bancos de dados como MySQL, MongoDB e PostgreSQL. Acredito que o trabalho em equipe é a chave para o sucesso e me orgulho de colaborar com colegas para alcançar resultados excepcionais."
+      }
+    },
+    "timeline": {
+      "title": "Timeline",
+      "1": {
+        "title": "Alura",
+        "sub": "2021 - Presente",
+        "description": "A Alura é a maior escola de tecnologia online do Brasil, oferecendo cursos em programação, front-end, DevOps, mobile, Data Science, UX & Design, Inteligência Artificial e Gestão & Inovação."
+      },
+      "2": {
+        "title": "Universidade IFBA",
+        "sub": "2019 - Presente",
+        "description": "Bacharelado em Sistemas de Informação. O IFBA, Instituto Federal de Educação, Ciência e Tecnologia da Bahia, é uma instituição pública federal que oferece cursos técnicos profissionais de nível superior em várias cidades da Bahia, Brasil."
+      },
+      "3": {
+        "title": "Desenvolvedor Full-Stack - Estágio",
+        "sub": "06/2024 - Presente",
+        "description": "Colaborei no desenvolvimento de soluções de software, participando desde a documentação do projeto até o desenvolvimento de backend, frontend e banco de dados. Utilizei Vue.js com Quasar Framework no frontend, NestJS com PrismaORM no backend e banco de dados Postgres. Os projetos desenvolvidos abordavam questões relacionadas à infraestrutura e ao estilo de vida na cidade, além de aprimorar a organização do próprio núcleo de desenvolvimento da prefeitura."
+      }
+    },
+    "hobbies": {
+      "sub": "Sempre que não estou imerso em codificação, costumo dedicar meu tempo a atividades que contribuem para o meu crescimento pessoal. Algumas dessas atividades incluem, mas não se limitam a:",
+      "1": "Treinamento: Para ser honesto, tenho uma grande paixão por treinamento. É uma daquelas coisas que dificilmente deixo um dia passar sem dedicar pelo menos 30 minutos a uma sessão de treino. A sensação de ultrapassar meus limites e testemunhar o progresso é verdadeiramente revigorante.",
+      "2": "Leitura: Se você não é um leitor ávido, talvez não entenda meu amor por livros. Encontro consolo no mundo da literatura, onde cada página virada é uma nova aventura. Seja ficção ou não-ficção, a alegria de adquirir conhecimento e explorar diferentes perspectivas é incomparável.",
+      "3": "Cozinhar: Nunca fui fã de fast food e acredito firmemente na alegria de preparar minhas próprias refeições. Experimentar ingredientes e criar pratos deliciosos me traz imensa satisfação. Embora nem todos possam apreciar minhas criações culinárias tanto quanto eu, o veredito das minhas papilas gustativas reina supremo nesta questão 😎.",
+      "4": "Viajar: Explorar novos lugares sempre foi uma fonte de inspiração para mim. Seja descobrindo a beleza da natureza ou me imergindo em diferentes culturas, viajar abre um mundo de possibilidades. Cada jornada é uma oportunidade de ampliar meus horizontes e criar memórias duradouras."
+    }
   }
 }

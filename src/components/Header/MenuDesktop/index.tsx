@@ -19,6 +19,14 @@ const MenuDesktop = () => {
       </Link>
       <Link
         className={`menuDesktop__link ${
+          isActive('/about') ? 'menuDesktop__link--active' : ''
+        }`}
+        to="/about"
+      >
+        {t('headerMenu.4')}
+      </Link>
+      <Link
+        className={`menuDesktop__link ${
           isActive('/projects') ? 'menuDesktop__link--active' : ''
         }`}
         to="/projects"

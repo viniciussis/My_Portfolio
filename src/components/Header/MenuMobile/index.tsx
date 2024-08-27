@@ -52,6 +52,13 @@ const MenuMobile = () => {
           >
             {t('headerMenu.3')}
           </Link>
+          <Link
+            onClick={() => setDropdown(false)}
+            className="menuMobile__dropdown__link"
+            to="/about"
+          >
+            {t('headerMenu.4')}
+          </Link>
         </nav>
       )}
     </div>
