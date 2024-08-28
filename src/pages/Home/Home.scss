@@ -1,6 +1,4 @@
 .home {
-  background-color: transparent;
-  backdrop-filter: blur(20px);
   flex-direction: column;
   padding: 4rem 2rem;
   min-height: 80vh;
@@ -52,6 +50,7 @@
       &__link {
         background-color: var(--theme-on-surface);
         border: 3px solid var(--theme-primary);
+        font-family: variables.$font-title;
         border-radius: variables.$br-default;
         color: var(--theme-on-primary);
         text-transform: capitalize;

@@ -6,7 +6,7 @@ import './Contact.scss'
 const Contact = () => {
   const { t } = useTranslation('global')
   return (
-    <div className="contact">
+    <main className="contact">
       <h2 className="contact__title">{t('headerMenu.3')}</h2>
       <EmailForm />
       <div className="contact__media">
@@ -15,7 +15,7 @@ const Contact = () => {
         <h3 className="contact__media__sub">{t('contact.sub3')}</h3>
         <SocialMedia />
       </div>
-    </div>
+    </main>
   )
 }
 

@@ -7,7 +7,7 @@ const Home = () => {
   const { t } = useTranslation('global')
 
   return (
-    <div className="home">
+    <main className="home">
       <div className="home__social">
         <img
           className="home__social__profile"
@@ -28,7 +28,7 @@ const Home = () => {
           <SocialMedia />
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

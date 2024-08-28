@@ -28,7 +28,7 @@
     height: 100%;
 
     &__link {
-      font-size: 1.25rem;
+      font-size: 1rem;
 
       &--active {
         div {
@@ -44,7 +44,7 @@
 
   @include mixins.for-size(desktop) {
     &__link {
-      font-size: 1.35rem;
+      font-size: 1.25rem;
     }
   }
 

@@ -1,0 +1,39 @@
+.about {
+  padding: 3rem 7.5vw 4rem;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  gap: 3rem;
+
+  &__title {
+    font-family: variables.$font-title;
+    color: var(--theme-primary);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  @include mixins.for-size(tablet) {
+    padding: 4rem 6rem;
+
+    &__title {
+      display: none;
+    }
+  }
+
+  @include mixins.for-size(desktop) {
+    justify-content: center;
+    padding: 4rem 11vw;
+  }
+
+  @include mixins.for-size(desktop-md) {
+    padding: 4rem 10vw;
+  }
+
+  @include mixins.for-size(desktop-lg) {
+    padding: 4rem 12vw;
+    gap: 5rem;
+  }
+}

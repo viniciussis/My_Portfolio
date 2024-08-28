@@ -9,7 +9,7 @@ const Projects = () => {
   const { t } = useTranslation('global')
 
   return (
-    <div className="projects">
+    <main className="projects">
       <h1 className="projects__title">{t('headerMenu.1')}</h1>
       {isLoading ? (
         <Loading />
@@ -28,7 +28,7 @@ const Projects = () => {
           ))}
         </div>
       )}
-    </div>
+    </main>
   )
 }
 

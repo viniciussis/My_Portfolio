@@ -27,9 +27,12 @@
 
     &__link {
       border: 3px solid var(--theme-primary);
-      font-size: 1.5rem;
+      font-family: variables.$font-title;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.75rem;
       font-weight: 800;
-      padding: 1.5rem;
+      padding: 1rem 1.5rem;
     }
   }
 

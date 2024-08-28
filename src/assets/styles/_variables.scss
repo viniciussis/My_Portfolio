@@ -1,5 +1,5 @@
 // fonts
-$font-title: 'Merriweather';
+$font-title: 'Poppins';
 $font-size: 18px;
 
 // colors
@@ -42,14 +42,14 @@ $gray-darkest: hsl(180, 3%, 7%);
 // gradients
 $gradient-dark: linear-gradient(
   90deg,
-  hsla(180, 3%, 7%, 1) 0%,
-  hsla(120, 62%, 5%, 1) 86%,
-  hsla(180, 3%, 7%, 1) 100%
+  hsla(180, 3%, 1%, 1) 0%,
+  hsla(120, 62%, 3%, 1) 50%,
+  hsla(180, 3%, 1%, 1) 100%
 );
 $gradient-light: linear-gradient(
   90deg,
   hsla(0, 0%, 100%, 1) 0%,
-  hsla(120, 85%, 90%, 1) 50%,
+  hsla(120, 85%, 95%, 1) 50%,
   hsla(0, 0%, 100%, 1) 98%
 );
 

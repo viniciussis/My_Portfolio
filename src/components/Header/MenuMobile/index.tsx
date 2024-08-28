@@ -1,8 +1,10 @@
 import { useTranslation } from 'react-i18next'
 import { TiThMenu } from 'react-icons/ti'
 import { Link } from 'react-router-dom'
+import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react'
 import './MenuMobile.scss'
+import { hiddenTransition } from '@/shared/animations'
 
 const MenuMobile = () => {
   const [dropdown, setDropdown] = useState(false)
@@ -18,49 +20,90 @@ const MenuMobile = () => {
       >
         <TiThMenu size={36} />
       </span>
-      {dropdown && (
-        <nav
-          className="menuMobile__dropdown"
-          onMouseEnter={() => setDropdown(true)}
-          onMouseLeave={() => setDropdown(false)}
-        >
-          <Link
-            onClick={() => setDropdown(false)}
-            className="menuMobile__dropdown__link"
-            to="/"
+      <AnimatePresence initial={false} mode="wait">
+        {dropdown && (
+          <motion.nav
+            variants={hiddenTransition}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="menuMobile__dropdown"
+            onMouseEnter={() => setDropdown(true)}
+            onMouseLeave={() => setDropdown(false)}
           >
-            Home
-          </Link>
-          <Link
-            onClick={() => setDropdown(false)}
-            className="menuMobile__dropdown__link"
-            to="/projects"
-          >
-            {t('headerMenu.1')}
-          </Link>
-          <Link
-            onClick={() => setDropdown(false)}
-            className="menuMobile__dropdown__link"
-            to="/certificates"
-          >
-            {t('headerMenu.2')}
-          </Link>
-          <Link
-            onClick={() => setDropdown(false)}
-            className="menuMobile__dropdown__link"
-            to="/contact"
-          >
-            {t('headerMenu.3')}
-          </Link>
-          <Link
-            onClick={() => setDropdown(false)}
-            className="menuMobile__dropdown__link"
-            to="/about"
-          >
-            {t('headerMenu.4')}
-          </Link>
-        </nav>
-      )}
+            <Link
+              onClick={() => setDropdown(false)}
+              className="menuMobile__dropdown__link"
+              to="/"
+            >
+              <motion.p
+                initial={{ x: '-100vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', stiffness: 250 }}
+                exit={{ x: '100vw' }}
+              >
+                Home
+              </motion.p>
+            </Link>
+            <Link
+              onClick={() => setDropdown(false)}
+              className="menuMobile__dropdown__link"
+              to="/projects"
+            >
+              <motion.p
+                initial={{ x: '100vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', stiffness: 250 }}
+                exit={{ x: '-100vw' }}
+              >
+                {t('headerMenu.1')}
+              </motion.p>
+            </Link>
+            <Link
+              onClick={() => setDropdown(false)}
+              className="menuMobile__dropdown__link"
+              to="/certificates"
+            >
+              <motion.p
+                initial={{ x: '-100vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', stiffness: 250 }}
+                exit={{ x: '100vw' }}
+              >
+                {t('headerMenu.2')}
+              </motion.p>
+            </Link>
+            <Link
+              onClick={() => setDropdown(false)}
+              className="menuMobile__dropdown__link"
+              to="/contact"
+            >
+              <motion.p
+                initial={{ x: '100vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', stiffness: 250 }}
+                exit={{ x: '-100vw' }}
+              >
+                {t('headerMenu.3')}
+              </motion.p>
+            </Link>
+            <Link
+              onClick={() => setDropdown(false)}
+              className="menuMobile__dropdown__link"
+              to="/about"
+            >
+              <motion.p
+                initial={{ x: '-100vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', stiffness: 250 }}
+                exit={{ x: '100vw' }}
+              >
+                {t('headerMenu.4')}
+              </motion.p>
+            </Link>
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </div>
   )
 }
