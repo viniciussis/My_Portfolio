@@ -5,6 +5,7 @@ const Myself = () => {
   const { t } = useTranslation('global')
   return (
     <section className="myself">
+      <h3 className="myself__sub">{t('aboutpage.greetings.sub')}</h3>
       <img
         className="myself__photo"
         src="images/common/profile.jpg"

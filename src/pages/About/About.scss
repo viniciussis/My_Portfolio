@@ -5,27 +5,25 @@
   position: relative;
   min-height: 80vh;
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
 
   &__title {
     font-family: variables.$font-title;
     color: var(--theme-primary);
     text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 900;
   }
 
   @include mixins.for-size(tablet) {
     padding: 4rem 6rem;
-
-    &__title {
-      display: none;
-    }
   }
 
   @include mixins.for-size(desktop) {
     justify-content: center;
-    padding: 4rem 11vw;
+    padding: 4rem 8vw;
   }
 
   @include mixins.for-size(desktop-md) {

@@ -4,7 +4,7 @@
 - [x] Email Modal
 - [ ] About Me Page
   - [ ] My Stack
-  - [ ] My Timeline
+  - [X] My Timeline
   - [ ] My Hobbies
 - [ ] Certificates Section (Do I really need?)
 
