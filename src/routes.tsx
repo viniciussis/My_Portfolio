@@ -28,7 +28,7 @@ function AppRoutes() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/certificates" element={<Certificates />} />
+          <Route path="/skills" element={<Certificates />} />
         </Route>
       </Routes>
     </AnimatePresence>

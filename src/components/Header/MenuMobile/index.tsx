@@ -1,10 +1,11 @@
 import { useTranslation } from 'react-i18next'
+import { AnimatePresence, motion } from 'framer-motion'
 import { TiThMenu } from 'react-icons/ti'
 import { Link } from 'react-router-dom'
-import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react'
-import './MenuMobile.scss'
+
 import { hiddenTransition } from '@/shared/animations'
+import './MenuMobile.scss'
 
 const MenuMobile = () => {
   const [dropdown, setDropdown] = useState(false)
@@ -48,7 +49,7 @@ const MenuMobile = () => {
             <Link
               onClick={() => setDropdown(false)}
               className="menuMobile__dropdown__link"
-              to="/projects"
+              to="/about"
             >
               <motion.p
                 initial={{ x: '100vw' }}
@@ -62,7 +63,7 @@ const MenuMobile = () => {
             <Link
               onClick={() => setDropdown(false)}
               className="menuMobile__dropdown__link"
-              to="/certificates"
+              to="/skills"
             >
               <motion.p
                 initial={{ x: '-100vw' }}
@@ -90,7 +91,7 @@ const MenuMobile = () => {
             <Link
               onClick={() => setDropdown(false)}
               className="menuMobile__dropdown__link"
-              to="/about"
+              to="/projects"
             >
               <motion.p
                 initial={{ x: '-100vw' }}

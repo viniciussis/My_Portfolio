@@ -11,33 +11,17 @@ const MenuDesktop = () => {
     <div className="menuDesktop">
       <Link
         className={`menuDesktop__link ${
-          isActive('/') ? 'menuDesktop__link--active' : ''
-        }`}
-        to="/"
-      >
-        Home
-      </Link>
-      <Link
-        className={`menuDesktop__link ${
           isActive('/about') ? 'menuDesktop__link--active' : ''
         }`}
         to="/about"
-      >
-        {t('headerMenu.4')}
-      </Link>
-      <Link
-        className={`menuDesktop__link ${
-          isActive('/projects') ? 'menuDesktop__link--active' : ''
-        }`}
-        to="/projects"
       >
         {t('headerMenu.1')}
       </Link>
       <Link
         className={`menuDesktop__link ${
-          isActive('/certificates') ? 'menuDesktop__link--active' : ''
+          isActive('/skills') ? 'menuDesktop__link--active' : ''
         }`}
-        to="/certificates"
+        to="/skills"
       >
         {t('headerMenu.2')}
       </Link>
@@ -48,6 +32,14 @@ const MenuDesktop = () => {
         to="/contact"
       >
         {t('headerMenu.3')}
+      </Link>
+      <Link
+        className={`menuDesktop__link ${
+          isActive('/projects') ? 'menuDesktop__link--active' : ''
+        }`}
+        to="/projects"
+      >
+        {t('headerMenu.4')}
       </Link>
     </div>
   )

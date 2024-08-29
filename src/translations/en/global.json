@@ -8,10 +8,10 @@
     "para": "Copyright | Web portfolio project created by Vinícius Silva Santos | "
   },
   "headerMenu": {
-    "1": "Projects",
-    "2": "Certificates",
+    "1": "About Me",
+    "2": "Skills",
     "3": "Contact",
-    "4": "About Me"
+    "4": "Projects"
   },
   "cardButton": {
     "1": "Repository"

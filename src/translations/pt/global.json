@@ -8,10 +8,10 @@
     "para": "Copyright | Projeto para portfólio web criado por Vinícius Silva Santos | "
   },
   "headerMenu": {
-    "1": "Projetos",
-    "2": "Certificados",
+    "1": "Sobre Mim",
+    "2": "Habilidades",
     "3": "Contato",
-    "4": "Sobre Mim"
+    "4": "Projetos"
   },
   "cardButton": {
     "1": "Repositório"
