@@ -4,8 +4,8 @@
 - [x] Email Modal
 - [ ] About Me Page
   - [ ] My Stack
-  - [X] My Timeline
-  - [ ] My Hobbies
+  - [x] My Timeline
+  - [x] My Hobbies
 - [ ] Certificates Section (Do I really need?)
 
 # UI and Design Features
