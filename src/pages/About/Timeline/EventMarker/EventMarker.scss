@@ -1,4 +1,6 @@
 .eventMarker {
+  box-shadow: 12px 12px 20px var(--theme-smoke-down),
+    -8px -8px 15px var(--theme-smoke-up);
   border-right: 1rem solid var(--theme-on-primary);
   background-color: var(--theme-background);
   border-radius: variables.$br-default;

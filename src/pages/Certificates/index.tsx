@@ -57,7 +57,7 @@ const Certificates = () => {
           setDuration(FAST_DURATION)
           setMustFinish(true)
         }}
-        className="certificates__container"
+        className="certificates__section"
         style={{ x: xTranslation }}
         ref={ref}
       >

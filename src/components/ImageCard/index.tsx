@@ -7,20 +7,20 @@ interface ImageCardProps {
 }
 
 const ImageCard = ({ image }: ImageCardProps) => {
-  const [showOverlay, setShowOverlay] = useState(false)
+  const [showOverlay, setShowOverlay] = useState(true)
   return (
     <motion.div
       className="card"
-      onHoverStart={() => setShowOverlay(true)}
-      onHoverEnd={() => setShowOverlay(false)}
+      onHoverStart={() => setShowOverlay(false)}
+      onHoverEnd={() => setShowOverlay(true)}
     >
       <AnimatePresence>
         {showOverlay && (
           <motion.div
+            className="card__container"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="card__container"
           >
             <div className="card__container__overlay" />
           </motion.div>
