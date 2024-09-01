@@ -6,7 +6,8 @@
   - [ ] My Stack
   - [x] My Timeline
   - [x] My Hobbies
-- [ ] Certificates Section (Do I really need?)
+- [X] Remove Certificates Section (Do I really need?)
+- [ ] Skills Page
 
 # UI and Design Features
 

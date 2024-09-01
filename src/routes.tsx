@@ -7,7 +7,7 @@ import './assets/styles/normalize.scss'
 import './assets/styles/reset.scss'
 import './main.scss'
 
-import Certificates from './pages/Certificates'
+import Skills from './pages/Skills'
 import Default from './components/Default'
 import Projects from './pages/Projects'
 import NotFound from './pages/NotFound'
@@ -28,7 +28,7 @@ function AppRoutes() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Certificates />} />
+          <Route path="/skills" element={<Skills />} />
         </Route>
       </Routes>
     </AnimatePresence>

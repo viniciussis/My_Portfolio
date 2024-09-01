@@ -5,9 +5,9 @@ import useMeasure from 'react-use-measure'
 
 import { FAST_DURATION, SLOW_DURATION } from '@/shared/animations'
 import ImageCard from '@/components/ImageCard'
-import './Certificates.scss'
+import './Skills.scss'
 
-const Certificates = () => {
+const Skills = () => {
   const images = Array.from(
     { length: 24 },
     (_, i) => `images/certificates/${i + 1}.png`,
@@ -69,4 +69,4 @@ const Certificates = () => {
   )
 }
 
-export default Certificates
+export default Skills
