@@ -5,9 +5,9 @@
   background-color: var(--theme-background);
   border-radius: variables.$br-default;
   position: relative;
-  max-width: 45%;
-  padding: 2rem;
-  left: 55%;
+  padding: 1.5rem;
+  max-width: 90%;
+  left: 10%;
 
   &__content {
     &__title {
@@ -16,15 +16,19 @@
       font-size: 1.25rem;
       font-weight: 700;
     }
+
     &__sub {
       color: var(--theme-secondary);
-      margin-bottom: 0.75rem;
+      margin-bottom: 1rem;
       font-weight: 700;
+      font-size: 1rem;
     }
+
     &__para {
       color: var(--theme-secondary);
       word-break: break-word;
       text-align: justify;
+      font-size: 1rem;
       hyphens: auto;
     }
   }
@@ -36,7 +40,7 @@
     border-radius: 50%;
     padding: 8px;
     content: ' ';
-    left: -14%;
+    left: -15%;
     top: 5%;
   }
 
@@ -52,27 +56,90 @@
     left: 0;
   }
 
-  &--left {
-    border-left: 1rem solid var(--theme-on-primary);
-    border-right: unset;
-    left: 0;
+  @include mixins.for-size(tablet) {
+    max-width: 90%;
+    padding: 2rem;
+    left: 10%;
+
+    &__content {
+      &__sub {
+        font-size: 1.25rem;
+      }
+
+      &__para {
+        font-size: 1.1rem;
+      }
+    }
 
     &::after {
-      transform: translateX(50%);
-      right: unset;
-      left: 107%;
+      left: -13%;
+    }
+  }
+
+  @include mixins.for-size(desktop) {
+    position: relative;
+    max-width: 45%;
+    padding: 2rem;
+    left: 55%;
+
+    &__content {
+      &__title {
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+      &__sub {
+        margin-bottom: 0.75rem;
+        font-weight: 700;
+      }
+      &__para {
+        word-break: break-word;
+        text-align: justify;
+        hyphens: auto;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      border-radius: 50%;
+      padding: 8px;
+      content: ' ';
+      left: -14%;
+      top: 5%;
     }
 
     &::before {
-      border: medium solid var(--theme-background);
-      border-width: 10px 0 10px 10px;
-      border-color: transparent transparent transparent var(--theme-background);
-      transform: translateX(0);
+      transform: translateX(-100%);
       position: absolute;
       content: ' ';
-      left: 100%;
       z-index: 1;
-      top: 22px;
+      top: 1rem;
+      left: 0;
     }
+
+    &--left {
+      border-right: unset;
+      left: 0;
+
+      &::after {
+        transform: translateX(50%);
+        right: unset;
+        left: 107%;
+      }
+
+      &::before {
+        transform: translateX(0);
+        position: absolute;
+        content: ' ';
+        left: 100%;
+        z-index: 1;
+        top: 22px;
+      }
+    }
+  }
+
+  @include mixins.for-size(desktop-md) {
+  }
+
+  @include mixins.for-size(desktop-lg) {
   }
 }

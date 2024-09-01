@@ -1,11 +1,11 @@
 .about {
-  padding: 3rem 7.5vw 4rem;
   flex-direction: column;
   align-items: center;
+  padding: 3rem 7.5vw;
   position: relative;
   min-height: 80vh;
   display: flex;
-  gap: 4rem;
+  gap: 3rem;
 
   &__title {
     font-family: variables.$font-title;
@@ -18,11 +18,11 @@
   }
 
   @include mixins.for-size(tablet) {
-    padding: 4rem 6rem;
+    padding: 4rem;
+    gap: 4rem;
   }
 
   @include mixins.for-size(desktop) {
-    justify-content: center;
     padding: 4rem 8vw;
   }
 

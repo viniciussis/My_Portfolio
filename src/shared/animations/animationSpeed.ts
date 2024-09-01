@@ -1,2 +1,2 @@
-export const FAST_DURATION = 50
-export const SLOW_DURATION = 100
+export const FAST_DURATION = 100
+export const SLOW_DURATION = 150

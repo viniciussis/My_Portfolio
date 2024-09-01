@@ -18,10 +18,16 @@
     word-break: break-word;
     text-align: justify;
     hyphens: auto;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 
     &__label {
       color: var(--theme-primary);
+    }
+  }
+
+  @include mixins.for-size(tablet) {
+    &__para {
+      font-size: 1.25rem;
     }
   }
 }

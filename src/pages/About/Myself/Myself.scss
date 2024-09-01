@@ -1,20 +1,22 @@
 .myself {
   flex-direction: column;
+  align-items: center;
   display: flex;
+  gap: 1rem;
 
   &__sub {
     font-family: variables.$font-title;
     color: var(--theme-secondary);
-    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.75rem;
     font-weight: 700;
-    font-size: 2rem;
   }
 
   &__photo {
-    box-shadow: 12px 12px 20px var(--theme-smoke-down),
-      -8px -8px 15px var(--theme-smoke-up);
-    margin-bottom: 1.5rem;
-    border-radius: variables.$br-default;
+    border-radius: variables.$border-radius-xl;
+    margin-bottom: 0.5rem;
+    max-width: 400px;
+    width: 90%;
   }
 
   &__para {
@@ -22,8 +24,7 @@
     word-break: break-word;
     line-height: 1.75rem;
     text-align: justify;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     text-indent: 5%;
     hyphens: auto;
   }
@@ -31,16 +32,40 @@
   @include mixins.for-size(tablet) {
     display: unset;
 
+    &__sub {
+      margin-bottom: 1rem;
+      text-align: left;
+      font-size: 2rem;
+    }
+
     &__photo {
-      margin-bottom: unset;
       margin-right: 1rem;
-      max-width: 20vw;
       float: left;
+      width: 40%;
     }
 
     &__para {
+      margin-bottom: 1rem;
       font-size: 1.25rem;
-      text-indent: unset;
+      text-indent: 5%;
+      hyphens: auto;
+    }
+  }
+
+  @include mixins.for-size(desktop-lg) {
+    &__sub {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+
+    &__photo {
+      margin-right: 2rem;
+    }
+
+    &__para {
+      margin-bottom: 1rem;
+      font-size: 1.75rem;
+      text-indent: 2.5%;
     }
   }
 }

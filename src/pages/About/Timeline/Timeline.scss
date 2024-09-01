@@ -21,13 +21,34 @@
 
     &::before {
       background-color: var(--theme-secondary);
-      transform: translateX(-50%) scale(1.05);
       position: absolute;
       content: '';
       width: 6px;
-      left: 50%;
       bottom: 0;
+      left: 0;
       top: 0;
     }
+  }
+
+  @include mixins.for-size(tablet) {
+  }
+
+  @include mixins.for-size(desktop) {
+    gap: 5rem;
+
+    &__container {
+      gap: 3rem;
+
+      &::before {
+        transform: translateX(-50%);
+        left: 50%;
+      }
+    }
+  }
+
+  @include mixins.for-size(desktop-md) {
+  }
+
+  @include mixins.for-size(desktop-lg) {
   }
 }
