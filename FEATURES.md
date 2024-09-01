@@ -2,12 +2,18 @@
 
 - [x] Email Form
 - [x] Email Modal
-- [ ] About Me Page
-  - [ ] My Stack
+- [x] About Me Page
   - [x] My Timeline
   - [x] My Hobbies
-- [X] Remove Certificates Section (Do I really need?)
+- [x] Remove Certificates Page
 - [ ] Skills Page
+  - [ ] Certificates section
+  - [ ] Stack Section
+  - [ ] Soft Skills section
+- [ ] Remove Projects Page
+- [ ] Home Page
+  - [ ] What I do section
+  - [ ] Projects section
 
 # UI and Design Features
 
