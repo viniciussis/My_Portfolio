@@ -110,7 +110,8 @@
       "subtitle": "Certificates"
     },
     "softskills": {
-      "subtitle": "Soft Skills"
+      "title": "Soft Skills",
+      "subtitle": "Soft skills that I consider crucial and am constantly refining."
     },
     "stack": {
       "subtitle": "Stack"

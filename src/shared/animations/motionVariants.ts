@@ -22,6 +22,33 @@ export const slideIn = {
   },
 }
 
+export const circleRotation = {
+  animate: {
+    rotateZ: 360,
+    transition: {
+      duration: 10,
+      ease: 'linear',
+      repeat: Infinity,
+    },
+  },
+  taping: {
+    rotate: 360,
+    transition: {
+      duration: 1,
+      ease: 'linear',
+      repeat: Infinity,
+    },
+  },
+  exit: {
+    rotateZ: 360,
+    transition: {
+      duration: 10,
+      ease: 'linear',
+      repeat: Infinity,
+    },
+  },
+}
+
 export const slideOut = {
   initial: {
     scaleY: 0,
