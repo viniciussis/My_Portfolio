@@ -104,5 +104,16 @@
         "value": " Exploring new places has always been a source of inspiration for me. Whether it's discovering the beauty of nature or immersing myself in different cultures, traveling opens up a world of possibilities. Each journey is an opportunity to broaden my horizons and create lasting memories."
       }
     }
+  },
+  "skillsPage": {
+    "certificates": {
+      "subtitle": "Certificates"
+    },
+    "softskills": {
+      "subtitle": "Soft Skills"
+    },
+    "stack": {
+      "subtitle": "Stack"
+    }
   }
 }

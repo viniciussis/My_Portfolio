@@ -1,0 +1,13 @@
+.sub {
+  font-family: variables.$font-title;
+  color: var(--theme-primary);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.certificates {
+  display: flex;
+  gap: 1rem;
+}

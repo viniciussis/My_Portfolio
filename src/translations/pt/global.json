@@ -104,5 +104,16 @@
         "value": " Explorar novos lugares sempre foi uma fonte de inspiração para mim. Seja descobrindo a beleza da natureza ou me imergindo em diferentes culturas, viajar abre um mundo de possibilidades. Cada jornada é uma oportunidade de ampliar meus horizontes e criar memórias duradouras."
       }
     }
+  },
+  "skillsPage": {
+    "certificates": {
+      "subtitle": "Certificados"
+    },
+    "softskills": {
+      "subtitle": "Soft Skills"
+    },
+    "stack": {
+      "subtitle": "Stack"
+    }
   }
 }

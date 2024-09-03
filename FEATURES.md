@@ -7,9 +7,9 @@
   - [x] My Hobbies
 - [x] Remove Certificates Page
 - [ ] Skills Page
-  - [ ] Certificates section
   - [ ] Stack Section
   - [ ] Soft Skills section
+  - [x] Certificates section
 - [ ] Remove Projects Page
 - [ ] Home Page
   - [ ] What I do section
