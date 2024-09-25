@@ -1,13 +1,38 @@
-.sub {
-  font-family: variables.$font-title;
-  color: var(--theme-primary);
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 900;
+.certificates {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+
+  &__slider {
+    display: inline-block;
+    animation: 5s slide infinite linear;
+
+    &::after,
+    &::before {
+      position: absolute;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      content: '';
+      z-index: 2;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
 }
 
-.certificates {
-  display: flex;
-  gap: 1rem;
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }

@@ -52,6 +52,16 @@ $gradient-light: linear-gradient(
   hsla(120, 85%, 95%, 1) 50%,
   hsla(0, 0%, 100%, 1) 98%
 );
+$gradient-carrousel-light: linear-gradient(
+  to left,
+  hsla(0, 0%, 100%, 0) 0%,
+  hsl(0, 0%, 100%) 100%
+);
+$gradient-carrousel-dark: linear-gradient(
+  to left,
+  hsla(0, 0%, 0%, 0) 0%,
+  hsl(0, 0%, 0%) 100%
+);
 
 // borders
 // radius
@@ -83,6 +93,7 @@ $--theme-smoke-down: --theme-smoke-down;
 $--theme-smoke-up: --theme-smoke-up;
 $--theme-lowest-contrast: --theme-higher-contrast;
 $--theme-gradient: --theme-gradient;
+$--theme-off-gradient: --theme-off-gradient;
 $--theme-on-gradient: --theme-on-gradient;
 $--theme-danger-primary: --theme-danger-primary;
 $--theme-danger-secondary: --theme-danger-secondary;
@@ -105,6 +116,7 @@ $theme-map-light: (
   $--theme-lowest-contrast: $light,
   $--theme-gradient: $gradient-light,
   $--theme-on-gradient: $gradient-dark,
+  $--theme-off-gradient: $gradient-carrousel-light,
   $--theme-danger-primary: $red-light,
   $--theme-danger-secondary: $red-dark,
   $--theme-danger-background: $red-neutral,
@@ -126,6 +138,7 @@ $theme-map-dark: (
   $--theme-lowest-contrast: $dark,
   $--theme-gradient: $gradient-dark,
   $--theme-on-gradient: $gradient-light,
+  $--theme-off-gradient: $gradient-carrousel-dark,
   $--theme-danger-primary: $red-dark,
   $--theme-danger-secondary: $red-light,
   $--theme-danger-background: $red-neutral,

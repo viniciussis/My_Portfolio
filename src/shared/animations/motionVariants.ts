@@ -1,3 +1,24 @@
+import { Variants } from 'framer-motion'
+
+export const carrouselSlide: Variants = {
+  initial: {
+    x: 0,
+    transition: {
+      duration: 100,
+      ease: 'linear',
+    },
+  },
+  animate: {
+    x: '-100%',
+    transition: {
+      duration: 100,
+      ease: 'linear',
+      repeat: Infinity,
+      repeatType: 'loop',
+    },
+  },
+}
+
 export const slideIn = {
   initial: {
     scaleY: 1,
