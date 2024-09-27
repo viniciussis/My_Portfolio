@@ -52,12 +52,22 @@ $gradient-light: linear-gradient(
   hsla(120, 85%, 95%, 1) 50%,
   hsla(0, 0%, 100%, 1) 98%
 );
-$gradient-carrousel-light: linear-gradient(
+$carrousel-gradient-right-light: linear-gradient(
+  to right,
+  hsla(0, 0%, 100%, 0) 0%,
+  hsl(0, 0%, 100%) 100%
+);
+$carrousel-gradient-right-dark: linear-gradient(
+  to right,
+  hsla(0, 0%, 0%, 0) 0%,
+  hsl(0, 0%, 0%) 100%
+);
+$carrousel-gradient-left-light: linear-gradient(
   to left,
   hsla(0, 0%, 100%, 0) 0%,
   hsl(0, 0%, 100%) 100%
 );
-$gradient-carrousel-dark: linear-gradient(
+$carrousel-gradient-left-dark: linear-gradient(
   to left,
   hsla(0, 0%, 0%, 0) 0%,
   hsl(0, 0%, 0%) 100%
@@ -93,7 +103,8 @@ $--theme-smoke-down: --theme-smoke-down;
 $--theme-smoke-up: --theme-smoke-up;
 $--theme-lowest-contrast: --theme-higher-contrast;
 $--theme-gradient: --theme-gradient;
-$--theme-off-gradient: --theme-off-gradient;
+$--theme-gradient-left: --theme-gradient-left;
+$--theme-gradient-right: --theme-gradient-right;
 $--theme-on-gradient: --theme-on-gradient;
 $--theme-danger-primary: --theme-danger-primary;
 $--theme-danger-secondary: --theme-danger-secondary;
@@ -116,7 +127,8 @@ $theme-map-light: (
   $--theme-lowest-contrast: $light,
   $--theme-gradient: $gradient-light,
   $--theme-on-gradient: $gradient-dark,
-  $--theme-off-gradient: $gradient-carrousel-light,
+  $--theme-gradient-left: $carrousel-gradient-left-light,
+  $--theme-gradient-right: $carrousel-gradient-right-light,
   $--theme-danger-primary: $red-light,
   $--theme-danger-secondary: $red-dark,
   $--theme-danger-background: $red-neutral,
@@ -138,7 +150,8 @@ $theme-map-dark: (
   $--theme-lowest-contrast: $dark,
   $--theme-gradient: $gradient-dark,
   $--theme-on-gradient: $gradient-light,
-  $--theme-off-gradient: $gradient-carrousel-dark,
+  $--theme-gradient-left: $carrousel-gradient-left-dark,
+  $--theme-gradient-right: $carrousel-gradient-right-dark,
   $--theme-danger-primary: $red-dark,
   $--theme-danger-secondary: $red-light,
   $--theme-danger-background: $red-neutral,

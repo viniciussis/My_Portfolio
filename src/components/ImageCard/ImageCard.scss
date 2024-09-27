@@ -1,6 +1,4 @@
 .card {
-  box-shadow: 12px 12px 20px var(--theme-smoke-down),
-    -8px -8px 15px var(--theme-smoke-up);
   border-radius: variables.$br-default;
   background-color: transparent;
   justify-content: center;
@@ -9,27 +7,6 @@
   overflow: hidden;
   min-width: 500px;
   display: flex;
-
-  &__container {
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    display: flex;
-    z-index: 10;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-
-    &__overlay {
-      background-color: variables.$dark;
-      pointer-events: none;
-      position: absolute;
-      opacity: 0.5;
-      height: 100%;
-      width: 100%;
-    }
-  }
 
   &__image {
     object-fit: cover;

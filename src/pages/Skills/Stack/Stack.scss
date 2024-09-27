@@ -1,8 +1,31 @@
-.sub {
-  font-family: variables.$font-title;
-  color: var(--theme-primary);
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 900;
+.stack {
+  position: relative;
+  height: 7rem;
+  width: 100%;
+
+  &::before,
+  &::after {
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    content: '';
+    z-index: 1;
+    top: 0;
+  }
+
+  &::before {
+    background: var(--theme-gradient-left);
+    left: 0;
+  }
+
+  &::after {
+    background: var(--theme-gradient-right);
+    right: 0;
+  }
+
+  &__slider {
+    position: absolute;
+    display: flex;
+    gap: 4rem;
+  }
 }

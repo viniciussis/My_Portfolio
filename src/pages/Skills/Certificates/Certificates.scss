@@ -1,38 +1,31 @@
 .certificates {
-  overflow: hidden;
-  padding: 60px 0;
-  white-space: nowrap;
   position: relative;
+  height: 25rem;
+  width: 100%;
+
+  &::before,
+  &::after {
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    content: '';
+    z-index: 1;
+    top: 0;
+  }
+
+  &::before {
+    background: var(--theme-gradient-left);
+    left: 0;
+  }
+
+  &::after {
+    background: var(--theme-gradient-right);
+    right: 0;
+  }
 
   &__slider {
-    display: inline-block;
-    animation: 5s slide infinite linear;
-
-    &::after,
-    &::before {
-      position: absolute;
-      top: 0;
-      width: 250px;
-      height: 100%;
-      content: '';
-      z-index: 2;
-    }
-
-    &::before {
-      left: 0;
-    }
-
-    &::after {
-      right: 0;
-    }
-  }
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
+    position: absolute;
+    display: flex;
+    gap: 1rem;
   }
 }

@@ -21,6 +21,15 @@
   }
 
   @include mixins.for-size(desktop-md) {
-    padding: 6rem 12vw;
+    padding: 6rem 0;
   }
+}
+
+.sub {
+  font-family: variables.$font-title;
+  color: var(--theme-primary);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
 }

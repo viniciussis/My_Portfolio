@@ -3,15 +3,26 @@ import { Variants } from 'framer-motion'
 export const carrouselSlide: Variants = {
   initial: {
     x: 0,
-    transition: {
-      duration: 100,
-      ease: 'linear',
-    },
   },
   animate: {
-    x: '-100%',
+    x: '-50%',
     transition: {
-      duration: 100,
+      duration: 150,
+      ease: 'linear',
+      repeat: Infinity,
+      repeatType: 'loop',
+    },
+  },
+}
+
+export const carrouselSlideReverse: Variants = {
+  initial: {
+    x: '-50%',
+  },
+  animate: {
+    x: 0,
+    transition: {
+      duration: 50,
       ease: 'linear',
       repeat: Infinity,
       repeatType: 'loop',
