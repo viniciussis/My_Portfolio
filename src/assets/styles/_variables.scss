@@ -52,6 +52,18 @@ $gradient-light: linear-gradient(
   hsla(120, 85%, 95%, 1) 50%,
   hsla(0, 0%, 100%, 1) 98%
 );
+$gradient-green-dark: linear-gradient(
+  90deg,
+  hsla(120, 61%, 28%, 1) 0%,
+  hsla(120, 64%, 5%, 1) 50%,
+  hsla(120, 65%, 64%, 1) 98%
+);
+$gradient-green-light: linear-gradient(
+  90deg,
+  hsla(120, 61%, 28%, 1) 0%,
+  hsla(120, 74%, 77%, 1) 50%,
+  hsla(120, 61%, 28%, 1) 98%
+);
 $carrousel-gradient-right-light: linear-gradient(
   to right,
   hsla(0, 0%, 100%, 0) 0%,
@@ -126,7 +138,7 @@ $theme-map-light: (
   $--theme-smoke-up: #ffffff,
   $--theme-lowest-contrast: $light,
   $--theme-gradient: $gradient-light,
-  $--theme-on-gradient: $gradient-dark,
+  $--theme-on-gradient: $gradient-green-light,
   $--theme-gradient-left: $carrousel-gradient-left-light,
   $--theme-gradient-right: $carrousel-gradient-right-light,
   $--theme-danger-primary: $red-light,
@@ -149,7 +161,7 @@ $theme-map-dark: (
   $--theme-smoke-up: $green-darker,
   $--theme-lowest-contrast: $dark,
   $--theme-gradient: $gradient-dark,
-  $--theme-on-gradient: $gradient-light,
+  $--theme-on-gradient: $gradient-green-dark,
   $--theme-gradient-left: $carrousel-gradient-left-dark,
   $--theme-gradient-right: $carrousel-gradient-right-dark,
   $--theme-danger-primary: $red-dark,

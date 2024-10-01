@@ -111,7 +111,17 @@
     },
     "softskills": {
       "title": "Soft Skills",
-      "subtitle": "Soft skills that I consider crucial and am constantly refining."
+      "subtitle": "Soft skills that I consider crucial and am constantly refining.",
+      "1": "Communication",
+      "2": "Problem Solving",
+      "3": "Teamwork",
+      "4": "Adaptability",
+      "5": "Time Management",
+      "6": "Initiative",
+      "7": "Continuous Learning",
+      "8": "Attention to Detail",
+      "9": "Critical Thinking",
+      "10": "Leadership"
     },
     "stack": {
       "subtitle": "Stack"

@@ -110,8 +110,18 @@
       "subtitle": "Certificados"
     },
     "softskills": {
-      "title": "Soft Skills",
-      "subtitle": "Soft skills que considero cruciais e estou constantemente aprimorando."
+      "title": "Habilidades Interpessoais",
+      "subtitle": "Habilidades interpessoais que considero cruciais e que estou constantemente aprimorando.",
+      "1": "Comunicação",
+      "2": "Resolução de Problemas",
+      "3": "Trabalho em Equipe",
+      "4": "Adaptabilidade",
+      "5": "Gestão de Tempo",
+      "6": "Iniciativa",
+      "7": "Aprendizado Contínuo",
+      "8": "Atenção aos Detalhes",
+      "9": "Pensamento Crítico",
+      "10": "Liderança"
     },
     "stack": {
       "subtitle": "Stack"

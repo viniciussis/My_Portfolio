@@ -15,6 +15,12 @@ export const carrouselSlide: Variants = {
   },
 }
 
+export const timeline: Variants = {
+  hiddenleft: { opacity: 0, x: -100 },
+  hiddenright: { opacity: 0, x: 100 },
+  visible: { opacity: 1, x: 0 },
+}
+
 export const carrouselSlideReverse: Variants = {
   initial: {
     x: '-50%',

@@ -6,9 +6,9 @@
   - [x] My Timeline
   - [x] My Hobbies
 - [x] Remove Certificates Page
-- [ ] Skills Page
-  - [ ] Stack Section
-  - [ ] Soft Skills section
+- [X] Skills Page
+  - [X] Stack Section
+  - [X] Soft Skills section
   - [x] Certificates section
 - [ ] Remove Projects Page
 - [ ] Home Page

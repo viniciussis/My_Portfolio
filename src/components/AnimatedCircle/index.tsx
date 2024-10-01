@@ -13,7 +13,6 @@ const AnimatedCircle = ({ label }: AnimatedCircleProps) => {
       <motion.div
         variants={circleRotation}
         animate="animate"
-        whileHover="taping"
         exit="exit"
         className="circle__border"
       />
