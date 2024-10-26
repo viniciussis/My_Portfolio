@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 12rem;
-  width: 12rem;
+  height: 9rem;
+  width: 9rem;
 
   &__border {
     outline: 2px dashed var(--theme-primary);
@@ -26,8 +26,17 @@
     text-align: center;
     position: absolute;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.8rem;
     left: 50%;
     top: 50%;
+  }
+
+  @include mixins.for-size(tablet) {
+    height: 12rem;
+    width: 12rem;
+
+    &__label {
+      font-size: 1rem;
+    }
   }
 }

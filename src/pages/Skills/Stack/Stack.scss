@@ -1,12 +1,12 @@
 .stack {
   position: relative;
   height: 7rem;
-  width: 100%;
+  width: 100vw;
 
   &::before,
   &::after {
     position: absolute;
-    width: 500px;
+    width: 25%;
     height: 100%;
     content: '';
     z-index: 1;

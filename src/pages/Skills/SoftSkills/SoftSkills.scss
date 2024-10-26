@@ -1,8 +1,8 @@
 .softSkills {
   flex-direction: column;
+  max-width: 90%;
   display: flex;
-  max-width: 75%;
-  gap: 3rem;
+  gap: 1.5rem;
 
   &__sub {
     color: var(--theme-secondary);
@@ -16,5 +16,10 @@
     flex-wrap: wrap;
     display: flex;
     gap: 2rem;
+  }
+
+  @include mixins.for-size(desktop) {
+    max-width: 75%;
+    gap: 3rem;
   }
 }
