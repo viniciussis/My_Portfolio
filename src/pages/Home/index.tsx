@@ -20,7 +20,7 @@ const Home = () => {
         <p className="home__greets__para">{t('homepage.para')}</p>
         <div className="home__greets__links">
           <a
-            href="https://drive.google.com/file/d/1qFa7Npp6Y0VoLVI_lBmAJ4qldR01i4Cy/view?usp=sharing"
+            href="https://drive.google.com/file/d/12DeIuNiKtSTT-3Y2Ehz8tN4HzSxgNR1w/view?usp=sharing"
             className="home__greets__links__link"
           >
             {t('homepage.curriculum')}
