@@ -1,0 +1,34 @@
+.animated__icon__button {
+  transition: color 0.3s ease-in-out;
+  color: var(--theme-secondary);
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  height: max-content;
+  width: max-content;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--theme-primary);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+
+    @include mixins.for-size(tablet) {
+      width: 32px;
+      height: 32px;
+    }
+
+    @include mixins.for-size(desktop-md) {
+      width: 48px;
+      height: 48px;
+    }
+
+    @include mixins.for-size(desktop-lg) {
+      width: 56px;
+      height: 56px;
+    }
+  }
+}

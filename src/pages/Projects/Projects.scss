@@ -1,9 +1,9 @@
 .projects {
   color: var(--theme-primary);
+  padding: 3rem 7.5vw 2.5rem;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 7.5vw;
   min-height: 80vh;
   display: flex;
   gap: 4rem;
@@ -17,32 +17,114 @@
 
   &__container {
     grid-template-columns: 1fr;
+    grid-auto-flow: dense;
     display: grid;
     gap: 4rem;
   }
 
-  @include mixins.for-size(tablet) {
-    padding: 6rem 13vw;
+  &__more {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
 
+    &__text {
+      color: var(--theme-secondary);
+      word-break: break-word;
+      text-align: justify;
+      font-size: 1.1rem;
+      hyphens: auto;
+    }
+
+    &__link {
+      color: var(--theme-secondary);
+      text-align: center;
+      font-size: 1.1rem;
+
+      &__highlight {
+        font-style: italic;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  @include mixins.for-size(tablet) {
     &__title {
       display: none;
+    }
+
+    &__more {
+      &__text {
+        font-size: 1.2rem;
+      }
+
+      &__link {
+        font-size: 1.2rem;
+
+        &__highlight {
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 
   @include mixins.for-size(desktop) {
-    padding: 4rem 11vw;
+    padding: 4rem 11vw 2.5rem;
 
     &__container {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 2rem;
+    }
+
+    &__more {
+      &__text {
+        font-size: 1.25rem;
+      }
+
+      &__link {
+        font-size: 1.25rem;
+
+        &__highlight {
+          font-size: 1.25rem;
+        }
+      }
     }
   }
 
   @include mixins.for-size(desktop-md) {
-    padding: 8rem 10vw;
+    padding: 8rem 10vw 4rem;
 
     &__container {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    &__more {
+      &__text {
+        font-size: 1.5rem;
+      }
+
+      &__link {
+        place-items: center;
+
+        font-size: 1.5rem;
+
+        &__highlight {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @include mixins.for-size(desktop-lg) {
+    padding: 8rem 10vw 4rem;
+    gap: 8rem;
+
+    &__container {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    &__more {
+      max-width: 65%;
     }
   }
 }

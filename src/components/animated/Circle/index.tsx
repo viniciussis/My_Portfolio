@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
 import { circleRotation } from '@/shared/animations'
-import './AnimatedCircle.scss'
+import './Circle.scss'
 
 interface AnimatedCircleProps {
   label: string

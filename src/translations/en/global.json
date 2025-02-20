@@ -126,5 +126,10 @@
     "stack": {
       "subtitle": "Stack"
     }
+  },
+  "projectPage": {
+    "moreProjects": "These are some of the projects I've worked on. You can find more on my GitHub, including experiments, contributions, and other developments.",
+    "viewOnGithub": "View more projects on GitHub",
+    "github": "GitHub"
   }
 }

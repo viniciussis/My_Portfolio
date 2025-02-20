@@ -12,6 +12,7 @@ const fetchProjects = async (): Promise<IRepository[]> => {
       (repo: any) =>
         repo.homepage !== null &&
         repo.name !== 'My_GitHub_ReadMe_Stats' &&
+        repo.name !== 'The_News_Streaks' &&
         repo.name !== 'Organo_Project' &&
         repo.name !== 'Raffle_Friends' &&
         repo.name !== 'URL_Short_API' &&

@@ -160,3 +160,25 @@ export const hiddenTransition = {
     },
   },
 }
+
+export const iconAnimation: Variants = {
+  initial: {
+    scale: 1,
+    rotate: 0,
+  },
+  hover: {
+    scale: 1.2,
+    rotate: 360,
+    transition: {
+      duration: 0.6,
+      ease: 'easeInOut',
+    },
+  },
+  tap: {
+    scale: 0.9,
+    transition: {
+      duration: 0.2,
+      ease: 'easeOut',
+    },
+  },
+}

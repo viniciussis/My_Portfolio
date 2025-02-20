@@ -1,4 +1,4 @@
-import AnimatedCircle from '@/components/AnimatedCircle'
+import AnimatedCircle from '@/components/animated/Circle'
 import { useTranslation } from 'react-i18next'
 import './SoftSkills.scss'
 

@@ -1,5 +1,8 @@
-import { useProjectsQuery } from '@/hooks/api/useProjectsQuery'
 import { useTranslation } from 'react-i18next'
+import { FaGithub } from 'react-icons/fa'
+
+import AnimatedIconButton from '@/components/animated/IconButton'
+import { useProjectsQuery } from '@/hooks/api/useProjectsQuery'
 import Loading from '@/components/Loading'
 import ProjectCard from './ProjectCard'
 import './Projects.scss'
@@ -10,7 +13,7 @@ const Projects = () => {
 
   return (
     <main className="projects">
-      <h1 className="projects__title">{t('headerMenu.1')}</h1>
+      <h1 className="projects__title">{t('headerMenu.4')}</h1>
       {isLoading ? (
         <Loading />
       ) : (
@@ -26,6 +29,23 @@ const Projects = () => {
               key={project.id}
             ></ProjectCard>
           ))}
+        </div>
+      )}
+      {!isLoading && (
+        <div className="projects__more">
+          <p className="projects__more__text">
+            {t('projectPage.moreProjects')}
+          </p>
+          <p className="projects__more__link">
+            {t('projectPage.viewOn')}{' '}
+            <span className="projects__more__link__highlight">
+              {t('projectPage.github')}
+            </span>
+          </p>
+          <AnimatedIconButton
+            icon={FaGithub}
+            href="https://github.com/viniciussis?tab=repositories"
+          />
         </div>
       )}
     </main>
