@@ -27,17 +27,17 @@ const MenuDesktop = () => {
       </Link>
       <Link
         className={`menuDesktop__link ${
-          isActive('/contact') ? 'menuDesktop__link--active' : ''
+          isActive('/projects') ? 'menuDesktop__link--active' : ''
         }`}
-        to="/contact"
+        to="/projects"
       >
         {t('headerMenu.3')}
       </Link>
       <Link
         className={`menuDesktop__link ${
-          isActive('/projects') ? 'menuDesktop__link--active' : ''
+          isActive('/contact') ? 'menuDesktop__link--active' : ''
         }`}
-        to="/projects"
+        to="/contact"
       >
         {t('headerMenu.4')}
       </Link>

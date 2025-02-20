@@ -10,8 +10,8 @@
   "headerMenu": {
     "1": "Sobre Mim",
     "2": "Habilidades",
-    "3": "Contato",
-    "4": "Projetos"
+    "3": "Projetos",
+    "4": "Contato"
   },
   "cardButton": {
     "1": "Repositório"

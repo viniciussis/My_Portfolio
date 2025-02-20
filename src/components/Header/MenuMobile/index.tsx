@@ -77,7 +77,7 @@ const MenuMobile = () => {
             <Link
               onClick={() => setDropdown(false)}
               className="menuMobile__dropdown__link"
-              to="/contact"
+              to="/projects"
             >
               <motion.p
                 initial={{ x: '100vw' }}
@@ -91,7 +91,7 @@ const MenuMobile = () => {
             <Link
               onClick={() => setDropdown(false)}
               className="menuMobile__dropdown__link"
-              to="/projects"
+              to="/contact"
             >
               <motion.p
                 initial={{ x: '-100vw' }}

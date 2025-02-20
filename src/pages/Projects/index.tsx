@@ -13,7 +13,7 @@ const Projects = () => {
 
   return (
     <main className="projects">
-      <h1 className="projects__title">{t('headerMenu.4')}</h1>
+      <h1 className="projects__title">{t('headerMenu.3')}</h1>
       {isLoading ? (
         <Loading />
       ) : (

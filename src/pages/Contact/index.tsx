@@ -7,7 +7,7 @@ const Contact = () => {
   const { t } = useTranslation('global')
   return (
     <main className="contact">
-      <h2 className="contact__title">{t('headerMenu.3')}</h2>
+      <h2 className="contact__title">{t('headerMenu.4')}</h2>
       <EmailForm />
       <div className="contact__media">
         <h3 className="contact__media__sub">{t('contact.sub2')}</h3>
