@@ -62,27 +62,32 @@
     "greetings": {
       "sub": "Eai! Me chamo Vinícius!",
       "paras": {
-        "1": "Sou um desenvolvedor de software apaixonado por programação e desenvolvimento web, comprometido em impulsionar a inovação e a excelência em cada projeto que participo.",
-        "2": "Minha jornada educacional me levou a estudar em uma das melhores instituições de ensino da Bahia, o IFBA, e também na maior escola de tecnologia online do Brasil, a Alura. Estou constantemente em busca de novos desafios e oportunidades para crescer e aprender.",
-        "3": "Minhas principais habilidades incluem amplo conhecimento em linguagens de programação como Java, Python, Javascript e Typescript. Também tenho expertise em tecnologias web como HTML, CSS e SQL, além de frameworks como Vue e ReactJs. Sou proficiente no controle de versão usando GIT & GitHub e tenho conhecimento de bancos de dados como MySQL, MongoDB e PostgreSQL. Acredito que o trabalho em equipe é a chave para o sucesso e me orgulho de colaborar com colegas para alcançar resultados excepcionais."
+        "1": "Sou um desenvolvedor Full-Stack apaixonado por tecnologia, com experiência em desenvolvimento de software, especializado em soluções Backend e tecnologias web. Atualmente, estou concluindo minha graduação em Sistemas de Informação e já atuei em projetos de grande impacto para clientes importantes, incluindo instituições financeiras e empresas internacionais. Estudei no IFBA, uma das principais instituições da Bahia, e na Alura, a maior escola de tecnologia online do Brasil. Busco sempre novos desafios, pois acredito que a aprendizagem contínua é essencial para a inovação.",
+        "2": "Minhas principais habilidades incluem TypeScript, Java, JavaScript, Golang e Python, além de frameworks como Vue3, ReactJs, NestJS e NodeJs. Tenho experiência com MySQL, MongoDB, PostgreSQL e ORMs como Mongoose e Prisma. Também já trabalhei com migração de API Gateway, microsserviços, gRPC, scripting e autenticação com Keycloak, utilizando ferramentas como Docker, CI/CD e Grafana para garantir sistemas escaláveis.",
+        "3": "Além das habilidades técnicas, valorizo o trabalho em equipe e a colaboração para impulsionar a inovação. Gosto de compartilhar conhecimento e resolver problemas em ambientes dinâmicos. Fora do trabalho, sou apaixonado por fitness, nutrição e leitura, acreditando que o crescimento pessoal é essencial para o sucesso a longo prazo."
       }
     },
     "timeline": {
       "title": "Timeline",
       "1": {
-        "title": "Desenvolvedor Full-Stack - Estágio",
-        "sub": "06/2024 - Presente",
-        "description": "Colaborei no desenvolvimento de soluções de software, participando desde a documentação do projeto até o desenvolvimento de backend, frontend e banco de dados. Utilizei Vue.js com Quasar Framework no frontend, NestJS com PrismaORM no backend e banco de dados Postgres. Os projetos desenvolvidos abordavam questões relacionadas à infraestrutura e ao estilo de vida na cidade, além de aprimorar a organização do próprio núcleo de desenvolvimento da prefeitura."
-      },
-      "2": {
         "title": "Universidade IFBA",
         "sub": "2019 - Presente",
         "description": "Bacharelado em Sistemas de Informação. O IFBA, Instituto Federal de Educação, Ciência e Tecnologia da Bahia, é uma instituição pública federal que oferece cursos técnicos profissionais de nível superior em várias cidades da Bahia, Brasil."
       },
-      "3": {
+      "2": {
         "title": "Alura",
         "sub": "2021 - Presente",
         "description": "A Alura é a maior escola de tecnologia online do Brasil, oferecendo cursos em programação, front-end, DevOps, mobile, Data Science, UX & Design, Inteligência Artificial e Gestão & Inovação."
+      },
+      "3": {
+        "title": "PMVC-CTI / Desenvolvedor Full-Stack",
+        "sub": "06/2024 - Presente",
+        "description": "Colaborei no desenvolvimento de soluções de software, participando desde a documentação do projeto até o desenvolvimento de backend, frontend e banco de dados. Utilizei Vue.js com Quasar Framework no frontend, NestJS com PrismaORM no backend e banco de dados Postgres. Os projetos desenvolvidos abordavam questões relacionadas à infraestrutura e ao estilo de vida na cidade, além de aprimorar a organização do próprio núcleo de desenvolvimento da prefeitura."
+      },
+      "4": {
+        "title": "4CodeTech / Desenvolvedor Back-End",
+        "sub": "09/2024 - Presente",
+        "description": "Contribuí para projetos de alto impacto com grandes clientes, incluindo instituições financeiras e empresas internacionais de tecnologia. Desenvolvi soluções com NestJS, Java e Python, enfrentando desafios como migração de API Gateway, microsserviços, gRPC, scripting e autenticação com Keycloak. Garanti entregas de alta qualidade aplicando ferramentas de infraestrutura como Docker, K9s, SFTP, CI/CD e Grafana, sempre focando em escalabilidade, eficiência e performance."
       }
     },
     "hobbies": {

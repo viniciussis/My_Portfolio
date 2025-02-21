@@ -62,27 +62,32 @@
     "greetings": {
       "sub": "Hey! I'm Vinícius!",
       "paras": {
-        "1": "I'm a software developer passionate about programming and web development committed to driving innovation and excellence in every project I engage in.",
-        "2": "My educational journey led me to study at one of the best teaching colleges in Bahia, IFBA, and also at the largest online technology school in Brazil, Alura. I am constantly seeking new challenges and opportunities to grow and learn.",
-        "3": "My key skills include extensive knowledge in programming languages such as Java, Python, Javascript, and Typescript. I also have expertise in web technologies like HTML, CSS, and SQL, as well as frameworks like Vue and ReactJs. I am proficient in version control using GIT & GitHub and have knowledge of databases such as MySQL, MongoDB, and PostgreSQL. I believe that teamwork is the key to success, and I take pride in collaborating with colleagues to achieve exceptional results."
+        "1": "I am a passionate Full-Stack Developer with experience in software development, specializing in Backend solutions and web technologies. Currently completing my degree in Information Systems, I have worked on high-impact projects for major clients, including financial institutions and international technology companies. I studied at IFBA, one of Bahia’s leading institutions, and Alura, Brazil’s largest online technology school. Always eager for new challenges, I believe continuous learning is key to innovation and professional excellence.",
+        "2": "My expertise includes TypeScript, Java, JavaScript, Golang, and Python, along with frameworks like Vue3, ReactJs, NestJS, and NodeJs. I have experience with MySQL, MongoDB, PostgreSQL, and ORMs such as Mongoose and Prisma. I have also worked with API Gateway migration, microservices, gRPC, scripting, and authentication with Keycloak, leveraging tools like Docker, CI/CD, and Grafana for scalable systems.",
+        "3": "Beyond technical skills, I value teamwork and collaboration to drive innovation. I enjoy knowledge sharing and problem-solving in dynamic environments. Outside of work, I am passionate about fitness, nutrition, and reading, believing that personal growth is essential for long-term success."
       }
     },
     "timeline": {
       "title": "Timeline",
       "1": {
-        "title": "Full-Stack Developer - Internship",
-        "sub": "2024/06 - Present",
-        "description": "I contributed to the development of software solutions participating in everything from project documentation to backend, frontend database development. I used Vue.js with Quasar Framework on the frontend, with PrismaORM on the backend, and Postgres for the database. The projects developed addressed issues related to infrastructure and lifestyle in the city, as well as improving the organization of the city's own development team."
-      },
-      "2": {
         "title": "IFBA University",
         "sub": "2019 - Present",
         "description": "Bachelor of System Information. The IFBA, Federal Institute of Education, Science, and Technology of Bahia, is a federal public institution that offers professional technical courses at the higher education level in various cities of Bahia, Brazil."
       },
-      "3": {
+      "2": {
         "title": "Alura",
         "sub": "2021 - Present",
         "description": "Alura is the largest online technology school in Brazil, offering courses in programming, front-end, DevOps, mobile, Data Science, UX & Design, Artificial Intelligence, and Management & Innovation"
+      },
+      "3": {
+        "title": "PMVC-CTI / Full-Stack Developer",
+        "sub": "2024/06 - Present",
+        "description": "I contributed to the development of software solutions participating in everything from project documentation to backend, frontend database development. I used Vue.js with Quasar Framework on the frontend, with PrismaORM on the backend, and Postgres for the database. The projects developed addressed issues related to infrastructure and lifestyle in the city, as well as improving the organization of the city's own development team."
+      },
+      "4": {
+        "title": "4CodeTech - Back-End Developer",
+        "sub": "2024/09 - Present",
+        "description": "I have contributed to high-impact projects for major clients, including financial institutions and international tech companies. I developed solutions using NestJS, Java, and Python, tackling challenges such as API Gateway migration, microservices, gRPC, scripting, and authentication with Keycloak. I ensured high-quality deliveries by applying infrastructure tools like Docker, K9s, SFTP, CI/CD, and Grafana, always focusing on scalability, efficiency, and performance."
       }
     },
     "hobbies": {
