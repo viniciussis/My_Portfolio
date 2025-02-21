@@ -22,7 +22,7 @@ const SocialMedia = () => {
       <a
         target="_blank"
         className="social__media"
-        href="https://twitter.com/dev_ilman_"
+        href="https://twitter.com/_devinicius"
       >
         <FaTwitter size={18} />
       </a>
