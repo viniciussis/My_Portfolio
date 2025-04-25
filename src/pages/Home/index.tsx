@@ -4,7 +4,12 @@ import SocialMedia from '@/components/SocialMedia'
 import './Home.scss'
 
 const Home = () => {
-  const { t } = useTranslation('global')
+  const { t, i18n } = useTranslation('global')
+
+  const cvLink =
+    i18n.language === 'pt'
+      ? 'https://drive.google.com/file/d/1B2f3nT7zfSUgscKc3HK_BS-9kggCjxAA/view?usp=sharing'
+      : 'https://drive.google.com/file/d/11hOWj-XFO7ifZgL6o-dvHt5nQm8tEL-H/view?usp=sharing'
 
   return (
     <main className="home">
@@ -20,8 +25,10 @@ const Home = () => {
         <p className="home__greets__para">{t('homepage.para')}</p>
         <div className="home__greets__links">
           <a
-            href="https://drive.google.com/file/d/1B2f3nT7zfSUgscKc3HK_BS-9kggCjxAA/view?usp=sharing"
+            href={cvLink}
             className="home__greets__links__link"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             {t('homepage.curriculum')}
           </a>
