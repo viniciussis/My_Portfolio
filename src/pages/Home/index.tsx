@@ -8,7 +8,7 @@ const Home = () => {
 
   const cvLink =
     i18n.language === 'pt'
-      ? 'https://drive.google.com/file/d/1B2f3nT7zfSUgscKc3HK_BS-9kggCjxAA/view?usp=sharing'
+      ? 'https://drive.google.com/file/d/1T5mRyKn0DocH_-8muMU4-8MRE6Zxvjut/view?usp=sharing'
       : 'https://drive.google.com/file/d/11hOWj-XFO7ifZgL6o-dvHt5nQm8tEL-H/view?usp=sharing'
 
   return (
