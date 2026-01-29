@@ -25,3 +25,22 @@
     }
   }
 }
+
+@mixin container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+
+  @include for-size(tablet) {
+    max-width: $breakpoint-tablet;
+  }
+  @include for-size(desktop) {
+    max-width: $breakpoint-desktop;
+  }
+  @include for-size(desktop-md) {
+    max-width: $breakpoint-desktop-md;
+  }
+}
