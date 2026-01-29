@@ -6,4 +6,7 @@ export interface IRepository {
   branch: string
   topics?: string[]
   description: string
+  image?: string
+  isFeatured?: boolean
+  isDraft?: boolean
 }
