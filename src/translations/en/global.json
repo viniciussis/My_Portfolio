@@ -135,6 +135,8 @@
   "projectPage": {
     "moreProjects": "These are some of the projects I've worked on. You can find more on my GitHub, including experiments, contributions, and other developments.",
     "viewOn": "View more projects on",
-    "github": "GitHub"
+    "github": "GitHub",
+    "labTitle": "The Lab (Experiments)",
+    "spotlight": "Spotlight"
   }
 }

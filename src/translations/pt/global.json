@@ -135,6 +135,8 @@
   "projectPage": {
     "moreProjects": "Esses são alguns dos projetos em que trabalhei. Você pode encontrar mais no meu GitHub, incluindo experimentos, contribuições e outros desenvolvimentos.",
     "viewOn": "Ver mais projetos no",
-    "github": "GitHub"
+    "github": "GitHub",
+    "labTitle": "O Laboratório (Experimentos)",
+    "spotlight": "Destaques"
   }
 }
