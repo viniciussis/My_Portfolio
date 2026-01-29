@@ -11,8 +11,6 @@
   display: flex;
 
   &__banner {
-    border-top-right-radius: variables.$br-default;
-    border-top-left-radius: variables.$br-default;
     border-bottom: 3px solid var(--theme-primary);
     background-color: var(--theme-primary);
 
@@ -47,7 +45,7 @@
     }
 
     &__description {
-      color: var(--theme-secondary);
+      color: var(--theme-on-surface); 
       text-align: justify;
       font-size: 1.15rem;
     }
@@ -67,6 +65,7 @@
       font-size: 0.75rem;
       font-weight: 800;
       flex-grow: 1;
+      color: var(--theme-on-surface); 
 
       &:last-child {
         border-right: none;
@@ -75,8 +74,6 @@
   }
 
   &__actions {
-    border-bottom-right-radius: variables.$br-default;
-    border-bottom-left-radius: variables.$br-default;
     border-top: 3px solid var(--theme-primary);
     background-color: var(--theme-on-surface);
     display: flex;

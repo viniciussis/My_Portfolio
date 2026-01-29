@@ -1,8 +1,14 @@
 .loading {
   flex-direction: column;
-  margin: 3rem 10vw;
+  margin: 10vh auto;
+  width: 80vw;
+  max-width: 600px;
+  
   display: flex;
-  gap: 2rem;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  min-height: 50vh;
 
   &__title {
     font-family: variables.$font-title;
