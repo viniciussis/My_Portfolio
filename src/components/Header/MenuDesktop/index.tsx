@@ -1,5 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import ThemeBtn from '@/components/Actions/ThemeBtn'
+import LangBtn from '@/components/Actions/LangBtn'
 import './MenuDesktop.scss'
 
 const MenuDesktop = () => {
@@ -10,37 +12,37 @@ const MenuDesktop = () => {
   return (
     <div className="menuDesktop">
       <Link
-        className={`menuDesktop__link ${
-          isActive('/about') ? 'menuDesktop__link--active' : ''
-        }`}
+        className={`menuDesktop__link ${isActive('/about') ? 'menuDesktop__link--active' : ''
+          }`}
         to="/about"
       >
         {t('headerMenu.1')}
       </Link>
       <Link
-        className={`menuDesktop__link ${
-          isActive('/skills') ? 'menuDesktop__link--active' : ''
-        }`}
+        className={`menuDesktop__link ${isActive('/skills') ? 'menuDesktop__link--active' : ''
+          }`}
         to="/skills"
       >
         {t('headerMenu.2')}
       </Link>
       <Link
-        className={`menuDesktop__link ${
-          isActive('/projects') ? 'menuDesktop__link--active' : ''
-        }`}
+        className={`menuDesktop__link ${isActive('/projects') ? 'menuDesktop__link--active' : ''
+          }`}
         to="/projects"
       >
         {t('headerMenu.3')}
       </Link>
       <Link
-        className={`menuDesktop__link ${
-          isActive('/contact') ? 'menuDesktop__link--active' : ''
-        }`}
+        className={`menuDesktop__link ${isActive('/contact') ? 'menuDesktop__link--active' : ''
+          }`}
         to="/contact"
       >
         {t('headerMenu.4')}
       </Link>
+      <div className="menuDesktop__actions">
+        <LangBtn />
+        <ThemeBtn />
+      </div>
     </div>
   )
 }

@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem 5vw 1.5rem 5vw;
+  gap: 0.5rem;
   width: 100%;
   position: relative;
   margin-top: auto;
@@ -15,7 +16,7 @@
   }
 
   &__divider {
-    background: linear-gradient(90deg, var(--theme-primary), transparent, var(--theme-primary));
+    background: linear-gradient(90deg, rgba(128,128,128,0.1), var(--theme-primary), rgba(128,128,128,0.1));
     height: 1px;
     width: 100%;
     opacity: 0.5;
@@ -101,10 +102,10 @@
   }
 
   @include mixins.for-size(tablet) {
-    padding: 3rem 5vw 1.5rem 5vw;
+    padding: 1rem 5vw 1.5rem 5vw;
 
     &--simple {
-      padding: 1.5rem 5vw;
+      padding: 0.5rem 5vw 1.5rem 5vw;
     }
 
     &__content {
@@ -132,12 +133,12 @@
 
     &__bottom {
       border-top: 1px solid rgba(255, 255, 255, 0.05);
-      padding-top: 1.5rem;
+      padding-top: 0.5rem;
       margin-top: 0.5rem;
     }
 
     &__para {
-      font-size: 0.95rem;
+      font-size: 1.15rem;
       margin-top: 0;
     }
   }
