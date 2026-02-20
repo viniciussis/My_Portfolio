@@ -1,3 +1,5 @@
+
+
 .timeline {
   flex-direction: column;
   display: flex;
@@ -17,17 +19,27 @@
     position: relative;
     display: flex;
     width: 100%;
-    gap: 2rem;
+    gap: 3rem;
+  }
 
-    &::before {
-      background-color: var(--theme-secondary);
-      position: absolute;
-      content: '';
-      width: 6px;
-      bottom: 0;
-      left: 0;
-      top: 0;
-    }
+  &__line-bg,
+  &__line {
+    border-radius: variables.$br-default;
+    position: absolute;
+    width: 4px;
+    bottom: 0;
+    left: 17px; /* Align with the EventMarker circle which will be around 17px on mobile */
+    top: 0;
+  }
+
+  &__line-bg {
+    background-color: var(--theme-on-primary);
+    opacity: 0.3;
+  }
+
+  &__line {
+    background-color: var(--theme-primary);
+    z-index: 0;
   }
 
   @include mixins.for-size(tablet) {
@@ -38,11 +50,12 @@
 
     &__container {
       gap: 3rem;
+    }
 
-      &::before {
-        transform: translateX(-50%);
-        left: 50%;
-      }
+    &__line-bg,
+    &__line {
+      transform: translateX(-50%);
+      left: 50%;
     }
   }
 

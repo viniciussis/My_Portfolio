@@ -1,14 +1,27 @@
+import { useRef } from 'react'
+import { motion, useScroll } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import EventMarker from './EventMarker'
 import './Timeline.scss'
 
 const Timeline = () => {
   const { t } = useTranslation('global')
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start center', 'end end'],
+  })
 
   return (
-    <section className="timeline">
+    <section className="timeline" ref={containerRef}>
       <h2 className="timeline__sub">{t('aboutpage.timeline.title')}</h2>
       <div className="timeline__container">
+        <div className="timeline__line-bg"></div>
+        <motion.div
+          className="timeline__line"
+          style={{ scaleY: scrollYProgress, transformOrigin: 'top' }}
+        />
         <EventMarker
           title={t('aboutpage.timeline.4.title')}
           subtitle={t('aboutpage.timeline.4.sub')}
