@@ -6,14 +6,16 @@
   overflow: hidden;
   min-height: 80vh;
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
 
   @include mixins.for-size(tablet) {
     padding: 6rem 13vw;
+    gap: 5rem;
   }
 
   @include mixins.for-size(desktop) {
     padding: 4rem 11vw;
+    gap: 6rem;
   }
 
   @include mixins.for-size(desktop-md) {
@@ -22,6 +24,14 @@
 
   @include mixins.for-size(desktop-md) {
     padding: 6rem 0;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
   }
 }
 

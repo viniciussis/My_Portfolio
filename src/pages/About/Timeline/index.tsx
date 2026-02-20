@@ -23,20 +23,20 @@ const Timeline = () => {
           style={{ scaleY: scrollYProgress, transformOrigin: 'top' }}
         />
         <EventMarker
+          title={t('aboutpage.timeline.5.title')}
+          subtitle={t('aboutpage.timeline.5.sub')}
+          description={t('aboutpage.timeline.5.description')}
+        />
+        <EventMarker
           title={t('aboutpage.timeline.4.title')}
           subtitle={t('aboutpage.timeline.4.sub')}
           description={t('aboutpage.timeline.4.description')}
+          position="right"
         />
         <EventMarker
           title={t('aboutpage.timeline.3.title')}
           subtitle={t('aboutpage.timeline.3.sub')}
           description={t('aboutpage.timeline.3.description')}
-          position="right"
-        />
-        <EventMarker
-          title={t('aboutpage.timeline.2.title')}
-          subtitle={t('aboutpage.timeline.2.sub')}
-          description={t('aboutpage.timeline.2.description')}
         />
         <EventMarker
           title={t('aboutpage.timeline.1.title')}

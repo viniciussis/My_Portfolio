@@ -80,14 +80,19 @@
         "description": "Alura is the largest online technology school in Brazil, offering courses in programming, front-end, DevOps, mobile, Data Science, UX & Design, Artificial Intelligence, and Management & Innovation"
       },
       "3": {
-        "title": "PMVC-CTI / Full-Stack Developer",
-        "sub": "2024/06 - Present",
-        "description": "I contributed to the development of software solutions participating in everything from project documentation to backend, frontend database development. I used Vue.js with Quasar Framework on the frontend, with PrismaORM on the backend, and Postgres for the database. The projects developed addressed issues related to infrastructure and lifestyle in the city, as well as improving the organization of the city's own development team."
+        "title": "PMVC-CTI / Full Stack Software Development Intern",
+        "sub": "Jun 2024 - Nov 2025",
+        "description": "Developed solutions to optimize internal processes. Worked on the frontend using Vue.js (Quasar Framework) and backend using NestJS and Prisma ORM. Maintained and developed PostgreSQL databases."
       },
       "4": {
-        "title": "4CodeTech - Back-End Developer",
-        "sub": "2024/09 - Present",
-        "description": "I have contributed to high-impact projects for major clients, including financial institutions and international tech companies. I developed solutions using NestJS, Java, and Python, tackling challenges such as API Gateway migration, microservices, gRPC, scripting, and authentication with Keycloak. I ensured high-quality deliveries by applying infrastructure tools like Docker, K9s, SFTP, CI/CD, and Grafana, always focusing on scalability, efficiency, and performance."
+        "title": "4CodeTech / Back-End Developer",
+        "sub": "Sep 2024 - Nov 2025",
+        "description": "Developed solutions for financial institutions, national banks, and international tech companies. Worked with NestJS, Java, Angular, and Python, developing REST and GraphQL APIs, microservices, and gRPC integrations using Clean Architecture. Worked with AWS (Lambda, S3, API Gateway, SDK) and Serverless Framework. Utilized Docker, SFTP, K9s, and CI/CD pipelines, along with Grafana for monitoring."
+      },
+      "5": {
+        "title": "Beyond TheBytes / Full Stack Developer",
+        "sub": "Nov 2025 - Present",
+        "description": "Operates in the full software development lifecycle (End-to-End). Develops modern and scalable web applications (SaaS) with the T3 stack (Next.js, TypeScript, Tailwind CSS, and Prisma ORM). Implements pixel-perfect interfaces with a focus on performance optimization (Core Web Vitals) and UX. Builds serverless backend architectures, including data modeling, secure APIs, and integration of authentication and data visualization systems."
       }
     },
     "hobbies": {
@@ -112,6 +117,7 @@
   },
   "skillsPage": {
     "certificates": {
+      "title": "My Qualifications",
       "subtitle": "Certificates"
     },
     "softskills": {
@@ -129,7 +135,17 @@
       "10": "Leadership"
     },
     "stack": {
-      "subtitle": "Stack"
+      "subtitle": "Stack",
+      "categories": {
+        "core": "Core Languages",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "databases": "Databases & Storage",
+        "cloud": "Cloud & Serverless",
+        "devops": "DevOps & Observability",
+        "messaging": "Messaging & Search",
+        "testing": "Testing & Tooling"
+      }
     }
   },
   "projectPage": {

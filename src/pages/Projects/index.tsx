@@ -18,7 +18,7 @@ const Projects = () => {
 
   // Extract all unique topics for the filter
   const allTechs = useMemo(() => {
-    if (!data) return []
+    if (!Array.isArray(data)) return []
     const techs = new Set<string>()
     data.forEach((p) => p.topics?.forEach((topic) => techs.add(topic)))
     return Array.from(techs).sort()
@@ -26,7 +26,7 @@ const Projects = () => {
 
   // Filter and Categorize Projects
   const { featured, standard, drafts } = useMemo(() => {
-    if (!data) return { featured: [], standard: [], drafts: [] }
+    if (!Array.isArray(data)) return { featured: [], standard: [], drafts: [] }
 
     let filtered = data
     // tailored filter logic: If tags selected, show projects having AT LEAST ONE of them.
@@ -67,6 +67,20 @@ const Projects = () => {
   }
 
   if (isLoading) return <Loading />
+
+  if (!Array.isArray(data)) {
+    return (
+      <main className="projects">
+        <h1 className="projects__title">{t('headerMenu.3')}</h1>
+        <div style={{ textAlign: 'center', marginTop: '4rem', color: 'var(--theme-on-surface)' }}>
+          <p>Os projetos não puderam ser carregados.</p>
+          <p style={{ marginTop: '1rem', opacity: 0.8 }}>
+            Dica: Se estiver rodando localmente, certifique-se de iniciar o projeto usando <code>pnpm dev:api</code> (Vercel CLI) para que a API funcione corretamente.
+          </p>
+        </div>
+      </main>
+    )
+  }
 
   return (
     <main className="projects">

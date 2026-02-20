@@ -1,9 +1,6 @@
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { motion, useAnimation } from 'framer-motion'
-
-import { carrouselSlide } from '@/shared/animations'
-import ImageCard from '@/components/ImageCard'
-import { useEffect } from 'react'
+import { motion } from 'framer-motion'
 import './Certificates.scss'
 
 const Certificates = () => {
@@ -11,36 +8,32 @@ const Certificates = () => {
     { length: 24 },
     (_, i) => `images/certificates/${i + 1}.png`,
   )
-  const controls = useAnimation()
   const { t } = useTranslation('global')
-
-  useEffect(() => {
-    controls.start('animate')
-  }, [controls])
+  const [activeId, setActiveId] = useState<string | null>(null)
 
   return (
-    <>
-      <h2 className="sub">{t('skillsPage.certificates.subtitle')}</h2>
-      <motion.section
-        className="certificates"
-        onHoverStart={() => controls.stop()}
-        onHoverEnd={() => controls.start('animate')}
-      >
-        <motion.div
-          className="certificates__slider"
-          variants={carrouselSlide}
-          animate={controls}
-          initial="initial"
-        >
-          {images.map((image, index) => (
-            <ImageCard image={image} key={index} />
-          ))}
-          {images.map((image, index) => (
-            <ImageCard image={image} key={index} />
-          ))}
-        </motion.div>
-      </motion.section>
-    </>
+    <div className="skills__block">
+      <h2 className="sub">{t('skillsPage.certificates.title')}</h2>
+      <section className="certificates">
+        <div className="certificates__grid">
+          {images.map((img) => {
+            const isActive = activeId === img
+            return (
+              <motion.div
+                key={img}
+                className={`certificates__thumb ${isActive ? 'active' : ''}`}
+                onMouseEnter={() => setActiveId(img)}
+                onMouseLeave={() => setActiveId(null)}
+                onClick={() => setActiveId(isActive ? null : img)}
+                transition={{ type: 'spring', stiffness: 350, damping: 30 }}
+              >
+                <img src={img} alt="Certificate" loading="lazy" />
+              </motion.div>
+            )
+          })}
+        </div>
+      </section>
+    </div>
   )
 }
 
