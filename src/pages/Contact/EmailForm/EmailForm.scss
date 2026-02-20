@@ -6,10 +6,10 @@
   flex-direction: column;
   align-items: center;
   max-width: 85rem;
-  padding: 1rem;
+  padding: clamp(0.5rem, 2vh, 1rem);
   display: flex;
   width: 100%;
-  gap: 3vh;
+  gap: clamp(1rem, 2.5vh, 3vh);
 
   &__sub {
     color: var(--theme-primary);
@@ -19,10 +19,10 @@
   }
 
   @include mixins.for-size(desktop) {
-    padding: 2rem;
+    padding: max(2vh, 1rem);
 
     &__sub {
-      margin-bottom: 1rem;
+      margin-bottom: clamp(0.5rem, 1vh, 1rem);
       font-size: 2rem;
     }
   }

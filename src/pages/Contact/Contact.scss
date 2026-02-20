@@ -1,5 +1,5 @@
 .contact {
-  padding: 2rem 7.5vw;
+  padding: max(2vh, 1rem) 7.5vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -7,7 +7,7 @@
   flex: 1;
   overflow: hidden;
   display: flex;
-  gap: 1.5rem;
+  gap: clamp(1rem, 2vh, 1.5rem);
 
   &__title {
     font-family: variables.$font-title;
@@ -21,7 +21,7 @@
     flex-direction: column;
     text-align: center;
     display: flex;
-    gap: 1.5vh;
+    gap: clamp(0.5rem, 1.5vh, 1.5rem);
 
     &__sub {
       font-family: variables.$font-title;
@@ -37,7 +37,7 @@
   }
 
   @include mixins.for-size(tablet) {
-    padding: 4rem 6rem;
+    padding: max(2vh, 1rem) 6rem;
 
     &__title {
       display: none;
@@ -46,11 +46,11 @@
 
   @include mixins.for-size(desktop) {
     flex-direction: row;
-    padding: 2rem 11vw;
+    padding: max(2vh, 1rem) 11vw;
   }
 
   @include mixins.for-size(desktop-md) {
-    padding: 6rem 10vw;
+    padding: max(2vh, 1rem) 10vw;
 
     &__media {
       &__sub {
@@ -64,8 +64,8 @@
   }
 
   @include mixins.for-size(desktop-lg) {
-    padding: 6rem 12vw;
-    gap: 5rem;
+    padding: max(2vh, 1rem) 12vw;
+    gap: clamp(2rem, 5vh, 5rem);
 
     &__media {
       &__sub {

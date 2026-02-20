@@ -10,11 +10,11 @@ const Footer = () => {
   const location = useLocation()
   const currentYear = new Date().getFullYear()
 
-  const isHome = location.pathname === '/'
+  const isSimpleFooter = location.pathname === '/' || location.pathname === '/contact'
 
   return (
     <motion.footer
-      className={`footer ${isHome ? 'footer--simple' : ''}`}
+      className={`footer ${isSimpleFooter ? 'footer--simple' : ''}`}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -22,7 +22,7 @@ const Footer = () => {
     >
       <div className="footer__divider" />
 
-      {!isHome && (
+      {!isSimpleFooter && (
         <div className="footer__content">
           <div className="footer__brand">
             <h3 className="footer__name">Vinícius Silva Santos</h3>
