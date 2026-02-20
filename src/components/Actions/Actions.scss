@@ -1,9 +1,11 @@
 .actions {
-  position: fixed;
-  bottom: 2rem;
-  right: 2vw;
+  position: absolute;
+  right: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 0.5rem;
   z-index: 10;
   
@@ -14,15 +16,18 @@
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 2rem;
-  padding: 0.5rem 1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 0.25rem 0.5rem;
   
   @include mixins.for-size(tablet) {
-    right: 3vw;
-    bottom: 2.5rem;
+    right: 5.5rem;
   }
 
-  @include mixins.for-size(desktop-md) {
-    right: 4vw;
+  @include mixins.for-size(desktop) {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin-right: -1rem;
+    padding: 0.5rem 1rem;
   }
 }

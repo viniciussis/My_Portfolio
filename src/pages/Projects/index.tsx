@@ -71,13 +71,12 @@ const Projects = () => {
   if (!Array.isArray(data)) {
     return (
       <main className="projects projects--error-state">
-        <h1 className="projects__title">{t('headerMenu.3')}</h1>
         <div className="projects__error">
           <FaExclamationTriangle size={48} className="projects__error-icon" />
-          <h2 className="projects__error-title">Projetos Indisponíveis</h2>
-          <p className="projects__error-text">Os projetos não puderam ser carregados no momento.</p>
+          <h2 className="projects__error-title">{t('projectPage.errorTitle')}</h2>
+          <p className="projects__error-text">{t('projectPage.errorText')}</p>
           <div className="projects__error-tip">
-            <p><strong>Dica:</strong> Se estiver rodando localmente, certifique-se de iniciar o projeto usando <br /><code>pnpm dev:api</code> para que a API local (json-server) funcione corretamente.</p>
+            <p><strong>Dica / Tip:</strong><br />{t('projectPage.errorTip')}</p>
           </div>
         </div>
       </main>

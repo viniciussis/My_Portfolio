@@ -2,17 +2,17 @@ import { Outlet } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 import { slideIn, slideOut } from '@/shared/animations/motionVariants'
-import Actions from '../Actions'
 import Header from '../Header'
 import Footer from '../Footer'
 import './Default.scss'
 
 const Default = () => {
   return (
-    <>
+    <div className="app-layout">
       <Header />
-      <Actions />
-      <Outlet />
+      <div className="app-content">
+        <Outlet />
+      </div>
       <Footer />
       <motion.div
         className="slideIn"
@@ -28,7 +28,7 @@ const Default = () => {
         animate="animate"
         exit="exit"
       />
-    </>
+    </div>
   )
 }
 

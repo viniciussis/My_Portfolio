@@ -155,6 +155,9 @@
     "viewOn": "View more projects on",
     "github": "GitHub",
     "labTitle": "The Lab (Experiments)",
-    "spotlight": "Spotlight"
+    "spotlight": "Spotlight",
+    "errorTitle": "Projects Unavailable",
+    "errorText": "The projects could not be loaded at this time.",
+    "errorTip": "Tip: If running locally, make sure to start the project using pnpm dev:api so the local API (json-server) works correctly."
   }
 }

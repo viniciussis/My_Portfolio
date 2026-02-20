@@ -1,6 +1,7 @@
 import useTheme from '@/context/useTheme'
 import MenuDesktop from './MenuDesktop'
 import MenuMobile from './MenuMobile'
+import Actions from '../Actions'
 import './Header.scss'
 import { Link } from 'react-router-dom'
 
@@ -29,6 +30,7 @@ const Header = () => {
           alt="logo"
         />
       </Link>
+      <Actions />
       <MenuMobile />
       <MenuDesktop />
     </header>
