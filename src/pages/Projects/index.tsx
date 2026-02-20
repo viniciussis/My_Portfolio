@@ -76,7 +76,7 @@ const Projects = () => {
           <h2 className="projects__error-title">{t('projectPage.errorTitle')}</h2>
           <p className="projects__error-text">{t('projectPage.errorText')}</p>
           <div className="projects__error-tip">
-            <p><strong>Dica / Tip:</strong><br />{t('projectPage.errorTip')}</p>
+            <p>{t('projectPage.errorTip')}</p>
           </div>
         </div>
       </main>
