@@ -49,16 +49,10 @@
     }
   }
 
-  @include mixins.for-size(desktop) {
-    &__link {
-      font-size: 1.25rem;
-    }
-  }
-
   @include mixins.for-size(desktop-md) {
     &__link {
       padding: 0 2rem;
-      font-size: 1.75rem;
+      font-size: 1.25rem;
     }
   }
 }

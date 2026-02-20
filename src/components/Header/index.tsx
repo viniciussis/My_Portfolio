@@ -30,9 +30,9 @@ const Header = () => {
           alt="logo"
         />
       </Link>
+      <MenuDesktop />
       <Actions />
       <MenuMobile />
-      <MenuDesktop />
     </header>
   )
 }
