@@ -1,36 +1,131 @@
 .footer {
-  background-color: var(--theme-background);
-  background: var(--theme-gradient);
-  justify-content: center;
-  flex-direction: column;
-  padding: 1rem 5vw;
-  align-items: center;
+  background: var(--theme-background);
+  background: linear-gradient(to top, var(--theme-surface-2) 0%, var(--theme-background) 100%);
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 5vw 2rem 5vw;
+  gap: 2rem;
+  width: 100%;
+  position: relative;
+  margin-top: auto;
 
   &__divider {
-    background-color: var(--theme-primary);
-    height: 0.5px;
-    width: 90vw;
+    background: linear-gradient(90deg, transparent, var(--theme-primary), transparent);
+    height: 1px;
+    width: 100%;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__name {
+    font-family: variables.$font-title;
+    color: var(--theme-primary);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  &__tagline {
+    color: var(--theme-secondary);
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    color: var(--theme-on-surface);
+    font-size: 1.8rem;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    
+    &:hover {
+      color: var(--theme-primary);
+      transform: translateY(-5px) scale(1.1);
+      filter: drop-shadow(0 0 8px rgba(var(--theme-primary-rgb), 0.5));
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 2rem;
   }
 
   &__para {
     color: var(--theme-secondary);
     text-align: center;
-    font-size: 1rem;
-  }
-
-  @include mixins.for-size(tablet) {
-    min-height: 10vh;
-
-    &__para {
-      font-size: 1.25rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    
+    a {
+      color: var(--theme-primary);
+      text-decoration: none;
+      font-weight: bold;
+      
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
-  @include mixins.for-size(desktop-md) {
+  @include mixins.for-size(tablet) {
+    padding: 5rem 5vw 2rem 5vw;
+
+    &__content {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+
+    &__brand {
+      align-items: flex-start;
+    }
+
+    &__name {
+      font-size: 1.8rem;
+    }
+
+    &__tagline {
+      font-size: 1.1rem;
+    }
+
+    &__icon {
+      font-size: 2rem;
+    }
+
+    &__bottom {
+      margin-top: 3rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 2rem;
+    }
+
     &__para {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 }
