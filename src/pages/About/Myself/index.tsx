@@ -10,16 +10,20 @@ const Myself = () => {
       <h3 className="myself__sub">{t('aboutpage.greetings.sub')}</h3>
 
       <div className="myself__content">
-        <motion.img
-          className="myself__photo"
-          src="images/common/profile.jpg"
-          alt="profile"
-          aria-hidden="true"
+        <motion.div
+          className="myself__image-container"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.2 }}
-        />
+        >
+          <img
+            className="myself__photo"
+            src="images/common/profile.jpg"
+            alt="profile"
+            aria-hidden="true"
+          />
+        </motion.div>
 
         <motion.div
           className="myself__text"
