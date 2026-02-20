@@ -19,8 +19,11 @@
     background: linear-gradient(90deg, transparent, var(--theme-primary), transparent);
     height: 1px;
     width: 100%;
-    margin-bottom: 0.5rem;
     opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
   &__content {
