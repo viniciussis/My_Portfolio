@@ -15,10 +15,48 @@ export const carrouselSlide: Variants = {
   },
 }
 
-export const timeline: Variants = {
-  hiddenleft: { opacity: 0, x: -100 },
-  hiddenright: { opacity: 0, x: 100 },
-  visible: { opacity: 1, x: 0 },
+export const springSlideInLeft: Variants = {
+  hidden: { opacity: 0, x: -100, y: 50 },
+  visible: { 
+    opacity: 1, 
+    x: 0, 
+    y: 0,
+    transition: {
+      type: 'spring',
+      damping: 15,
+      stiffness: 100,
+      mass: 0.8,
+    }
+  },
+}
+
+export const springSlideInRight: Variants = {
+  hidden: { opacity: 0, x: 100, y: 50 },
+  visible: { 
+    opacity: 1, 
+    x: 0, 
+    y: 0,
+    transition: {
+      type: 'spring',
+      damping: 15,
+      stiffness: 100,
+      mass: 0.8,
+    }
+  },
+}
+
+export const popIn: Variants = {
+  hidden: { opacity: 0, scale: 0 },
+  visible: { 
+    opacity: 1, 
+    scale: 1,
+    transition: {
+      type: 'spring',
+      damping: 12,
+      stiffness: 200,
+      delay: 0.2
+    }
+  },
 }
 
 export const carrouselSlideReverse: Variants = {
