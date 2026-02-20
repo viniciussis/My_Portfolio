@@ -1,33 +1,91 @@
 .hobbies {
   flex-direction: column;
+  align-items: center;
   display: flex;
-  gap: 1.5rem;
+  gap: 3rem;
+  width: 100%;
+  margin-top: 2rem;
+
+  &__header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+  }
 
   &__sub {
     font-family: variables.$font-title;
     color: var(--theme-primary);
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-align: center;
     font-size: 2.5rem;
     font-weight: 900;
   }
 
-  &__para {
+  &__subtitle {
     color: var(--theme-secondary);
-    word-break: break-word;
-    text-align: justify;
-    hyphens: auto;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+  
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+  }
 
-    &__label {
+  &__card {
+    background-color: var(--theme-background);
+    border: 3px solid var(--theme-on-surface);
+    border-radius: variables.$border-radius-lg;
+    box-shadow: 8px 8px 15px var(--theme-smoke-down), -5px -5px 10px var(--theme-smoke-up);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      border-color: var(--theme-primary);
+      box-shadow: 12px 12px 20px var(--theme-smoke-down), -8px -8px 15px var(--theme-smoke-up);
+      
+      .hobbies__card-icon {
+        color: var(--theme-primary);
+        transform: translateX(10px);
+      }
+    }
+
+    &-icon {
+      font-size: 2.5rem;
+      color: var(--theme-on-surface);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+    }
+
+    &-title {
+      font-family: variables.$font-title;
       color: var(--theme-primary);
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    &-text {
+      color: var(--theme-secondary);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: justify;
     }
   }
 
   @include mixins.for-size(tablet) {
-    &__para {
-      font-size: 1.25rem;
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
     }
   }
 }
