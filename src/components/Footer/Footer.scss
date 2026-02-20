@@ -4,17 +4,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 5vw 2rem 5vw;
-  gap: 2rem;
+  padding: 2rem 5vw 1.5rem 5vw;
+  gap: 1.5rem;
   width: 100%;
   position: relative;
   margin-top: auto;
+
+  &--simple {
+    padding: 1rem 5vw;
+    gap: 0;
+  }
 
   &__divider {
     background: linear-gradient(90deg, transparent, var(--theme-primary), transparent);
     height: 1px;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     opacity: 0.5;
   }
 
@@ -22,7 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     width: 100%;
     max-width: 1200px;
     text-align: center;
@@ -31,33 +36,33 @@
   &__brand {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem;
   }
 
   &__name {
     font-family: variables.$font-title;
     color: var(--theme-primary);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 800;
     letter-spacing: 1px;
   }
 
   &__tagline {
     color: var(--theme-secondary);
-    font-size: 1rem;
+    font-size: 0.9rem;
     opacity: 0.8;
   }
 
   &__socials {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.25rem;
     align-items: center;
     justify-content: center;
   }
 
   &__icon {
     color: var(--theme-on-surface);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
     
     &:hover {
@@ -73,14 +78,14 @@
     align-items: center;
     gap: 1rem;
     width: 100%;
-    margin-top: 2rem;
   }
 
   &__para {
     color: var(--theme-secondary);
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     opacity: 0.7;
+    margin-top: 1rem;
     
     a {
       color: var(--theme-primary);
@@ -94,12 +99,17 @@
   }
 
   @include mixins.for-size(tablet) {
-    padding: 5rem 5vw 2rem 5vw;
+    padding: 3rem 5vw 1.5rem 5vw;
+
+    &--simple {
+      padding: 1.5rem 5vw;
+    }
 
     &__content {
       flex-direction: row;
       justify-content: space-between;
       text-align: left;
+      gap: 0;
     }
 
     &__brand {
@@ -107,25 +117,26 @@
     }
 
     &__name {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
 
     &__tagline {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     &__icon {
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
 
     &__bottom {
-      margin-top: 3rem;
       border-top: 1px solid rgba(255, 255, 255, 0.05);
-      padding-top: 2rem;
+      padding-top: 1.5rem;
+      margin-top: 0.5rem;
     }
 
     &__para {
-      font-size: 1rem;
+      font-size: 0.95rem;
+      margin-top: 0;
     }
   }
 }
