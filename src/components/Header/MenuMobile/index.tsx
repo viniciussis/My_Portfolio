@@ -4,8 +4,6 @@ import { TiThMenu } from 'react-icons/ti'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-import ThemeBtn from '@/components/Actions/ThemeBtn'
-import LangBtn from '@/components/Actions/LangBtn'
 import { hiddenTransition } from '@/shared/animations'
 import './MenuMobile.scss'
 
@@ -15,10 +13,6 @@ const MenuMobile = () => {
 
   return (
     <div className="menuMobile">
-      <div className="menuMobile__actions">
-        <LangBtn />
-        <ThemeBtn />
-      </div>
       <span
         className="menuMobile__dropbutton"
         onMouseEnter={() => setDropdown(true)}

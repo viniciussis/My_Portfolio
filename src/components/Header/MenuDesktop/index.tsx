@@ -1,7 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import ThemeBtn from '@/components/Actions/ThemeBtn'
-import LangBtn from '@/components/Actions/LangBtn'
 import './MenuDesktop.scss'
 
 const MenuDesktop = () => {
@@ -39,10 +37,6 @@ const MenuDesktop = () => {
       >
         {t('headerMenu.4')}
       </Link>
-      <div className="menuDesktop__actions">
-        <LangBtn />
-        <ThemeBtn />
-      </div>
     </div>
   )
 }

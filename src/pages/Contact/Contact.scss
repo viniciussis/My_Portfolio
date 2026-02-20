@@ -1,11 +1,13 @@
 .contact {
-  padding: 3rem 7.5vw 4rem;
+  padding: 2rem 7.5vw;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 80vh;
+  height: calc(100vh - 10vh);
+  overflow: hidden;
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
 
   &__title {
     font-family: variables.$font-title;
@@ -19,7 +21,7 @@
     flex-direction: column;
     text-align: center;
     display: flex;
-    gap: 3vh;
+    gap: 1.5vh;
 
     &__sub {
       font-family: variables.$font-title;
@@ -43,9 +45,8 @@
   }
 
   @include mixins.for-size(desktop) {
-    justify-content: center;
     flex-direction: row;
-    padding: 6rem 11vw;
+    padding: 2rem 11vw;
   }
 
   @include mixins.for-size(desktop-md) {

@@ -1,21 +1,25 @@
 .actions {
-  justify-content: center;
   position: fixed;
+  bottom: 2rem;
+  right: 2vw;
   display: flex;
-  width: 60vw;
-  gap: 2.5rem;
-  z-index: 2;
-  left: 20vw;
-  top: 1rem;
-
+  flex-direction: row;
+  gap: 0.5rem;
+  z-index: 10;
+  
+  // Premium glassmorphism pill effect
+  background: var(--theme-surface-2); // Fallback
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  
   @include mixins.for-size(tablet) {
-    flex-direction: column;
-    width: fit-content;
-    height: 100vh;
-    left: initial;
     right: 3vw;
-    gap: 1rem;
-    top: 0;
+    bottom: 2.5rem;
   }
 
   @include mixins.for-size(desktop-md) {

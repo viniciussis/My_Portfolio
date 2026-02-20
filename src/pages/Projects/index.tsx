@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
-import { FaGithub, FaFlask, FaStar, FaLayerGroup } from 'react-icons/fa'
+import { FaGithub, FaFlask, FaStar, FaLayerGroup, FaExclamationTriangle } from 'react-icons/fa'
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion'
 
 import AnimatedIconButton from '@/components/animated/IconButton'
@@ -70,13 +70,15 @@ const Projects = () => {
 
   if (!Array.isArray(data)) {
     return (
-      <main className="projects">
+      <main className="projects projects--error-state">
         <h1 className="projects__title">{t('headerMenu.3')}</h1>
-        <div style={{ textAlign: 'center', marginTop: '4rem', color: 'var(--theme-on-surface)' }}>
-          <p>Os projetos não puderam ser carregados.</p>
-          <p style={{ marginTop: '1rem', opacity: 0.8 }}>
-            Dica: Se estiver rodando localmente, certifique-se de iniciar o projeto usando <code>pnpm dev:api</code> (Vercel CLI) para que a API funcione corretamente.
-          </p>
+        <div className="projects__error">
+          <FaExclamationTriangle size={48} className="projects__error-icon" />
+          <h2 className="projects__error-title">Projetos Indisponíveis</h2>
+          <p className="projects__error-text">Os projetos não puderam ser carregados no momento.</p>
+          <div className="projects__error-tip">
+            <p><strong>Dica:</strong> Se estiver rodando localmente, certifique-se de iniciar o projeto usando <br /><code>pnpm dev:api</code> para que a API local (json-server) funcione corretamente.</p>
+          </div>
         </div>
       </main>
     )
