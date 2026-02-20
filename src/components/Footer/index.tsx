@@ -33,16 +33,16 @@ const Footer = () => {
             <a href="https://github.com/viniciussis" target="_blank" rel="noreferrer" aria-label="GitHub">
               <FaGithub className="footer__icon" />
             </a>
-            <a href="https://linkedin.com/in/viniciussilva-ba" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/viniciussis/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <FaLinkedin className="footer__icon" />
             </a>
-            <a href="https://instagram.com/o_viniciussilva" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/_devinicius/" target="_blank" rel="noreferrer" aria-label="Instagram">
               <FaInstagram className="footer__icon" />
             </a>
-            <a href="https://x.com/ovini_silva" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
+            <a href="https://twitter.com/_devinicius" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
               <FaXTwitter className="footer__icon" />
             </a>
-            <a href="mailto:contato.viniciussilva.ba@gmail.com" aria-label="Email">
+            <a href="mailto:vinicius01012@gmail.com" aria-label="Email">
               <FaEnvelope className="footer__icon" />
             </a>
           </div>
